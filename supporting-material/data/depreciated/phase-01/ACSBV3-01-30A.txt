@@ -1,0 +1,19 @@
+total_items
+3176
+entry	name	ItemLevel	Quality	dps_budget	stat_budget	total_budget
+1521	Lumbering Ogre Axe	44	2	33.72	19.75	53.47
+30865	Tracker's Blade	141	4	100.33	37.70	138.03
+34066	Vengeful Gladiator's Piercing Touch	146	4	189.47	27.80	217.27
+2527	Battle Staff	36	1	22.94	0.00	22.94
+9391	The Shoveler	37	3	32.5	15.00	47.5
+30758	Aldor Guardian Rifle	70	1	39.54	0.00	39.54
+41186	Corroded Saronite Edge	179	3	114.42	63.70	178.12
+13032	Sword of Corruption	27	3	17.14	0.00	17.14
+18713	Rhok'delar, Longbow of the Ancient Keepers	75	4	53.28	0.00	53.28
+25190	Wight's Claws	99	2	51.92	0.00	51.92
+Quality	min_budget	avg_budget	max_budget
+1	4.17	24.32	65.39
+2	5.48	62.48	297.27
+3	12.31	97.49	696.4
+4	30.93	377.14	1649.87
+5	55.34	250.21	936.8

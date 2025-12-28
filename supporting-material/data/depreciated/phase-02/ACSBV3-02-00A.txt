@@ -1,0 +1,20 @@
+total_items
+15055
+negative_budgets
+0
+entry	name	ItemLevel	Quality	stat_budget	armor_budget	socket_budget	actual_stat_budget
+24750	Daggerfen Boots	102	2	0.00	33.90	0.00	33.90
+16483	Marshal's Plate Boots	71	4	57.00	139.36	0.00	196.36
+29035	Cyclone Faceguard	120	4	86.62	142.90	0.00	229.52
+19325	Don Julio's Band	65	4	11.00	0.00	0.00	11.00
+23272	Knight-Captain's Lamellar Breastplate	68	3	47.24	146.85	0.00	194.09
+35000	Brutal Gladiator's Dragonhide Legguards	159	4	242.23	99.42	0.00	341.65
+35321	Cloak of Arcane Alacrity	136	4	79.80	23.71	0.00	103.51
+36194	Njord Bracers	134	2	0.00	62.40	0.00	62.40
+42538	Furious Gladiator's Grimoire	232	4	211.10	0.00	0.00	211.10
+7728	Beguiler Robes	34	3	26.04	10.40	0.00	36.44
+Quality	min_budget	avg_budget	max_budget
+1	1.66	24.43	524.78
+2	0.85	60.44	1153.57
+3	2.00	146.42	1676.84
+4	6.00	403.88	2305.06

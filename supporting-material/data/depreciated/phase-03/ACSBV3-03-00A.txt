@@ -1,0 +1,14 @@
+total_rows
+18305
+item_family	rows_per_family
+equipment	15055
+weapon	3250
+item_family	Quality	min_ilvl	max_ilvl	n
+equipment	1	10	90	336
+equipment	2	10	182	3810
+equipment	3	18	200	3258
+equipment	4	36	284	7651
+weapon	1	10	115	132
+weapon	2	10	187	893
+weapon	3	18	200	876
+weapon	4	40	284	1349

@@ -1,0 +1,135 @@
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  1. Remove Unknown Items: Remove items with "Unknown" tags.                                                   (v2.4)  ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+note	ini_count	last_count	current_count	drop_environment	source_type	FamilyID	SlotID	QualityName
+Unknown Items: 	18318	18318	18318	0	0	0	0	0
+
+                                                                                                                           
+                                                                                                                           
+
+                                                                                                                           
+                                                                                                                           
+note	ini_count	last_count	current_count	drop_environment	source_type	FamilyID	SlotID	QualityName	removed	expected
+Unknown Items: 	18318	18318	18318	0	0	0	0	0	0	6
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  2. Remove Unexpected Modifiers: Remove any modifiers with unexpected values.                                 (v2.4)  ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+note	ini_count	last_count	current_count	mod_drop	mod_misc	mod_slot
+Unexpected Modifiers: 	18318	18318	18318	0	0	0
+
+                                                                                                                           
+                                                                                                                           
+
+                                                                                                                           
+                                                                                                                           
+note	ini_count	last_count	current_count	mod_drop	mod_misc	mod_slot	removed	expected
+Unexpected Modifiers: 	18318	18318	18318	0	0	0	0	0
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  3. Remove Negative Stats: Remove any stat_value N with a negative value.                                     (v2.4)  ##
+##                             - Our model does not account for this behavior.                                           ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+note	ini_count	last_count	current_count	negative_stats
+Negative Stats: 	18318	18318	18318	0
+
+                                                                                                                           
+                                                                                                                           
+
+                                                                                                                           
+                                                                                                                           
+note	ini_count	last_count	current_count	negative_stats	removed	expected
+Negative Stats: 	18318	18318	18318	0	0	15
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  4. Remove Zero Budget Items: Remove items with a budget_actual value less than 0.20.                         (v2.4)  ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+note	ini_count	last_count	current_count	budget_actual
+Zero Budget Items: 	18318	18318	18318	0
+
+                                                                                                                           
+                                                                                                                           
+
+                                                                                                                           
+                                                                                                                           
+note	ini_count	last_count	current_count	budget_actual	removed	expected
+Zero Budget Items: 	18318	18318	18318	0	0	339
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5. Remove Zero DPS: Remove weapon items with DPS value less than 1.00.                                       (v2.4)  ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+note	ini_count	last_count	current_count	DPS
+Zero DPS Items: 	18318	18318	18318	0
+
+                                                                                                                           
+                                                                                                                           
+
+                                                                                                                           
+                                                                                                                           
+note	ini_count	last_count	current_count	DPS	removed	expected
+Zero DPS Items: 	18318	18318	18318	0	0	56
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  6. Remove Unavailable Items: Remove items unavailable to player, such as "%MONSTER%" items.                  (v2.4)  ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+note	ini_count	last_count	current_count	monster
+Unavailable Items: 	18318	18318	18318	0
+
+                                                                                                                           
+                                                                                                                           
+
+                                                                                                                           
+                                                                                                                           
+note	ini_count	last_count	current_count	monster	removed	expected
+Unavailable Items: 	18318	18318	18318	0	0	1
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  7. Final Diagnostic Output:                                                                                  (v2.4)  ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+note	ini_count	final_count	unknown	mod	negative	zero	zero	unavailable	total_removed	expected
+Final Count: 	18318	18318	0	0	0	0	0	0	0	417
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##  END PRINT OUT                                                                                                        ##
+###########################################################################################################################
+                                                                                                                           
+                                                                                                                           
+                                                                                                                           

@@ -1,0 +1,27 @@
+total_rows	randomized_items	pct_randomized	avg_random_mod	avg_adj_norm_dps	stdev_adj_norm_dps
+6341	29	0.46	1.002	1.001	0.541
+entry	name	subclass	ItemLevel	normalized_dps	adj_normalized_dps	random_mod	RandomProperty	RandomSuffix
+49227	Skoll's Fang	15	187	0.571	0.771	1.35	0	306
+36696	Graced Scepter	4	182	0.582	0.786	1.35	0	84
+36682	Seduced Blade	15	182	0.508	0.686	1.35	0	84
+36695	Dogmatic Scepter	4	178	0.571	0.771	1.35	0	84
+36681	Wisdom Carver	15	178	0.499	0.674	1.35	0	84
+36680	Mystic Fang	15	174	0.489	0.66	1.35	0	84
+36694	Beatific Mace	4	174	0.56	0.756	1.35	0	84
+36693	Serene Hammer	4	170	0.543	0.733	1.35	0	84
+36679	Singing Dagger	15	170	0.474	0.64	1.35	0	84
+36692	Remedial Mace	4	166	0.535	0.722	1.35	0	84
+entry	name	subclass	ItemLevel	normalized_dps	adj_normalized_dps	random_mod
+49623	Shadowmourne	1	284	2.38	2.38	1.00
+49623	Shadowmourne	1	284	2.38	2.38	1.00
+50732	Bloodsurge, Kel'Thuzad's Blade of Agony	7	284	1.472	1.472	1.00
+50736	Heaven's Fall, Kryss of a Thousand Lies	15	284	2.189	2.189	1.00
+50732	Bloodsurge, Kel'Thuzad's Blade of Agony	7	284	1.472	1.472	1.00
+50736	Heaven's Fall, Kryss of a Thousand Lies	15	284	2.189	2.189	1.00
+50732	Bloodsurge, Kel'Thuzad's Blade of Agony	7	284	1.472	1.472	1.00
+50736	Heaven's Fall, Kryss of a Thousand Lies	15	284	2.189	2.189	1.00
+49623	Shadowmourne	1	284	2.38	2.38	1.00
+49623	Shadowmourne	1	284	2.38	2.38	1.00
+random_mod	items	avg_adj_dps
+1.00	6312	1.002
+1.35	29	0.634

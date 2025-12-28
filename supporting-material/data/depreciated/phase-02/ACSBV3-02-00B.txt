@@ -1,0 +1,15 @@
+total_items
+15055
+null_budgets
+0
+entry	name	ItemLevel	Quality	actual_budget	slot_mod_percent	drop_mod_percent	misc_mod	normalized_budget
+20273	90 Epic Rogue Spaulders	90	4	99.89	72.00	100.00	1.00	138.74
+8279	Valorous Helm	48	2	108.71	86.00	100.00	1.00	126.40
+40952	Spiked Cobalt Gauntlets	154	2	272.42	63.00	100.00	1.00	432.41
+51818	Wyrmwing Treads	264	4	687.06	63.00	125.00	1.00	872.45
+30911	Scepter of Purification	151	4	62.59	33.00	125.00	1.00	151.73
+48794	Runetotem's Handgrips 	232	4	349.75	63.00	100.00	1.00	555.16
+48496	Koltira's Shoulderplates of Triumph	245	4	735.63	72.00	100.00	1.00	1021.71
+37634	Bracers of the Divine Elemental	200	3	157.37	44.00	100.00	1.00	357.66
+43438	Eviscerator's Legguards	187	3	367.98	87.00	100.00	1.00	422.96
+32352	Naturewarden's Treads	141	4	146.80	63.00	125.00	1.00	186.41

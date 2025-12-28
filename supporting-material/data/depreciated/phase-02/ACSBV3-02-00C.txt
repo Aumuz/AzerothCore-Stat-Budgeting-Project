@@ -1,0 +1,15 @@
+total_items
+15055
+min_actual	avg_actual	max_actual	min_norm	avg_norm	max_norm
+0.85	252.78	2305.06	2.58	330.58	1645.66
+entry	name	ItemLevel	Quality	actual_budget	normalized_budget	weight
+35646	Lava Burn Gloves	175	3	156.66	331.55	0.375
+35146	Guardian's Plate Greaves	159	4	440.50	699.21	1
+29038	Cyclone Breastplate	120	4	285.15	285.15	1
+35057	Brutal Gladiator's Mooncloth Robe	159	4	220.27	220.27	1
+31377	Gladiator's Kodohide Legguards	123	4	186.24	214.07	1
+37366	Drake-Champion's Bracers	200	3	174.46	396.50	0.806
+3075	Eye of Flame	55	4	35.13	40.85	0.6386
+48163	Malfurion's Gloves of Triumph	245	4	445.02	706.38	1
+14558	Lady Maye's Pendant	64	4	37.88	111.41	0.7332
+28134	Brooch of Heightened Potential	112	3	52.28	153.76	0.5

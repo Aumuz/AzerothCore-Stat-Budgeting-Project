@@ -1,0 +1,136 @@
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  1. View - Index: Group all items by (iLvl, Quality_Name, Family_Name, Slot_Name).                            (v2.4)  ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+Item_Count	iLvl	Quality_Name	Family_Name	Slot_Name	Average_Budget	Minimum_Budget	Maximum_Budget
+124	232	Epic	Equipment	Head	371.76951	184.51693	704.61295
+111	232	Epic	Equipment	Legs	349.77235	178.73461	713.18115
+107	232	Epic	Equipment	Shoulder	343.25500	164.14649	789.27561
+105	232	Epic	Equipment	Hands	349.99779	177.77012	735.91232
+90	200	Epic	Equipment	Head	342.24884	102.06328	629.69839
+89	115	Rare	Equipment	Legs	122.67534	19.38022	291.65133
+88	115	Rare	Equipment	Hands	129.38082	18.57490	281.62847
+86	115	Rare	Equipment	Head	122.33713	18.97675	306.66841
+85	115	Rare	Equipment	Shoulder	125.42354	19.78537	294.62412
+83	245	Epic	Equipment	Head	452.66153	207.67753	771.20966
+count
+18318
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  2. View - Quality: Show total number of items in each quality tier.                                          (v2.4)  ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+Item_Count	Quality_Name	Average_Budget	Minimum_Budget	Maximum_Budget
+9000	Epic	315.40652	9.03049	1238.44831
+4703	Uncommon	63.11077	0.97997	489.64213
+4134	Rare	112.67088	2.32077	621.78694
+468	Common	14.24802	0.69639	105.77379
+13	Legendary	244.22291	63.31977	1026.69929
+count
+18318
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  3. View - Slot: Show total number of items in each equipment slot or weapon type category.                   (v2.4)  ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+Item_Count	Family_Name	Slot_Name	Average_Budget	Minimum_Budget	Maximum_Budget
+1810	Equipment	Legs	209.57518	1.22868	1033.32106
+1733	Equipment	Hands	205.36058	1.17024	1021.07709
+1652	Equipment	Head	226.06640	2.86961	962.46175
+1609	Equipment	Shoulder	213.00150	2.64014	884.53434
+1374	Equipment	Chest	182.71417	0.69639	759.03861
+1346	Equipment	Feet	168.30827	1.16713	1013.25343
+1298	Equipment	Waist	172.48874	1.08879	952.46667
+1178	Equipment	Wrists	177.15277	1.15344	1086.50003
+742	Equipment	Back	190.27694	3.68268	862.00909
+662	Equipment	Finger	243.41110	1.87441	998.26840
+602	Equipment	Robe	247.59311	3.64343	1122.33446
+478	Equipment	Neck	257.02062	3.66552	960.53317
+446	Weapon	Dagger	207.87946	4.60552	1110.80515
+380	Weapon	1H Mace	196.85387	4.47452	1212.64731
+377	Equipment	Shield	111.77743	2.32077	318.19832
+361	Weapon	Staff	220.72102	3.48488	927.65734
+351	Weapon	1H Sword	175.89160	4.76840	1238.44831
+226	Weapon	1H Axe	171.19943	7.15564	626.41985
+194	Equipment	Off-Hand	223.81291	2.25564	931.53455
+194	Weapon	Wand	164.08893	6.87831	521.05379
+186	Weapon	2H Axe	138.83591	5.40305	815.58297
+186	Weapon	2H Sword	142.70759	4.87254	688.22332
+180	Weapon	2H Mace	135.24985	5.45554	669.79973
+153	Weapon	Fist Weapon	219.34227	7.07287	612.58706
+151	Weapon	Bow	128.11825	8.79121	549.05983
+149	Weapon	Gun	160.68736	8.55175	558.43671
+127	Weapon	Polearm	198.75749	9.38407	709.06284
+87	Weapon	Thrown	158.32820	8.09716	440.46131
+86	Weapon	Crossbow	205.74803	11.76938	642.10703
+count
+18318
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  4. View - iLvl: Show total number of items in each iLvl bracket.                                             (v2.4)  ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+Item_Count	iLvl	Average_Budget	Minimum_Budget	Maximum_Budget
+1101	200	308.53135	22.92152	662.77808
+927	115	122.85903	11.19965	366.90783
+779	232	385.18699	164.14649	842.87436
+681	245	467.91124	179.60389	1026.69929
+555	213	324.45291	95.24170	675.99230
+484	264	548.43118	212.91209	1086.50003
+463	226	414.52131	86.27480	928.36285
+450	251	453.94157	35.19837	1106.03182
+415	258	522.69109	205.61028	1026.45074
+371	63	57.87938	5.81520	177.30637
+count
+18318
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5. Final Diagnostic Output: This defines the (theoretically) most common Quality/Slot/iLvl combo.            (v2.4)  ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+Note	Quality	Slot	iLvl	Item_Count
+Focal Point: 	Epic	Legs	200	82
+
+                                                                                                                           
+                                                                                                                           
+Entry	Name	iLvl	Quality_Name	Family_Name	Slot	Budget
+43816	Heroes' Scourgeborne Legguards	200	Epic	Equipment	Legs	629.60236
+43746	Dreadnaught Legplates	200	Epic	Equipment	Legs	624.26362
+43500	Bolstered Legplates	200	Epic	Equipment	Legs	622.28461
+42657	Hateful Gladiator's Dreadplate Legguards	200	Epic	Equipment	Legs	618.14249
+47171	Legguards of Abandoned Fealty	200	Epic	Equipment	Legs	617.17687
+43817	Heroes' Scourgeborne Legplates	200	Epic	Equipment	Legs	613.40206
+43803	Heroes' Redemption Legplates	200	Epic	Equipment	Legs	610.77872
+43745	Heroes' Dreadnaught Legguards	200	Epic	Equipment	Legs	604.19735
+37193	Staggering Legplates	200	Epic	Equipment	Legs	593.01362
+43802	Heroes' Redemption Legguards	200	Epic	Equipment	Legs	591.19109
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##  END PRINT OUT                                                                                                        ##
+###########################################################################################################################
+                                                                                                                           
+                                                                                                                           
+                                                                                                                           

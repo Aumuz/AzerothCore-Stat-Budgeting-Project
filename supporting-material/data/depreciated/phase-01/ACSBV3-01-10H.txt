@@ -1,0 +1,5 @@
+total_modifiers
+2
+modifier_name	multiplier	notes
+RandomPropertySuffix	1.350	Empirical correction; random affix items average 60-65 percent of baseline.
+SpellID	1.000	No adjustment; spell effects already budgeted via DBC.

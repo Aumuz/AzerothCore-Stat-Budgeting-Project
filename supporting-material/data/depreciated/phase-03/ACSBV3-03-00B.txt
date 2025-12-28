@@ -1,0 +1,9 @@
+item_family	Quality	n
+equipment	1	336
+equipment	2	3810
+equipment	3	3258
+equipment	4	7651
+weapon	1	132
+weapon	2	893
+weapon	3	876
+weapon	4	1349

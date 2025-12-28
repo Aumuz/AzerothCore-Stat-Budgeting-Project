@@ -1,0 +1,23 @@
+total_rows
+20
+id	stat_name	normalized_cost	design_notes
+-1	DPS_BASE	1.000	ITEM_MOD_DPS baseline (subclass-normalized mean = 1.0).
+3	ITEM_MOD_AGILITY	1.100	Reduced from 1.25 -> weapons show ~12% lower stat magnitude.
+4	ITEM_MOD_STRENGTH	0.850	Weapons average 0.69x equipment value after normalization.
+5	ITEM_MOD_INTELLECT	0.920	Caster weapons slightly below equipment average.
+6	ITEM_MOD_SPIRIT	0.800	Low regeneration influence; mirrors equipment trend.
+7	ITEM_MOD_STAMINA	1.000	Normalization baseline for all stat costs.
+12	ITEM_MOD_DEFENSE_SKILL_RATING	0.800	Observed 40% reduction from equipment; smoothed to 0.8.
+13	ITEM_MOD_DODGE_RATING	0.850	Defensive rating scaled to melee 1H weapon norms.
+15	ITEM_MOD_BLOCK_RATING	0.550	Rare on weapons; efficiency reduced.
+31	ITEM_MOD_HIT_RATING	0.850	Average 35% lower than equipment.
+32	ITEM_MOD_CRIT_RATING	0.900	Slightly reduced relative to equipment baseline.
+35	ITEM_MOD_RESILIENCE_RATING	0.700	PvP mitigation unchanged from equipment.
+36	ITEM_MOD_HASTE_RATING	0.880	Endgame Haste effect stable across both sets.
+37	ITEM_MOD_EXPERTISE_RATING	1.100	Maintains higher scaling importance for melee control.
+38	ITEM_MOD_ATTACK_POWER	0.400	Weapons supply AP directly; efficiency ~0.4 normalized.
+39	ITEM_MOD_RANGED_ATTACK_POWER	0.400	Parallel to melee AP efficiency.
+42	ITEM_MOD_SPELL_DAMAGE_DONE	0.450	Legacy caster stat; mirrors equipment.
+44	ITEM_MOD_ARMOR_PENETRATION_RATING	0.900	Identical to equipment after re-balancing.
+45	ITEM_MOD_SPELL_POWER	0.900	Weapons show 4.4x magnitude -> adjusted cost raised to 0.9.
+1000	ITEM_MOD_DPS	1.000	Derived DPS contribution; acts as baseline cost driver.

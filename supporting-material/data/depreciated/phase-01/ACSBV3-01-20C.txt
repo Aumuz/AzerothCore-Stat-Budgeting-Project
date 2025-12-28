@@ -1,0 +1,44 @@
+subclass	avg_dps	items
+0	139.089	462
+1	144.564	281
+2	125.813	178
+3	152.21	222
+4	105.536	788
+5	136.006	330
+6	192.291	262
+7	114.753	721
+8	155.018	300
+10	138.249	942
+13	151.525	346
+15	120.946	985
+18	167.537	169
+19	270.242	355
+subclass	avg_dps_raw	avg_norm_dps	stdev_norm_dps	items
+0	139.089	1	0.517	462
+1	144.564	1	0.66	281
+2	125.813	1	0.62	178
+3	152.21	1	0.47	222
+4	105.536	1	0.607	788
+5	136.006	1	0.652	330
+6	192.291	1	0.462	262
+7	114.753	1	0.541	721
+8	155.018	1	0.607	300
+10	138.249	1	0.54	942
+13	151.525	1	0.39	346
+15	120.946	1	0.53	985
+18	167.537	1	0.46	169
+19	270.242	1	0.391	355
+global_avg_norm_dps	global_stdev_norm_dps	total_items
+1	0.542	6341
+entry	name	subclass	ItemLevel	dps	normalized_dps
+50738	Mithrios, Bronzebeard's Legacy	4	284	264.688	2.508
+50738	Mithrios, Bronzebeard's Legacy	4	284	264.688	2.508
+50738	Mithrios, Bronzebeard's Legacy	4	284	264.688	2.508
+50738	Mithrios, Bronzebeard's Legacy	4	284	264.688	2.508
+50738	Mithrios, Bronzebeard's Legacy	4	284	264.688	2.508
+entry	name	subclass	ItemLevel	dps	normalized_dps
+2281	Rodentia Flint Axe	0	11	6	0.043
+1917	Jeweled Dagger	15	10	5.312	0.044
+2265	Stonesplinter Axe	0	13	6.818	0.049
+816	Small Hand Blade	15	11	6	0.05
+33791	Heavy Copper Longsword	7	11	6	0.052

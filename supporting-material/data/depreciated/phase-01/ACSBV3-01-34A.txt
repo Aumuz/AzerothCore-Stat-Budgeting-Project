@@ -1,0 +1,32 @@
+Quality	drop_environment	drop_modifier
+1	World	100
+2	Dungeon	24.19
+2	World	100
+3	Dungeon	66.19
+3	Raid	57.71
+3	World	100
+4	Dungeon	65.55
+4	Raid	127.39
+4	World	100
+5	Raid	92.95
+5	World	100
+drop_environment	items
+Dungeon	236
+Raid	520
+World	1843
+drop_environment	Quality	item_count	avg_normalized_budget	stdev_normalized_budget
+World	1	22	5.259	6.178
+Dungeon	2	3	6.688	1.712
+World	2	822	27.653	22.31
+Dungeon	3	203	29.799	28.041
+Raid	3	20	25.981	5.147
+World	3	538	45.02	41.204
+Dungeon	4	30	90.769	83.658
+Raid	4	497	176.397	131.665
+World	4	451	138.475	116.656
+Raid	5	3	103.852	7.018
+World	5	10	111.731	145.44
+drop_environment	global_avg	global_stdev
+World	65.63	56.88
+Dungeon	42.42	43.44
+Raid	102.08	75.22

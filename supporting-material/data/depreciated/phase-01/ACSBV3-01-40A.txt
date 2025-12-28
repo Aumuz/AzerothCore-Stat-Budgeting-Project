@@ -1,0 +1,21 @@
+Tables_in_acore_world (ACSBV3_ref_statcost_equipment)
+ACSBV3_ref_statcost_equipment
+Tables_in_acore_world (ACSBV3_ref_statcost_weapons)
+ACSBV3_ref_statcost_weapons
+Tables_in_acore_world (ACSBV3_ref_slotmod_equipment)
+ACSBV3_ref_slotmod_equipment
+Tables_in_acore_world (ACSBV3_ref_slotmod_weapons)
+ACSBV3_ref_slotmod_weapons
+Tables_in_acore_world (ACSBV3_ref_dropmod)
+ACSBV3_ref_dropmod
+Tables_in_acore_world (ACSBV3_ref_miscmod)
+ACSBV3_ref_miscmod
+Tables_in_acore_world (ACSBV3_ref_%)
+ACSBV3_ref_dropmod
+ACSBV3_ref_items
+ACSBV3_ref_map_environment
+ACSBV3_ref_miscmod
+ACSBV3_ref_slotmod_equipment
+ACSBV3_ref_slotmod_weapons
+ACSBV3_ref_statcost_equipment
+ACSBV3_ref_statcost_weapons

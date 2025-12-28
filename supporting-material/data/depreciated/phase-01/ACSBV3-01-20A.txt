@@ -1,0 +1,51 @@
+total_rows
+6341
+stat_type	occurrences
+3	549
+4	394
+5	554
+6	191
+7	1703
+12	48
+13	27
+14	24
+15	4
+18	1
+30	2
+31	397
+32	790
+35	416
+36	305
+37	74
+38	457
+43	28
+44	122
+45	250
+47	3
+48	2
+subclass	avg_dps	items
+0	139.089	462
+1	144.564	281
+2	125.813	178
+3	152.21	222
+4	105.536	788
+5	136.006	330
+6	192.291	262
+7	114.753	721
+8	155.018	300
+10	138.249	942
+13	151.525	346
+15	120.946	985
+18	167.537	169
+19	270.242	355
+entry	name	ItemLevel	subclass	dps
+50684	Corpse-Impaling Spike	277	19	460.278
+50684	Corpse-Impaling Spike	277	19	460.278
+50631	Nightmare Ender	277	19	460.278
+50631	Nightmare Ender	277	19	460.278
+50684	Corpse-Impaling Spike	277	19	460.278
+50631	Nightmare Ender	277	19	460.278
+50684	Corpse-Impaling Spike	277	19	460.278
+50631	Nightmare Ender	277	19	460.278
+50631	Nightmare Ender	277	19	460.278
+50684	Corpse-Impaling Spike	277	19	460.278

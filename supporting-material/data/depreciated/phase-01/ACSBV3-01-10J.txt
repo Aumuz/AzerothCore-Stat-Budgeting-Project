@@ -1,0 +1,15 @@
+Quality	drop_environment	drop_modifier_refined
+1	Dungeon	47.03
+1	World	100.00
+2	Dungeon	66.71
+2	World	100.00
+3	Dungeon	84.40
+3	Raid	54.35
+3	World	100.00
+4	Dungeon	71.01
+4	Raid	125.26
+4	World	100.00
+drop_environment	items	avg_budget
+Dungeon	634	192.03
+Raid	1999	567.87
+World	8251	208.04

@@ -1,0 +1,368 @@
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  1. Overall Report: Compares all items and curves into one report (not generally useful).                     (v2.4)  ##
+##                                                                                                                       ##
+##      - PASS/FAIL Determined by 'value' BETWEEN 0.90 AND 1.10.                                                         ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+Group	Raw_Average	3pnt_Average	Mono_Average	Row_Result
+ | Global |	| 1.00000 PASS |	| 0.99680 PASS |	| 0.97507 PASS |	| ALL PASSED:        |                
+
+ - Total Row Count: 1 | 18318 Distinct Items of 18318 Total Points.
+
+Report Summary:
+
+ - 1. Curve | ALL PASSED | Raw Failure: 0 | 3pnt Failure: 0 | Mono Failure: 0 | Total Failure: 0 of 3 points checked.
+
+ - 2. Outlier | 89% FAILED | 16313 Significant budget outliers detected, in 18318 points checked. | Least: 5.36% | Greatest: 408.22%
+
+ - 3. Focal-Point | No Focal-Point found in report.
+                    
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  2. Drop Report: Compares all items and curves, grouped by Drop Environment (not generally useful).           (v2.4)  ##
+##                                                                                                                       ##
+##      - PASS/FAIL Determined by 'value' BETWEEN 0.90 AND 1.10.                                                         ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+Group	Total_Items	Raw_Average	3pnt_Average	Mono_Average	Row_Result
+ | World   |	| 14916 |	| 0.99988 PASS |	| 1.00200 PASS |	| 0.97882 PASS |	| ALL PASSED:        | <- Focal Point 
+ | Dungeon |	| 875   |	| 0.97495 PASS |	| 0.97173 PASS |	| 0.96540 PASS |	| ALL PASSED:        |                
+ | Raid    |	| 2527  |	| 1.00940 PASS |	| 0.97477 PASS |	| 0.95623 PASS |	| ALL PASSED:        |                
+
+ - Total Row Count: 3 | 18318 Distinct Items of 18318 Total Points.
+
+Report Summary:
+
+ - 1. Curve | ALL PASSED | Raw Failure: 0 | 3pnt Failure: 0 | Mono Failure: 0 | Total Failure: 0 of 9 points checked.
+
+ - 2. Outlier | 89% FAILED | 16313 Significant budget outliers detected, in 18318 points checked. | Least: 5.36% | Greatest: 408.22%
+
+ - 3. Focal-Point | ALL PASSED | Raw Failure: 0 | 3pnt Failure: 0 | Mono Failure: 0 | Total Failure: 0 of 3 points checked.
+                               | One Focal-Point with one point of contact found in report. | 
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  3. Source Report: Compares all items and curves, grouped by Item Source (not generally useful).              (v2.4)  ##
+##                                                                                                                       ##
+##      - PASS/FAIL Determined by 'value' BETWEEN 0.90 AND 1.10.                                                         ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+Group	Total_Items	Raw_Average	3pnt_Average	Mono_Average	Row_Result
+ | Quest      |	| 266   |	| 1.10665 FAIL |	| 1.13524 FAIL |	| 1.06339 PASS |	|     FAILED: 2 of 3 |                
+ | Item_Loot  |	| 2107  |	| 1.02559 PASS |	| 1.04324 PASS |	| 1.02256 PASS |	| ALL PASSED:        |                
+ | Gameobject |	| 1258  |	| 1.03332 PASS |	| 1.02903 PASS |	| 1.01446 PASS |	| ALL PASSED:        |                
+ | Crafted    |	| 3146  |	| 1.00108 PASS |	| 1.01670 PASS |	| 0.98892 PASS |	| ALL PASSED:        |                
+ | Creature   |	| 6764  |	| 1.00703 PASS |	| 1.00149 PASS |	| 0.98266 PASS |	| ALL PASSED:        |                
+ | Conjured   |	| 1     |	| 1.00000 PASS |	| 0.96084 PASS |	| 0.96084 PASS |	| ALL PASSED:        |                
+ | Vendor     |	| 4776  |	| 0.96333 PASS |	| 0.94037 PASS |	| 0.91894 PASS |	| ALL PASSED:        |                
+
+ - Total Row Count: 7 | 18318 Distinct Items of 18318 Total Points.
+
+Report Summary:
+
+ - 1. Curve | 10% FAILED | Raw Failure: 1 | 3pnt Failure: 1 | Mono Failure: 0 | Total Failure: 2 of 21 points checked.
+
+ - 2. Outlier | 89% FAILED | 16313 Significant budget outliers detected, in 18318 points checked. | Least: 5.36% | Greatest: 408.22%
+
+ - 3. Focal-Point | No Focal-Point found in report.
+                    
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  4. Curve Report: Compares all items within a curve.                                                          (v2.4)  ##
+##                                                                                                                       ##
+##      - PASS/FAIL Determined by 'value' BETWEEN 0.90 AND 1.10.                                                         ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+Group	Curve_Information	Total_Items	Raw_Average	3pnt_Average	Mono_Average	Row_Result
+ | Q2  |	| Uncommon  ALL       |	| 4703  |	| 1.00000 PASS |	| 1.02545 PASS |	| 1.00325 PASS |	| ALL PASSED:        |                
+ | Q3  |	| Rare      ALL       |	| 4134  |	| 1.00000 PASS |	| 1.00437 PASS |	| 0.99065 PASS |	| ALL PASSED:        | <- Focal Point 
+ | Q5  |	| Legendary ALL       |	| 13    |	| 1.00000 PASS |	| 0.95881 PASS |	| 0.95881 PASS |	| ALL PASSED:        |                
+ | Q4C |	| Epic      ALL       |	| 9000  |	| 1.00000 PASS |	| 0.98023 PASS |	| 0.95552 PASS |	| ALL PASSED:        |                
+ | Q1  |	| Common    ALL       |	| 468   |	| 1.00000 PASS |	| 0.96168 PASS |	| 0.93062 PASS |	| ALL PASSED:        |                
+
+ - Total Row Count: 5 | 18318 Distinct Items of 18318 Total Points.
+
+Report Summary:
+
+ - 1. Curve | ALL PASSED | Raw Failure: 0 | 3pnt Failure: 0 | Mono Failure: 0 | Total Failure: 0 of 15 points checked.
+
+ - 2. Outlier | 89% FAILED | 16313 Significant budget outliers detected, in 18318 points checked. | Least: 5.36% | Greatest: 408.22%
+
+ - 3. Focal-Point | ALL PASSED | Raw Failure: 0 | 3pnt Failure: 0 | Mono Failure: 0 | Total Failure: 0 of 3 points checked.
+                               | One Focal-Point with one point of contact found in report. | 
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5. Slot Report: Compares all items of similar FamilyID and SlotID to all curves.                             (v2.4)  ##
+##                                                                                                                       ##
+##      - PASS/FAIL Determined by 'value' BETWEEN 0.90 AND 1.10.                                                         ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+Group	Family	Total_Items	Raw_Average	3pnt_Average	Mono_Average	Row_Result
+ | Shield      |	| Equipment |	| 377   |	| 1.12523 FAIL |	| 1.12797 FAIL |	| 1.10514 FAIL |	| ALL FAILED:        |                
+ | Bow         |	| Weapon    |	| 151   |	| 1.08061 PASS |	| 1.07187 PASS |	| 1.04174 PASS |	| ALL PASSED:        |                
+ | Wrists      |	| Equipment |	| 1178  |	| 1.04685 PASS |	| 1.04676 PASS |	| 1.02561 PASS |	| ALL PASSED:        |                
+ | Thrown      |	| Weapon    |	| 87    |	| 1.04499 PASS |	| 1.06971 PASS |	| 1.02469 PASS |	| ALL PASSED:        |                
+ | 1H Axe      |	| Weapon    |	| 226   |	| 1.03655 PASS |	| 1.03781 PASS |	| 1.01549 PASS |	| ALL PASSED:        |                
+ | Gun         |	| Weapon    |	| 149   |	| 1.04087 PASS |	| 1.04589 PASS |	| 1.01530 PASS |	| ALL PASSED:        |                
+ | Feet        |	| Equipment |	| 1346  |	| 1.03682 PASS |	| 1.03428 PASS |	| 1.01432 PASS |	| ALL PASSED:        |                
+ | 2H Axe      |	| Weapon    |	| 186   |	| 1.03424 PASS |	| 1.03039 PASS |	| 1.00570 PASS |	| ALL PASSED:        |                
+ | Wand        |	| Weapon    |	| 194   |	| 1.02864 PASS |	| 1.02975 PASS |	| 1.00189 PASS |	| ALL PASSED:        |                
+ | Crossbow    |	| Weapon    |	| 86    |	| 1.00902 PASS |	| 1.03270 PASS |	| 0.99677 PASS |	| ALL PASSED:        |                
+ | Waist       |	| Equipment |	| 1298  |	| 1.01297 PASS |	| 1.01182 PASS |	| 0.99299 PASS |	| ALL PASSED:        | <- Focal Point 
+ | 1H Mace     |	| Weapon    |	| 380   |	| 1.01128 PASS |	| 1.01859 PASS |	| 0.99244 PASS |	| ALL PASSED:        |                
+ | 2H Sword    |	| Weapon    |	| 186   |	| 1.01010 PASS |	| 1.01494 PASS |	| 0.99218 PASS |	| ALL PASSED:        |                
+ | 2H Mace     |	| Weapon    |	| 180   |	| 1.00182 PASS |	| 1.01254 PASS |	| 0.98468 PASS |	| ALL PASSED:        |                
+ | Back        |	| Equipment |	| 742   |	| 1.00451 PASS |	| 0.99849 PASS |	| 0.98273 PASS |	| ALL PASSED:        |                
+ | Head        |	| Equipment |	| 1652  |	| 1.00808 PASS |	| 1.00492 PASS |	| 0.98249 PASS |	| ALL PASSED:        |                
+ | Legs        |	| Equipment |	| 1810  |	| 1.00173 PASS |	| 0.99850 PASS |	| 0.97642 PASS |	| ALL PASSED:        |                
+ | Shoulder    |	| Equipment |	| 1609  |	| 0.99203 PASS |	| 0.99421 PASS |	| 0.97181 PASS |	| ALL PASSED:        |                
+ | Dagger      |	| Weapon    |	| 446   |	| 0.99639 PASS |	| 0.99407 PASS |	| 0.96802 PASS |	| ALL PASSED:        |                
+ | Hands       |	| Equipment |	| 1733  |	| 0.99512 PASS |	| 0.98948 PASS |	| 0.96783 PASS |	| ALL PASSED:        |                
+ | Fist Weapon |	| Weapon    |	| 153   |	| 0.99827 PASS |	| 0.98906 PASS |	| 0.96316 PASS |	| ALL PASSED:        |                
+ | 1H Sword    |	| Weapon    |	| 351   |	| 0.98890 PASS |	| 0.98488 PASS |	| 0.96053 PASS |	| ALL PASSED:        |                
+ | Polearm     |	| Weapon    |	| 127   |	| 0.97515 PASS |	| 0.97460 PASS |	| 0.95028 PASS |	| ALL PASSED:        |                
+ | Chest       |	| Equipment |	| 1374  |	| 0.95733 PASS |	| 0.95379 PASS |	| 0.93237 PASS |	| ALL PASSED:        |                
+ | Off-Hand    |	| Equipment |	| 194   |	| 0.96565 PASS |	| 0.94904 PASS |	| 0.93171 PASS |	| ALL PASSED:        |                
+ | Staff       |	| Weapon    |	| 361   |	| 0.94479 PASS |	| 0.93219 PASS |	| 0.91197 PASS |	| ALL PASSED:        |                
+ | Robe        |	| Equipment |	| 602   |	| 0.94374 PASS |	| 0.92823 PASS |	| 0.90966 PASS |	| ALL PASSED:        |                
+ | Finger      |	| Equipment |	| 662   |	| 0.92286 PASS |	| 0.91513 PASS |	| 0.89095 FAIL |	|     FAILED: 1 of 3 |                
+ | Neck        |	| Equipment |	| 478   |	| 0.92075 PASS |	| 0.89808 FAIL |	| 0.88517 FAIL |	|     FAILED: 2 of 3 |                
+
+ - Total Row Count: 29 | 18318 Distinct Items of 18318 Total Points.
+
+Report Summary:
+
+ - 1. Curve | 7% FAILED | Raw Failure: 1 | 3pnt Failure: 2 | Mono Failure: 3 | Total Failure: 6 of 87 points checked.
+
+ - 2. Outlier | 89% FAILED | 16313 Significant budget outliers detected, in 18318 points checked. | Least: 5.36% | Greatest: 408.22%
+
+ - 3. Focal-Point | ALL PASSED | Raw Failure: 0 | 3pnt Failure: 0 | Mono Failure: 0 | Total Failure: 0 of 3 points checked.
+                               | One Focal-Point with one point of contact found in report. | 
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  6. iLvl Report: Compares all items of similar iLvl to all curves.                                            (v2.4)  ##
+##                                                                                                                       ##
+##      - PASS/FAIL Determined by 'value' BETWEEN 0.90 AND 1.10.                                                         ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+Group	Total_Items	Raw_Average	3pnt_Average	Mono_Average	Row_Result
+ | 259 |	| 4     |	| 1.00000 PASS |	| 1.27129 FAIL |	| 1.27129 FAIL |	|     FAILED: 2 of 3 |                
+ | 143 |	| 1     |	| 1.00000 PASS |	| 1.19729 FAIL |	| 1.19729 FAIL |	|     FAILED: 2 of 3 |                
+ | 107 |	| 8     |	| 1.00000 PASS |	| 1.19488 FAIL |	| 1.19488 FAIL |	|     FAILED: 2 of 3 |                
+ | 156 |	| 7     |	| 1.00000 PASS |	| 1.18538 FAIL |	| 1.18538 FAIL |	|     FAILED: 2 of 3 |                
+ | 101 |	| 1     |	| 1.00000 PASS |	| 1.42981 FAIL |	| 1.17460 FAIL |	|     FAILED: 2 of 3 |                
+ | 72  |	| 31    |	| 1.00000 PASS |	| 1.14159 FAIL |	| 1.14159 FAIL |	|     FAILED: 2 of 3 |                
+ | 158 |	| 64    |	| 1.00000 PASS |	| 1.19032 FAIL |	| 1.14035 FAIL |	|     FAILED: 2 of 3 |                
+ | 113 |	| 41    |	| 1.00000 PASS |	| 1.16577 FAIL |	| 1.13260 FAIL |	|     FAILED: 2 of 3 |                
+ | 268 |	| 4     |	| 1.00000 PASS |	| 1.27710 FAIL |	| 1.11392 FAIL |	|     FAILED: 2 of 3 |                
+ | 171 |	| 27    |	| 1.00000 PASS |	| 1.11107 FAIL |	| 1.11107 FAIL |	|     FAILED: 2 of 3 |                
+ | 142 |	| 80    |	| 1.00000 PASS |	| 1.32945 FAIL |	| 1.10625 FAIL |	|     FAILED: 2 of 3 |                
+ | 200 |	| 1101  |	| 1.00000 PASS |	| 1.08950 PASS |	| 1.08950 PASS |	| ALL PASSED:        |                
+ | 127 |	| 13    |	| 1.00000 PASS |	| 1.08870 PASS |	| 1.08870 PASS |	| ALL PASSED:        |                
+ | 85  |	| 54    |	| 1.00000 PASS |	| 1.08174 PASS |	| 1.08174 PASS |	| ALL PASSED:        |                
+ | 179 |	| 21    |	| 1.00000 PASS |	| 1.09024 PASS |	| 1.07627 PASS |	| ALL PASSED:        |                
+ | 123 |	| 231   |	| 1.00000 PASS |	| 1.09886 PASS |	| 1.07176 PASS |	| ALL PASSED:        |                
+ | 94  |	| 35    |	| 1.00000 PASS |	| 1.06992 PASS |	| 1.06992 PASS |	| ALL PASSED:        |                
+ | 67  |	| 14    |	| 1.00000 PASS |	| 1.06904 PASS |	| 1.06904 PASS |	| ALL PASSED:        |                
+ | 219 |	| 357   |	| 1.00000 PASS |	| 1.06797 PASS |	| 1.06797 PASS |	| ALL PASSED:        |                
+ | 45  |	| 107   |	| 1.00000 PASS |	| 1.07274 PASS |	| 1.06560 PASS |	| ALL PASSED:        |                
+
+ - Total Row Count: 162 (report view limited to 20 rows.) | 18318 Distinct Items of 18318 Total Points.
+
+Report Summary:
+
+ - 1. Curve | 13% FAILED | Raw Failure: 0 | 3pnt Failure: 30 | Mono Failure: 33 | Total Failure: 63 of 486 points checked.
+
+ - 2. Outlier | 89% FAILED | 16313 Significant budget outliers detected, in 18318 points checked. | Least: 5.36% | Greatest: 408.22%
+
+ - 3. Focal-Point | ALL PASSED | Raw Failure: 0 | 3pnt Failure: 0 | Mono Failure: 0 | Total Failure: 0 of 3 points checked.
+                               | One Focal-Point with one point of contact found in report. | 
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  7. Focal-Point Report: Compares all Focal-Point items to relevant curve/s.                                   (v2.4)  ##
+##                                                                                                                       ##
+##      - PASS/FAIL Determined by 'value' BETWEEN 0.90 AND 1.10.                                                         ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+Group	Curve_Information	Item_Information	Drop_Information	Total_Items	Raw_Average	3pnt_Average	Mono_Average	Row_Result
+ | Q3  |	| Rare      ALL       |	| Waist       115 |	| World   ALL        |	| 26    |	| 0.94804 PASS |	| 0.91466 PASS |	| 0.91466 PASS |	| ALL PASSED:        | <- Focal Point 
+
+ - Total Row Count: 1 | 26 Distinct Items of 26 Total Points.
+
+Report Summary:
+
+ - 1. Curve | ALL PASSED | Raw Failure: 0 | 3pnt Failure: 0 | Mono Failure: 0 | Total Failure: 0 of 3 points checked.
+
+ - 2. Outlier | 85% FAILED | 22 Significant budget outliers detected, in 26 points checked. | Least: 14.32% | Greatest: 233.01%
+
+ - 3. Focal-Point | ALL PASSED | Raw Failure: 0 | 3pnt Failure: 0 | Mono Failure: 0 | Total Failure: 0 of 3 points checked.
+                               | One Focal-Point with 4 points of contact (4 avg per point) found in report. 
+
+ - 4.A - Focal-Point Detail: Highest Percentage Outliers.
+
+Item_Info	Modifiers	Budget_Info
+ | Q3  Creature   27755 Girdle of Gallantry       |	| 1.00 1.00 1.00 |	| Raw: 279.1065 - 119.7818 = 159.32475 (233.01%) | 3pnt: 279.1065 - 124.1535 = 154.95304 (224.81%) | Mono: 279.1065 - 124.1535 = 154.95304 (224.81%) |
+ | Q3  Creature   28375 Rubium War-Girdle         |	| 1.00 1.00 1.00 |	| Raw: 278.4192 - 119.7818 = 158.63746 (232.44%) | 3pnt: 278.4192 - 124.1535 = 154.26575 (224.25%) | Mono: 278.4192 - 124.1535 = 154.26575 (224.25%) |
+ | Q3  Creature   27672 Girdle of the Immovable   |	| 1.00 1.00 1.00 |	| Raw: 275.9038 - 119.7818 = 156.12200 (230.34%) | 3pnt: 275.9038 - 124.1535 = 151.75029 (222.23%) | Mono: 275.9038 - 124.1535 = 151.75029 (222.23%) |
+ | Q3  Creature   27985 Deathforge Girdle         |	| 1.00 1.00 1.00 |	| Raw: 267.1478 - 119.7818 = 147.36599 (223.03%) | 3pnt: 267.1478 - 124.1535 = 142.99428 (215.18%) | Mono: 267.1478 - 124.1535 = 142.99428 (215.18%) |
+ | Q3  Creature   27548 Girdle of Many Blessings  |	| 1.00 1.00 1.00 |	| Raw: 266.2543 - 119.7818 = 146.47252 (222.28%) | 3pnt: 266.2543 - 124.1535 = 142.10081 (214.46%) | Mono: 266.2543 - 124.1535 = 142.10081 (214.46%) |
+
+
+ - 4.B - Focal-Point Detail: Lowest Percentage Outliers.
+
+Item_Info	Modifiers	Budget_Info
+ | Q3  Creature   31555 Windchanneller's Ceinture |	| 1.00 0.65 1.00 |	| Raw:  17.7798 - 119.7818 = -102.001 ( 14.84%) | 3pnt:  17.7798 - 124.1535 = -106.373 ( 14.32%) | Mono:  17.7798 - 124.1535 = -106.373 ( 14.32%) |
+ | Q3  Creature   27542 Cord of Belief            |	| 1.00 1.00 1.00 |	| Raw:  35.6557 - 119.7818 = -84.1261 ( 29.77%) | 3pnt:  35.6557 - 124.1535 = -88.4978 ( 28.72%) | Mono:  35.6557 - 124.1535 = -88.4978 ( 28.72%) |
+ | Q3  Creature   34793 Cord of Reconstruction    |	| 1.00 1.00 1.00 |	| Raw:  39.1359 - 119.7818 = -80.6459 ( 32.67%) | 3pnt:  39.1359 - 124.1535 = -85.0176 ( 31.52%) | Mono:  39.1359 - 124.1535 = -85.0176 ( 31.52%) |
+ | Q3  Creature   31563 Skystalker's Cord         |	| 1.00 0.65 1.00 |	| Raw:  39.4108 - 119.7818 = -80.3710 ( 32.90%) | 3pnt:  39.4108 - 124.1535 = -84.7427 ( 31.74%) | Mono:  39.4108 - 124.1535 = -84.7427 ( 31.74%) |
+ | Q3  Creature   27843 Glyph-Lined Sash          |	| 1.00 1.00 1.00 |	| Raw:  44.2577 - 119.7818 = -75.5241 ( 36.95%) | 3pnt:  44.2577 - 124.1535 = -79.8958 ( 35.65%) | Mono:  44.2577 - 124.1535 = -79.8958 ( 35.65%) |
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  8. Outlier Report: Display highest and lowest percentage outliers for each report.                           (v2.4)  ##
+##                                                                                                                       ##
+###########################################################################################################################
+                                                                                                                           
+
+ - 1. Overall Report: Outliers
+
+Group_Information	Raw_Outliers	3pnt_Outliers	Mono_Outliers	Total_Outliers
+ | Global       18318 items |	| 0.05363 - 3.86693 |	| 0.05620 - 4.08219 |	| 0.05479 - 3.45952 |	| 16313 |                
+
+ - 2. Drop Report: Outliers
+
+Group_Information	Raw_Outliers	3pnt_Outliers	Mono_Outliers	Total_Outliers
+ | World        14916 items |	| 0.05363 - 3.86693 |	| 0.05620 - 4.08219 |	| 0.05479 - 3.45952 |	| 13316 | <- Focal Point 
+ | Dungeon        875 items |	| 0.13277 - 2.97077 |	| 0.13524 - 3.05689 |	| 0.13192 - 3.04410 |	| 768   |                
+ | Raid          2527 items |	| 0.17026 - 2.81785 |	| 0.15219 - 3.01057 |	| 0.15219 - 2.90265 |	| 2229  |                
+
+ - 3. Source Report: Outliers
+
+Group_Information	Raw_Outliers	3pnt_Outliers	Mono_Outliers	Total_Outliers
+ | Quest          266 items |	| 0.15847 - 3.31093 |	| 0.14852 - 3.17993 |	| 0.14852 - 3.01770 |	| 252   |                
+ | Item_Loot     2107 items |	| 0.07570 - 2.92207 |	| 0.06859 - 3.41179 |	| 0.06859 - 2.84536 |	| 1918  |                
+ | Gameobject    1258 items |	| 0.09173 - 3.44127 |	| 0.09175 - 3.28106 |	| 0.09175 - 3.24032 |	| 1112  |                
+ | Crafted       3146 items |	| 0.05363 - 3.86693 |	| 0.05620 - 4.08219 |	| 0.05479 - 3.45952 |	| 2822  |                
+ | Creature      6764 items |	| 0.07446 - 3.15737 |	| 0.07011 - 3.76832 |	| 0.07011 - 3.22620 |	| 5923  |                
+ | Conjured         1 items |	| 1.00000 - 1.00000 |	| 0.96084 - 0.96084 |	| 0.96084 - 0.96084 |	| 0     |                
+ | Vendor        4776 items |	| 0.07576 - 2.87681 |	| 0.06959 - 2.53211 |	| 0.06959 - 2.48313 |	| 4286  |                
+
+ - 4. Curve Report: Outliers
+
+Group_Information	Raw_Outliers	3pnt_Outliers	Mono_Outliers	Total_Outliers
+ | Q2            4703 items |	| 0.09173 - 2.96791 |	| 0.08994 - 3.76832 |	| 0.08994 - 2.90736 |	| 4154  |                
+ | Q3            4134 items |	| 0.05363 - 3.44127 |	| 0.05620 - 3.30690 |	| 0.05479 - 3.24032 |	| 3601  | <- Focal Point 
+ | Q5              13 items |	| 0.83807 - 1.19623 |	| 0.50625 - 1.47565 |	| 0.50625 - 1.47565 |	| 6     |                
+ | Q4C           9000 items |	| 0.07754 - 3.86693 |	| 0.07910 - 4.08219 |	| 0.07559 - 3.45952 |	| 8114  |                
+ | Q1             468 items |	| 0.07576 - 2.55323 |	| 0.06959 - 2.42806 |	| 0.06959 - 2.42806 |	| 438   |                
+
+ - 5. Slot Report: Outliers
+
+Group_Information	Raw_Outliers	3pnt_Outliers	Mono_Outliers	Total_Outliers
+ | Shield         377 items |	| 0.05363 - 1.89053 |	| 0.05620 - 2.23407 |	| 0.05479 - 1.82873 |	| 309   |                
+ | Bow            151 items |	| 0.71473 - 2.14586 |	| 0.50625 - 1.70746 |	| 0.50625 - 1.49504 |	| 119   |                
+ | Wrists        1178 items |	| 0.12296 - 3.58402 |	| 0.11294 - 3.37793 |	| 0.11294 - 3.01556 |	| 1095  |                
+ | Thrown          87 items |	| 0.68710 - 1.78247 |	| 0.56335 - 1.84278 |	| 0.56335 - 1.34796 |	| 77    |                
+ | 1H Axe         226 items |	| 0.45841 - 1.68652 |	| 0.46942 - 1.65011 |	| 0.46942 - 1.55527 |	| 168   |                
+ | Gun            149 items |	| 0.57439 - 2.11560 |	| 0.58045 - 1.68499 |	| 0.58045 - 1.38909 |	| 111   |                
+ | Feet          1346 items |	| 0.11109 - 3.50216 |	| 0.10814 - 4.08219 |	| 0.10814 - 3.45952 |	| 1265  |                
+ | 2H Axe         186 items |	| 0.57888 - 1.57771 |	| 0.56947 - 1.54388 |	| 0.56947 - 1.54388 |	| 132   |                
+ | Wand           194 items |	| 0.67588 - 1.52285 |	| 0.57889 - 2.10748 |	| 0.57889 - 1.58840 |	| 150   |                
+ | Crossbow        86 items |	| 0.70025 - 1.29196 |	| 0.66104 - 1.64179 |	| 0.66104 - 1.32224 |	| 61    |                
+ | Waist         1298 items |	| 0.10435 - 3.44127 |	| 0.10923 - 3.25494 |	| 0.10923 - 3.24032 |	| 1213  | <- Focal Point 
+ | 1H Mace        380 items |	| 0.34049 - 2.65348 |	| 0.32850 - 3.76832 |	| 0.32850 - 2.79989 |	| 305   |                
+ | 2H Sword       186 items |	| 0.60732 - 1.57201 |	| 0.64339 - 1.64997 |	| 0.56140 - 1.64997 |	| 134   |                
+ | 2H Mace        180 items |	| 0.51886 - 1.77655 |	| 0.52396 - 2.07079 |	| 0.47980 - 1.75492 |	| 142   |                
+ | Back           742 items |	| 0.28565 - 2.79636 |	| 0.27828 - 2.22114 |	| 0.27828 - 2.17736 |	| 652   |                
+ | Head          1652 items |	| 0.08036 - 3.86693 |	| 0.08121 - 3.38245 |	| 0.08121 - 3.22620 |	| 1522  |                
+ | Legs          1810 items |	| 0.12179 - 2.85625 |	| 0.11818 - 3.39241 |	| 0.11818 - 2.89724 |	| 1680  |                
+ | Shoulder      1609 items |	| 0.11140 - 3.18219 |	| 0.11816 - 3.60060 |	| 0.11816 - 2.90265 |	| 1495  |                
+ | Dagger         446 items |	| 0.40624 - 2.63410 |	| 0.41618 - 3.72947 |	| 0.41618 - 2.77102 |	| 377   |                
+ | Hands         1733 items |	| 0.11904 - 3.19631 |	| 0.11782 - 3.29306 |	| 0.11630 - 2.71335 |	| 1600  |                
+ | Fist Weapon    153 items |	| 0.66289 - 1.33303 |	| 0.53683 - 1.73061 |	| 0.53683 - 1.26860 |	| 127   |                
+ | 1H Sword       351 items |	| 0.41952 - 2.43651 |	| 0.42936 - 2.58970 |	| 0.37743 - 2.42688 |	| 264   |                
+ | Polearm        127 items |	| 0.47330 - 1.58193 |	| 0.47343 - 1.52116 |	| 0.47343 - 1.52116 |	| 99    |                
+ | Chest         1374 items |	| 0.07446 - 2.47691 |	| 0.06859 - 2.90326 |	| 0.06859 - 2.48143 |	| 1265  |                
+ | Off-Hand       194 items |	| 0.16829 - 2.06046 |	| 0.14854 - 2.33662 |	| 0.14854 - 2.33662 |	| 173   |                
+ | Staff          361 items |	| 0.40631 - 1.83667 |	| 0.38430 - 1.72858 |	| 0.36348 - 1.72858 |	| 323   |                
+ | Robe           602 items |	| 0.25707 - 2.45981 |	| 0.27208 - 2.45252 |	| 0.27208 - 2.41957 |	| 499   |                
+ | Finger         662 items |	| 0.17998 - 2.51048 |	| 0.15219 - 2.76387 |	| 0.15219 - 2.45943 |	| 559   |                
+ | Neck           478 items |	| 0.22362 - 1.71476 |	| 0.21352 - 1.69207 |	| 0.21126 - 1.69207 |	| 397   |                
+
+ - 6. iLvl Report: Outliers (report view limited to 20 rows.)
+
+Group_Information	Raw_Outliers	3pnt_Outliers	Mono_Outliers	Total_Outliers
+ | 259              4 items |	| 0.87738 - 1.04770 |	| 1.11541 - 1.33194 |	| 1.11541 - 1.33194 |	| 4     |                
+ | 143              1 items |	| 1.00000 - 1.00000 |	| 1.19729 - 1.19729 |	| 1.19729 - 1.19729 |	| 1     |                
+ | 107              8 items |	| 0.60217 - 1.77966 |	| 0.71952 - 2.12648 |	| 0.71952 - 2.12648 |	| 8     |                
+ | 156              7 items |	| 0.82855 - 1.46114 |	| 0.96990 - 1.85675 |	| 0.96990 - 1.85675 |	| 5     |                
+ | 101              1 items |	| 1.00000 - 1.00000 |	| 1.42981 - 1.42981 |	| 1.17460 - 1.17460 |	| 1     |                
+ | 72              31 items |	| 0.23930 - 2.24782 |	| 0.27533 - 2.58634 |	| 0.27533 - 2.58634 |	| 31    |                
+ | 158             64 items |	| 0.13053 - 2.44873 |	| 0.15657 - 2.93726 |	| 0.14925 - 2.79989 |	| 61    |                
+ | 113             41 items |	| 0.31580 - 2.05323 |	| 0.37412 - 2.43238 |	| 0.36143 - 2.34991 |	| 40    |                
+ | 268              4 items |	| 0.87580 - 1.05302 |	| 1.11848 - 1.34481 |	| 0.97557 - 1.17298 |	| 4     |                
+ | 171             27 items |	| 0.33635 - 1.96903 |	| 0.37371 - 2.18774 |	| 0.37371 - 2.18774 |	| 23    |                
+ | 142             80 items |	| 0.12125 - 2.28724 |	| 0.16310 - 3.07670 |	| 0.13438 - 2.53496 |	| 80    |                
+ | 200           1101 items |	| 0.08036 - 2.17986 |	| 0.08121 - 2.33662 |	| 0.08121 - 2.33662 |	| 956   |                
+ | 127             13 items |	| 0.28176 - 2.13528 |	| 0.30675 - 2.32469 |	| 0.30675 - 2.32469 |	| 11    |                
+ | 85              54 items |	| 0.16789 - 2.44849 |	| 0.17918 - 2.61313 |	| 0.17918 - 2.61313 |	| 47    |                
+ | 179             21 items |	| 0.34193 - 1.86997 |	| 0.37279 - 2.03871 |	| 0.36801 - 2.01260 |	| 20    |                
+ | 123            231 items |	| 0.29617 - 2.47969 |	| 0.32545 - 2.72483 |	| 0.31743 - 2.65763 |	| 210   |                
+ | 94              35 items |	| 0.13874 - 2.36714 |	| 0.14844 - 2.53265 |	| 0.14844 - 2.53265 |	| 30    |                
+ | 67              14 items |	| 0.29773 - 1.54318 |	| 0.31829 - 1.64972 |	| 0.31829 - 1.64972 |	| 11    |                
+ | 219            357 items |	| 0.19847 - 1.92022 |	| 0.21196 - 2.05074 |	| 0.21196 - 2.05074 |	| 315   |                
+ | 45             107 items |	| 0.05363 - 2.57874 |	| 0.05620 - 2.78972 |	| 0.05479 - 2.78972 |	| 100   |                
+
+ - 7. Focal-Point Report: Outliers
+
+Group_Information	Raw_Outliers	3pnt_Outliers	Mono_Outliers	Total_Outliers
+ | Focal-Point     26 items |	| 0.14844 - 2.33013 |	| 0.14321 - 2.24808 |	| 0.14321 - 2.24808 |	| 22    | <- Focal Point 
+
+ - 8.A - Highest Percentage Outliers:
+
+Item_Info	Budget_Calculation	Budget_Info
+ | Q4C 70  20039 Dark Iron Boots           |	| 148.20 / (1.00 * 0.65 * 1.12) = 283.60 |	| Raw: 283.6047 -  80.9798 = 202.6248 (350.22%) | 3pnt: 283.6047 -  69.4736 = 214.1310 (408.22%) | Mono: 283.6047 -  81.9780 = 201.6266 (345.95%) |
+ | Q3  61  18529 Elemental Plate Girdle    |	|  96.05 / (1.00 * 0.65 * 1.00) = 187.64 |	| Raw: 187.6435 -  54.5273 = 133.1161 (344.13%) | 3pnt: 187.6435 -  57.9090 = 129.7345 (324.03%) | Mono: 187.6435 -  57.9090 = 129.7345 (324.03%) |
+ | Q3  60  12952 Gyth's Skull              |	| 121.80 / (1.00 * 0.65 * 1.32) = 185.25 |	| Raw: 185.2513 -  58.6727 = 126.5785 (315.74%) | 3pnt: 185.2513 -  56.0197 = 129.2315 (330.69%) | Mono: 185.2513 -  57.4210 = 127.8303 (322.62%) |
+ | Q3  63  13502 Handcrafted Mastersmith G |	| 134.15 / (1.04 * 1.00 * 1.00) = 177.31 |	| Raw: 177.3064 -  59.6837 = 117.6226 (297.08%) | 3pnt: 177.3064 -  58.0023 = 119.3041 (305.69%) | Mono: 177.3064 -  58.2460 = 119.0604 (304.41%) |
+ | Q4C 78  21388 Avenger's Greaves         |	| 202.80 / (1.00 * 1.00 * 1.12) = 278.06 |	| Raw: 278.0581 -  83.9819 = 194.0762 (331.09%) | 3pnt: 278.0581 -  87.4415 = 190.6165 (317.99%) | Mono: 278.0581 -  92.1425 = 185.9156 (301.77%) |
+
+
+ - 8.B - Lowest Percentage Outliers:
+
+Item_Info	Budget_Calculation	Budget_Info
+ | Q3  45  18303 Nimble Buckler            |	|  14.70 / (1.00 * 1.00 * 6.53) =   2.32 |	| Raw:   2.3208 -  43.2709 = -40.9501 (  5.36%) | 3pnt:   2.3208 -  41.2917 = -38.9709 (  5.62%) | Mono:   2.3208 -  42.3560 = -40.0352 (  5.48%) |
+ | Q3  41  9434 Elemental Raiment         |	|  11.80 / (1.00 * 1.00 * 1.68) =   2.67 |	| Raw:   2.6707 -  35.2798 = -32.6091 (  7.57%) | 3pnt:   2.6707 -  38.9377 = -36.2670 (  6.86%) | Mono:   2.6707 -  38.9377 = -36.2670 (  6.86%) |
+ | Q1  50  2435 Embroidered Armor         |	|  12.40 / (1.00 * 1.00 * 1.68) =   2.40 |	| Raw:   2.3987 -  31.6598 = -29.2611 (  7.58%) | 3pnt:   2.3987 -  34.4674 = -32.0687 (  6.96%) | Mono:   2.3987 -  34.4674 = -32.0687 (  6.96%) |
+ | Q3  61  12609 Polychromatic Visionwrap  |	|  17.40 / (1.00 * 1.00 * 1.68) =   4.06 |	| Raw:   4.0599 -  54.5273 = -50.4674 (  7.45%) | 3pnt:   4.0599 -  57.9090 = -53.8490 (  7.01%) | Mono:   4.0599 -  57.9090 = -53.8490 (  7.01%) |
+ | Q3  45  18342 Quel'dorei Guard          |	|  18.90 / (1.00 * 1.00 * 6.53) =   2.98 |	| Raw:   2.9839 -  43.2709 = -40.2870 (  6.90%) | 3pnt:   2.9839 -  41.2917 = -38.3078 (  7.23%) | Mono:   2.9839 -  42.3560 = -39.3721 (  7.05%) |

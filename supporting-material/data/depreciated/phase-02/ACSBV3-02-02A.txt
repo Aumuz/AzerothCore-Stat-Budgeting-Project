@@ -1,0 +1,33 @@
+total_sampled
+1387
+Quality	items
+1	155
+2	364
+3	434
+4	434
+InventoryType	items
+1	99
+2	88
+3	103
+5	103
+6	103
+7	103
+8	103
+9	103
+10	103
+11	88
+14	103
+16	103
+20	96
+23	89
+entry	name	ItemLevel	Quality	actual_budget	normalized_budget	weight
+21601	Ring of Emperor Vek'lor	81	4	53.80	130.42	0.25
+47869	Armplates of the Nether Lord	232	4	449.69	817.61	0.25
+39243	Handgrips of the Foredoomed	200	4	348.15	442.10	0.25
+2418	Augmented Chain Leggings	37	1	37.86	43.51	1
+32169	Chancellor's Scaled Gauntlets	105	4	78.40	124.44	1
+10070	Righteous Armor	55	2	29.95	22.19	0.7252
+31255	Cloak of the Craft	103	3	58.81	196.03	0.5
+36045	Crystalsong Robe	174	2	44.10	32.66	1
+15559	Pillager's Cloak	31	2	4.58	11.30	0.5
+9432	Skullplate Bracers	42	3	52.90	120.24	0.6152

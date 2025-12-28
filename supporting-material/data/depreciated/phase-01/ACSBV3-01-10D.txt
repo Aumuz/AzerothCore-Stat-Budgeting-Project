@@ -1,0 +1,17 @@
+total_slots
+14
+InventoryType	slot_name	slot_modifier	notes
+1	Head	86.00	Average of qualities 2-4; stable +/-3%.
+2	Neck	34.00	Consistent across qualities; treated as jewelry.
+3	Shoulder	72.00	Stable +/-3%; slightly lower for low-level gear.
+5	Chest	100.00	Baseline slot for normalization.
+6	Waist	59.00	Consistent +/-2%.
+7	Legs	87.00	Parallel to Head slot; +/-3%.
+8	Feet	63.00	Consistent +/-3%.
+9	Wrist	44.00	Stable +/-2%; lowest of primary armor pieces.
+10	Hands	63.00	Aligned with Feet slot; +/-3%.
+11	Finger	33.00	Same as Neck; jewelry classification.
+14	Shield	340.00	Exceptionally high defensive budget; separate treatment.
+16	Cloak	30.00	Flat across qualities; consistent scaling.
+20	Robe	100.00	Alternate chest model; treated as Chest equivalent.
+23	Held in Off-Hand	33.00	Equivalent to Finger/Neck; +/-3%.

@@ -1,0 +1,6 @@
+total_environments
+3
+drop_environment	drop_modifier	notes
+DUNGEON	75.00	Average dungeon items budgeted below world-level gear.
+WORLD	100.00	Baseline environment; reference for normalization.
+RAID	125.00	Raid gear consistently overbudgeted relative to world items.
