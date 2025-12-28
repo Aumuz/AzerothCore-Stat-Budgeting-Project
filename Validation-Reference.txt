@@ -16,7 +16,7 @@
   Version:     1.0
 
   Created:     2025-12-27
-  Updated:     2025-12-27
+  Updated:     2025-12-28
 
 ===========================================================================================================================================
 
@@ -431,7 +431,7 @@
 
   Developers Handbook
     "A Developers Handbook to Stat Budgeting Custom Items in AzerothCore. v1.0"
-    <URL of DEVELOPER_DOCUMENT>
+    https://github.com/Aumuz/AzerothCore-Stat-Budgeting-Project/blob/main/Developer-Handbook.txt
 
     Provides the workflow and reference tables required for calculating item stat budgets. This document incorporates interpolation
     and derived values and defines both observed and permissible itemization behavior. It is intended for routine use during item creation.
@@ -440,7 +440,7 @@
 
   Developer Recommendations
     "Developer Recommendations for Stat Allocation of Custom Items in AzerothCore. v1.0"
-    <URL of RECOMMENDATION_DOCUMENT>
+    https://github.com/Aumuz/AzerothCore-Stat-Budgeting-Project/blob/main/Developer-Recommendations.txt
 
     Provides guidance on selecting appropriate ItemLevel, Quality, DPS values, armor values, and stat distributions based on player progression and item purpose.
 
@@ -448,7 +448,7 @@
 
   Precision Reference
     "A Verification Guide to Stat Budgeting in AzerothCore. v1.0"
-    <URL of PRECISION_DOCUMENT>
+    https://github.com/Aumuz/AzerothCore-Stat-Budgeting-Project/blob/main/Precision-Reference.txt
 
     Provides the same workflow and tables as the Developers Handbook using observed 3.3.5 values only, without interpolation or derived values.
     This document is intended for validation and reference rather than day-to-day item creation and serves as a companion to this methodology.
@@ -457,4 +457,5 @@
 
 ===========================================================================================================================================
   End of Document: A Derivation and Validation of Stat Budgeting in AzerothCore. v1.0
+
 ===========================================================================================================================================
