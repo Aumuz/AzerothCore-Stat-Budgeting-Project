@@ -1,0 +1,2 @@
+total_records	distinct_items
+1647395	18731

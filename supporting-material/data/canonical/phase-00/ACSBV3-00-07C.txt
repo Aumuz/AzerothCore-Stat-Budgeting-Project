@@ -1,0 +1,2 @@
+total_records	distinct_items
+18731	18731

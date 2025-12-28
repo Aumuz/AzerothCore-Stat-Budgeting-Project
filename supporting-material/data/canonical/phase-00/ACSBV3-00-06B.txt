@@ -1,0 +1,6 @@
+total_records	distinct_items	avg_final_weight
+3289	3289	1.000
+source_type	count_per_type
+Conjured	1
+Crafted	3283
+Unknown	5

@@ -1,0 +1,25 @@
+ref_rows	item_rows
+18731	46096
+total_items	has_holy	has_fire	has_nature	has_frost	has_shadow	has_arcane
+18731	0	250	134	166	212	81
+entry	name	ItemLevel	holy_res	fire_res	nature_res	frost_res	shadow_res	arcane_res
+49468	Helm of Ten Storms	245	0	0	0	10	10	0
+49491	Flowing Sapphiron Drape	245	0	0	0	6	0	6
+49474	Judgement Hood	245	0	0	0	10	10	0
+49483	Halo of Transcendence	245	0	10	0	10	0	0
+49477	Bloodfang Hood	245	0	0	0	10	10	0
+49475	Judgement Heaume	245	0	0	0	10	10	0
+49481	Netherwind Crown	245	0	0	0	10	10	0
+49476	Judgement Crown	245	0	0	0	10	10	0
+49470	Helmet of Ten Storms	245	0	0	0	10	10	0
+49484	Nemesis Skullcap	245	0	0	0	10	10	0
+49480	Dragonstalker's Helm	245	0	0	0	10	10	0
+49479	Helm of Wrath	245	0	0	0	10	10	0
+49469	Crown of Ten Storms	245	0	0	0	10	10	0
+49471	Stormrage Coverlet	245	0	0	0	10	10	0
+49478	Helmet of Wrath	245	0	0	0	10	10	0
+49482	Aurora of Transcendence	245	0	10	0	10	0	0
+49489	Signified Ring of Binding	245	0	30	30	30	30	30
+49473	Stormrage Cover	245	0	0	0	10	10	0
+49472	Stormrage Crown	245	0	0	0	10	10	0
+49467	Frostforged Greathelm	245	0	0	0	10	10	0

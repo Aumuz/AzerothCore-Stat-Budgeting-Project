@@ -1,0 +1,25 @@
+ref_rows	template_rows
+18731	46096
+total_items	has_spell	has_randomprop	has_randomsuffix
+18731	6422	1698	1715
+entry	name	Quality	ItemLevel	spellid_1	spellid_2	spellid_3	spellid_4	spellid_5	RandomProperty	RandomSuffix
+49623	Shadowmourne	5	284	71903	-1	-1	0	0	0	0
+51240	Sanctified Frost Witch's Shoulderguards	4	277	72958	0	0	0	0	0	0
+50648	Nibelung	4	277	71846	0	0	0	0	0	0
+50400	Ashen Band of Endless Wisdom	4	277	71655	72419	0	0	0	0	0
+50641	Heartpierce	4	277	71892	0	0	0	0	0	0
+51235	Sanctified Frost Witch's Shoulderpads	4	277	72958	0	0	0	0	0	0
+50404	Ashen Band of Endless Courage	4	277	71653	72415	0	0	0	0	0
+50398	Ashen Band of Endless Destruction	4	277	71581	72417	0	0	0	0	0
+50708	Last Word	4	277	71873	0	0	0	0	0	0
+50638	Zod's Repeating Longbow	4	277	71836	0	0	0	0	0	0
+50692	Black Bruise	4	277	71878	0	0	0	0	0	0
+50402	Ashen Band of Endless Vengeance	4	277	71650	72413	0	0	0	0	0
+50729	Icecrown Glacial Wall	4	277	64926	0	0	0	0	0	0
+50685	Trauma	4	277	71868	0	0	0	0	0	0
+51245	Sanctified Frost Witch's Spaulders	4	277	72958	0	0	0	0	0	0
+50709	Bryntroll, the Bone Arbiter	4	277	71839	0	0	0	0	0	0
+51498	Wrathful Gladiator's Ringmail Gauntlets	4	270	32973	0	0	0	0	0	0
+51459	Wrathful Gladiator's Chain Gauntlets	4	270	61255	0	0	0	0	0	0
+51493	Wrathful Gladiator's Leather Gloves	4	270	0	61249	0	0	0	0	0
+51542	Wrathful Gladiator's Plate Gauntlets	4	270	22778	0	0	0	0	0	0

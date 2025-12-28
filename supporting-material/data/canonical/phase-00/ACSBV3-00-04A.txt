@@ -1,0 +1,5 @@
+total_links	distinct_items
+15151	4784
+stock_type	count_per_stock	pct
+Limited	265	1.7
+Unlimited	14886	98.3

@@ -1,0 +1,34 @@
+
+18731 - Total     Items in ACSBV3_ref_items.
+ 3357 - Weapon    Items in ACSBV3_ref_items.
+15374 - Equipment Items in ACSBV3_ref_items.
+
+1. Remove Items Missed in 00-00A Global Filter: Expected - 7
+7 Items Removed.
+
+2. Remove Impossible or Unwanted Slot Combinations: Expected - 3
+3 Items Removed.
+
+3. Remove Unknown Items: Expected - 5
+5 Items Removed.
+
+4. Remove Negative Stats: Expected - 15 (our model does not account for this behavior)
+15 Items Removed.
+
+5. Remove Zero Budget Items: Expected - 335
+335 Items Removed.
+
+6. Remove Zero DPS Weapons: Expected - 48 (our model does account for this behavior, however these items are typically noise)
+48 Items Removed.
+
+  +-----------------------------------------------------------+  
+  |              Initial Count - Items Removed = Final Count  |  
+  +----------------------------+---------------+--------------+  
+  |  Expected:           18731 |           413 |       18318  |  
+  |  Actual:             18731 |           413 |       18318  |  
+  +----------------------------+---------------+--------------+  
+  |  Difference:             0 |             0 |           0  |  
+  +----------------------------+---------------+--------------+  
+18318 - Total     Items in ACSBV3_ref_items.
+ 3263 - Weapon    Items in ACSBV3_ref_items.
+15055 - Equipment Items in ACSBV3_ref_items.

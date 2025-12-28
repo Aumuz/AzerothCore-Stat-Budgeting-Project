@@ -1,0 +1,4 @@
+total_links	distinct_items
+4030	2255
+drop_environment	count_per_env	avg_drop_chance
+World	4030	0.534

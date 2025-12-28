@@ -1,0 +1,2 @@
+total_records	distinct_items	avg_weight
+18731	18731	0.728

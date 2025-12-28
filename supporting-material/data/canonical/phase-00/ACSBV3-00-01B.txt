@@ -1,0 +1,6 @@
+total_records	distinct_items
+1613305	10527
+drop_environment	avg_drop	avg_eff_chance	avg_freq_weight	avg_final_weight
+Dungeon	0.051	0.156	0.502	0.376
+Raid	0.041	0.041	0.501	0.251
+World	0.012	0.073	0.503	0.503

@@ -1,0 +1,5 @@
+total_links	distinct_items
+355	267
+reward_type	count_per_type
+Choice	147
+Guaranteed	208

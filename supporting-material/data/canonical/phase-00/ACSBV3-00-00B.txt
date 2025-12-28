@@ -1,0 +1,4 @@
+environment	maps_per_env
+Raid	19
+Dungeon	46
+World	1

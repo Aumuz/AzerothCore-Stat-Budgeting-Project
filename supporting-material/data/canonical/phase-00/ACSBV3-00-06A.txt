@@ -1,0 +1,12 @@
+total_residual_items	distinct_items
+3289	3289
+legendary_count
+7
+ItemID	ItemName	ItemLevel	RequiredLevel
+22736	Andonisus, Reaper of Souls	100	60
+23051	Glaive of the Defender	86	60
+17182	Sulfuras, Hand of Ragnaros	80	60
+17782	Talisman of Binding Shard	80	60
+17783	Talisman of Binding Fragment	80	60
+50442	Ashbringer (Extra Effects)	76	60
+17142	Shard of the Defiler	70	60

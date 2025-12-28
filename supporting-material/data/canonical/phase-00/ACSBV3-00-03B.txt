@@ -1,0 +1,4 @@
+total_records	distinct_items
+4030	2255
+drop_environment	avg_drop	avg_eff_chance	avg_freq_weight	avg_final_weight
+World	0.534	0.534	0.516	0.439

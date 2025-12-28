@@ -1,0 +1,1581 @@
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  1. Research Stat Count per Item: Simple Groups                                                                       ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:58:50                                                                                            0604A (v1.0)
+                                                                                                                           
+Group_Name	Item_Count	AVG_Stat_Count
+Global	14270	3.4081
+
+
+
+GROUP BY Quality
+Group_Name	Item_Count	AVG_Stat_Count
+Uncommon  	 1632	  1.9063
+Rare      	 3737	  2.6901
+Epic      	 8890	  3.9862
+Legendary 	   11	  2.9091
+
+
+
+GROUP BY ItemLevelBracket
+Group_Name	Item_Count	AVG_Stat_Count
+10 	  235	  1.5064
+20 	  451	  1.7871
+30 	  442	  2.0475
+40 	  482	  2.0415
+50 	  663	  2.1991
+60 	 1173	  2.2924
+70 	  586	  2.4727
+80 	  295	  2.3153
+90 	  216	  2.2407
+100	  346	  2.7630
+110	 1135	  2.9233
+130	  384	  3.3594
+140	  554	  3.4657
+150	  483	  3.5673
+160	  109	  3.0550
+170	   96	  2.7813
+180	  228	  3.6404
+200	 1100	  3.9855
+120	  602	  3.3854
+210	  912	  4.4101
+220	  463	  4.7127
+230	  865	  4.6012
+240	  678	  4.7640
+250	  877	  4.6933
+260	  488	  4.7234
+270	  385	  4.7299
+280	   22	  4.8182
+
+
+
+GROUP BY slot_group
+Group_Name	Item_Count	AVG_Stat_Count
+1H-Weapon      	 1105	  2.9611
+Accessory      	 1327	  3.0490
+Major-Armor    	 3074	  3.6321
+Minor-Armor    	 4218	  3.4289
+2H-Weapon      	  411	  2.8540
+Back           	  556	  2.9191
+Shield         	  228	  2.7061
+Staff-Weapon   	  273	  3.4505
+Ranged-Thrown  	   48	  2.8542
+Moderate-Armor 	 2712	  3.7895
+Ranged-Weapon  	  208	  2.7260
+Ranged-Wand    	  110	  3.1909
+
+
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  1. Research Stat Count per Item: Two Groups                                                                          ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:58:51                                                                                            0604A (v1.0)
+                                                                                                                           
+
+GROUP BY Quality, ItemLevelBracket
+Quality	ItemLevel	Item_Count	AVG_Stat_Count
+Uncommon  	10 	  227	  1.4934
+Uncommon  	20 	  288	  1.7257
+Uncommon  	30 	  256	  1.9922
+Uncommon  	40 	  278	  2.0000
+Uncommon  	50 	  233	  2.1116
+Uncommon  	60 	  140	  1.9786
+Uncommon  	70 	    1	  2.0000
+Uncommon  	80 	    7	  1.4286
+Uncommon  	90 	   61	  1.6721
+Uncommon  	100	   21	  1.4286
+Uncommon  	110	    5	  1.8000
+Uncommon  	130	   24	  2.5000
+Uncommon  	140	   35	  2.8286
+Uncommon  	150	   34	  2.5000
+Uncommon  	160	   12	  2.5000
+Uncommon  	170	    7	  1.4286
+Uncommon  	180	    3	  1.0000
+Rare      	10 	    8	  1.8750
+Rare      	20 	  163	  1.8957
+Rare      	30 	  185	  2.1297
+Rare      	40 	  188	  2.0851
+Rare      	50 	  411	  2.2384
+Rare      	60 	  749	  2.2537
+Rare      	70 	   89	  2.3933
+Rare      	80 	   54	  2.4815
+Rare      	90 	   83	  2.4819
+Rare      	100	  112	  2.6786
+Rare      	110	  812	  2.9901
+Rare      	130	   18	  2.8333
+Rare      	140	   15	  3.1333
+Rare      	150	   66	  2.5909
+Rare      	160	   74	  3.0405
+Rare      	170	   89	  2.8876
+Rare      	180	  225	  3.6756
+Rare      	200	  396	  3.7273
+Epic      	30 	    1	  1.0000
+Epic      	40 	   16	  2.2500
+Epic      	50 	   19	  2.4211
+Epic      	60 	  284	  2.5493
+Epic      	70 	  496	  2.4879
+Epic      	80 	  232	  2.3060
+Epic      	90 	   68	  2.4265
+Epic      	100	  213	  2.9390
+Epic      	110	  318	  2.7704
+Epic      	120	  602	  3.3854
+Epic      	130	  342	  3.4474
+Epic      	140	  504	  3.5198
+Epic      	150	  381	  3.8346
+Epic      	160	   22	  3.4545
+Epic      	200	  704	  4.1307
+Epic      	210	  912	  4.4101
+Epic      	220	  463	  4.7127
+Epic      	230	  865	  4.6012
+Epic      	240	  677	  4.7637
+Epic      	250	  877	  4.6933
+Epic      	260	  488	  4.7234
+Epic      	270	  385	  4.7299
+Epic      	280	   21	  4.8571
+Legendary 	80 	    2	  2.0000
+Legendary 	90 	    4	  2.7500
+Legendary 	150	    2	  3.0000
+Legendary 	160	    1	  2.0000
+Legendary 	240	    1	  5.0000
+Legendary 	280	    1	  4.0000
+
+
+
+GROUP BY Quality, slot_group
+Quality	Slot_Group	Item_Count	AVG_Stat_Count
+Uncommon  	1H-Weapon      	  120	  1.2250
+Uncommon  	Accessory      	  125	  1.8880
+Uncommon  	Major-Armor    	  391	  1.9514
+Uncommon  	Minor-Armor    	  525	  1.9886
+Uncommon  	2H-Weapon      	   62	  1.6290
+Uncommon  	Back           	  101	  1.8218
+Uncommon  	Shield         	   49	  2.0204
+Uncommon  	Staff-Weapon   	   13	  1.3846
+Uncommon  	Ranged-Thrown  	    7	  1.2857
+Uncommon  	Moderate-Armor 	  228	  2.1667
+Uncommon  	Ranged-Weapon  	    9	  1.5556
+Uncommon  	Ranged-Wand    	    2	  1.0000
+Rare      	1H-Weapon      	  321	  2.2710
+Rare      	Back           	  167	  2.2275
+Rare      	Major-Armor    	  706	  3.0567
+Rare      	Minor-Armor    	 1118	  2.6968
+Rare      	Accessory      	  395	  2.3494
+Rare      	2H-Weapon      	  137	  2.3577
+Rare      	Moderate-Armor 	  616	  3.1006
+Rare      	Shield         	   66	  2.2273
+Rare      	Staff-Weapon   	   88	  2.6136
+Rare      	Ranged-Weapon  	   74	  1.8108
+Rare      	Ranged-Wand    	   35	  2.2000
+Rare      	Ranged-Thrown  	   14	  2.1429
+Epic      	Accessory      	  807	  3.5713
+Epic      	Staff-Weapon   	  168	  4.0655
+Epic      	Shield         	  113	  3.2832
+Epic      	Major-Armor    	 1977	  4.1700
+Epic      	Minor-Armor    	 2575	  4.0404
+Epic      	Ranged-Weapon  	  124	  3.3629
+Epic      	Moderate-Armor 	 1868	  4.2147
+Epic      	1H-Weapon      	  660	  3.6106
+Epic      	Back           	  288	  3.7049
+Epic      	2H-Weapon      	  210	  3.5381
+Epic      	Ranged-Wand    	   73	  3.7260
+Epic      	Ranged-Thrown  	   27	  3.6296
+Legendary 	1H-Weapon      	    4	  3.2500
+Legendary 	2H-Weapon      	    2	  3.0000
+Legendary 	Staff-Weapon   	    4	  2.7500
+Legendary 	Ranged-Weapon  	    1	  2.0000
+
+
+
+GROUP BY slot_group, ItemLevelBracket
+Slot_Group	ItemLevel	Item_Count	AVG_Stat_Count
+1H-Weapon      	10 	   33	  1.1212
+Accessory      	10 	   12	  1.4167
+Major-Armor    	10 	   75	  1.6133
+Minor-Armor    	10 	   69	  1.6667
+2H-Weapon      	10 	   14	  1.2857
+Back           	10 	   19	  1.4211
+Shield         	10 	    6	  1.6667
+Staff-Weapon   	10 	    6	  1.3333
+Ranged-Thrown  	10 	    1	  1.0000
+1H-Weapon      	20 	   59	  1.5593
+2H-Weapon      	20 	   40	  1.6750
+Accessory      	20 	   44	  1.7955
+Back           	20 	   40	  1.6500
+Major-Armor    	20 	   88	  1.9432
+Minor-Armor    	20 	  123	  1.8618
+Ranged-Thrown  	20 	    1	  1.0000
+Shield         	20 	   16	  1.8750
+Staff-Weapon   	20 	   14	  1.9286
+Moderate-Armor 	20 	   24	  1.7500
+1H-Weapon      	30 	   35	  1.6571
+2H-Weapon      	30 	   21	  1.8571
+Accessory      	30 	   54	  2.0556
+Back           	30 	   27	  2.0370
+Major-Armor    	30 	   75	  2.1733
+Minor-Armor    	30 	  136	  2.0515
+Moderate-Armor 	30 	   71	  2.1831
+Shield         	30 	   15	  1.9333
+Staff-Weapon   	30 	    7	  2.1429
+2H-Weapon      	40 	   17	  1.8824
+Accessory      	40 	   37	  2.1081
+Major-Armor    	40 	   88	  2.0568
+Minor-Armor    	40 	  165	  2.1091
+Moderate-Armor 	40 	   85	  2.0353
+Ranged-Thrown  	40 	    1	  2.0000
+Shield         	40 	   18	  2.1111
+Back           	40 	   26	  2.2692
+Ranged-Weapon  	40 	   11	  1.2727
+1H-Weapon      	40 	   24	  1.7500
+Back           	50 	   36	  1.8889
+Major-Armor    	50 	  112	  2.3482
+Minor-Armor    	50 	  268	  2.3619
+Moderate-Armor 	50 	   94	  2.2234
+1H-Weapon      	50 	   36	  1.5833
+2H-Weapon      	50 	   19	  1.8421
+Accessory      	50 	   58	  2.0345
+Shield         	50 	   16	  2.0000
+1H-Weapon      	60 	   62	  1.4355
+2H-Weapon      	60 	   26	  1.8462
+Accessory      	60 	  121	  2.0165
+Back           	60 	   52	  2.0385
+Major-Armor    	60 	  257	  2.5097
+Minor-Armor    	60 	  402	  2.3831
+Moderate-Armor 	60 	  180	  2.6222
+Ranged-Thrown  	60 	    2	  1.5000
+Ranged-Weapon  	60 	   20	  1.6500
+Shield         	60 	   20	  1.7500
+Staff-Weapon   	60 	   23	  2.0000
+Ranged-Wand    	60 	    8	  1.2500
+Major-Armor    	70 	   95	  2.7053
+1H-Weapon      	80 	   25	  1.7200
+Accessory      	80 	   46	  1.8043
+Major-Armor    	80 	   51	  2.8824
+Minor-Armor    	80 	   91	  2.3626
+1H-Weapon      	90 	   16	  2.3750
+2H-Weapon      	90 	    5	  2.2000
+Accessory      	90 	   34	  1.9706
+Back           	90 	   15	  2.1333
+Major-Armor    	90 	   38	  2.4211
+Minor-Armor    	90 	   55	  2.2545
+Moderate-Armor 	90 	   21	  2.7143
+Ranged-Wand    	90 	    7	  1.8571
+Ranged-Weapon  	90 	    9	  1.8889
+Staff-Weapon   	90 	    9	  2.3333
+2H-Weapon      	100	   17	  2.0000
+Major-Armor    	100	   80	  3.2875
+Accessory      	100	   43	  1.9535
+1H-Weapon      	100	   34	  1.8529
+Back           	100	   14	  1.4286
+Minor-Armor    	100	   66	  2.9697
+Ranged-Thrown  	100	    3	  1.6667
+Major-Armor    	110	  243	  3.1687
+2H-Weapon      	110	   34	  3.1471
+Ranged-Weapon  	110	   18	  1.7222
+1H-Weapon      	130	   42	  2.5952
+Major-Armor    	130	   96	  3.7083
+Minor-Armor    	130	  103	  3.3883
+Moderate-Armor 	130	   88	  3.7045
+Accessory      	130	   15	  2.6667
+1H-Weapon      	140	   45	  2.7111
+Major-Armor    	140	  127	  3.7795
+Minor-Armor    	140	  179	  3.5866
+Moderate-Armor 	140	  110	  3.6273
+Shield         	140	    8	  2.7500
+1H-Weapon      	150	   45	  2.7556
+2H-Weapon      	150	   11	  2.7273
+Major-Armor    	150	   88	  3.8523
+Minor-Armor    	150	  155	  3.9742
+Moderate-Armor 	150	   89	  3.6854
+Ranged-Thrown  	150	    4	  2.0000
+1H-Weapon      	160	   18	  2.1667
+Accessory      	160	   11	  2.9091
+Minor-Armor    	160	   24	  3.0833
+Moderate-Armor 	160	   17	  3.4706
+Major-Armor    	160	   19	  3.6316
+1H-Weapon      	170	   14	  1.7143
+Major-Armor    	170	   22	  3.3182
+1H-Weapon      	180	   17	  2.5294
+Ranged-Weapon  	20 	    2	  1.0000
+Ranged-Weapon  	30 	    1	  1.0000
+Ranged-Wand    	40 	    1	  2.0000
+Staff-Weapon   	40 	    9	  1.6667
+Ranged-Weapon  	50 	   11	  1.4545
+Ranged-Wand    	50 	    4	  1.2500
+Staff-Weapon   	50 	    9	  2.4444
+Back           	70 	   19	  1.9474
+Minor-Armor    	70 	  169	  2.7160
+Moderate-Armor 	70 	  134	  2.8209
+2H-Weapon      	70 	   23	  2.2609
+Accessory      	70 	   52	  1.9423
+2H-Weapon      	80 	   13	  2.1538
+Back           	80 	   11	  1.9091
+Moderate-Armor 	80 	   44	  2.7045
+Staff-Weapon   	80 	    6	  2.5000
+Ranged-Weapon  	80 	    3	  1.0000
+Ranged-Thrown  	90 	    3	  1.6667
+Shield         	90 	    4	  1.7500
+Moderate-Armor 	100	   74	  3.4730
+Shield         	100	    4	  2.5000
+Staff-Weapon   	100	    5	  2.6000
+Ranged-Weapon  	100	    6	  1.8333
+Minor-Armor    	110	  320	  2.9625
+Ranged-Thrown  	110	    6	  2.0000
+1H-Weapon      	110	   84	  2.7500
+Accessory      	110	  129	  2.2481
+Back           	110	   45	  2.2000
+Moderate-Armor 	110	  210	  3.3762
+Ranged-Wand    	110	    8	  2.3750
+Shield         	110	   18	  2.1111
+Staff-Weapon   	110	   20	  3.2000
+Shield         	130	    4	  2.5000
+Staff-Weapon   	130	    7	  2.8571
+Accessory      	140	   45	  2.9333
+Back           	140	    7	  3.0000
+2H-Weapon      	140	   12	  3.5000
+Accessory      	150	   47	  3.0638
+Back           	150	   14	  3.2857
+Ranged-Wand    	150	    7	  2.5714
+Shield         	150	   10	  3.0000
+Staff-Weapon   	150	    8	  3.5000
+Ranged-Weapon  	160	    5	  2.6000
+Staff-Weapon   	160	    3	  3.3333
+Back           	160	    5	  3.2000
+Ranged-Wand    	160	    2	  3.0000
+Shield         	160	    4	  3.0000
+Accessory      	170	    9	  3.0000
+Minor-Armor    	170	   24	  3.0417
+Moderate-Armor 	170	   12	  2.8333
+2H-Weapon      	170	    2	  2.5000
+Ranged-Thrown  	170	    1	  2.0000
+Shield         	170	    3	  3.0000
+Staff-Weapon   	170	    3	  2.0000
+Ranged-Wand    	170	    2	  1.5000
+Back           	170	    2	  4.0000
+Ranged-Weapon  	170	    2	  1.5000
+Accessory      	180	   20	  3.1500
+Back           	180	    9	  3.3333
+Major-Armor    	180	   43	  3.8837
+Minor-Armor    	180	   79	  3.8861
+Moderate-Armor 	180	   43	  3.8605
+2H-Weapon      	180	    4	  3.5000
+Ranged-Thrown  	180	    2	  3.0000
+Ranged-Wand    	180	    4	  3.0000
+Ranged-Weapon  	180	    2	  2.5000
+Shield         	180	    2	  3.0000
+Staff-Weapon   	180	    3	  3.6667
+1H-Weapon      	200	   85	  3.8000
+2H-Weapon      	200	   22	  3.6364
+Accessory      	200	  108	  3.8148
+Back           	200	   31	  3.8387
+Major-Armor    	200	  232	  4.1078
+Minor-Armor    	200	  321	  3.9688
+Moderate-Armor 	200	  232	  4.1595
+Ranged-Thrown  	200	    5	  3.4000
+Ranged-Wand    	200	   11	  3.8182
+Ranged-Weapon  	200	   16	  3.3125
+Shield         	200	   15	  3.6000
+Staff-Weapon   	200	   22	  4.1818
+1H-Weapon      	70 	   57	  1.7018
+Ranged-Wand    	70 	    4	  1.5000
+Ranged-Weapon  	70 	   14	  1.2143
+Staff-Weapon   	70 	   13	  2.6154
+Shield         	70 	    6	  1.8333
+Shield         	80 	    3	  1.6667
+Ranged-Wand    	80 	    2	  2.0000
+1H-Weapon      	120	   25	  3.0000
+2H-Weapon      	120	   12	  3.0833
+Accessory      	120	   37	  2.5676
+Back           	120	   18	  2.6111
+Major-Armor    	120	  135	  3.5259
+Minor-Armor    	120	  227	  3.5683
+Moderate-Armor 	120	  133	  3.4812
+Ranged-Weapon  	120	    3	  1.6667
+Staff-Weapon   	120	    3	  2.6667
+Ranged-Thrown  	120	    2	  2.0000
+Ranged-Wand    	120	    2	  3.0000
+Shield         	120	    5	  2.4000
+Back           	130	    9	  2.8889
+2H-Weapon      	130	   11	  3.0909
+Ranged-Wand    	130	    4	  2.0000
+Ranged-Weapon  	130	    3	  2.0000
+Ranged-Thrown  	130	    2	  3.0000
+Ranged-Thrown  	140	    2	  2.5000
+Ranged-Wand    	140	    5	  2.6000
+Ranged-Weapon  	140	    7	  2.4286
+Staff-Weapon   	140	    7	  3.5714
+Ranged-Weapon  	150	    5	  2.4000
+2H-Weapon      	160	    1	  3.0000
+1H-Weapon      	210	   61	  4.3607
+2H-Weapon      	210	   19	  4.1579
+Accessory      	210	   69	  4.2029
+Back           	210	   32	  4.3438
+Major-Armor    	210	  214	  4.4720
+Minor-Armor    	210	  263	  4.3574
+Moderate-Armor 	210	  199	  4.5528
+Ranged-Thrown  	210	    2	  4.0000
+Ranged-Wand    	210	   10	  4.2000
+Ranged-Weapon  	210	   14	  4.2143
+Shield         	210	   10	  4.3000
+Staff-Weapon   	210	   19	  4.5789
+1H-Weapon      	220	    6	  4.1667
+2H-Weapon      	220	    1	  4.0000
+Accessory      	220	   68	  4.5441
+Back           	220	   20	  4.6000
+Major-Armor    	220	  102	  4.7059
+Minor-Armor    	220	  168	  4.7738
+Moderate-Armor 	220	   93	  4.8172
+Ranged-Weapon  	220	    1	  3.0000
+Shield         	220	    3	  4.6667
+Staff-Weapon   	220	    1	  5.0000
+1H-Weapon      	230	   86	  4.5349
+2H-Weapon      	230	   25	  4.4000
+Accessory      	230	   44	  4.5909
+Back           	230	   12	  4.6667
+Major-Armor    	230	  224	  4.5670
+Minor-Armor    	230	  171	  4.6667
+Moderate-Armor 	230	  237	  4.6076
+Ranged-Thrown  	230	    4	  4.7500
+Ranged-Wand    	230	   10	  4.9000
+Ranged-Weapon  	230	   17	  4.5294
+Shield         	230	   11	  4.1818
+Staff-Weapon   	230	   24	  4.9167
+1H-Weapon      	240	   56	  4.5893
+2H-Weapon      	240	   17	  4.4706
+Accessory      	240	   60	  4.5500
+Back           	240	   22	  4.6364
+Major-Armor    	240	  142	  4.8169
+Minor-Armor    	240	  189	  4.8201
+Moderate-Armor 	240	  149	  4.8658
+Ranged-Thrown  	240	    3	  4.6667
+Ranged-Wand    	240	    7	  4.8571
+Ranged-Weapon  	240	   12	  4.6667
+Shield         	240	    8	  4.2500
+Staff-Weapon   	240	   13	  4.9231
+1H-Weapon      	250	   57	  4.7018
+2H-Weapon      	250	   20	  4.3500
+Accessory      	250	   64	  4.5781
+Back           	250	   31	  4.6452
+Major-Armor    	250	  248	  4.6976
+Minor-Armor    	250	  204	  4.7206
+Moderate-Armor 	250	  214	  4.7383
+Ranged-Thrown  	250	    1	  5.0000
+Ranged-Wand    	250	    2	  5.0000
+Ranged-Weapon  	250	   11	  4.6364
+Shield         	250	   10	  4.2000
+Staff-Weapon   	250	   15	  4.9333
+1H-Weapon      	260	   41	  4.3171
+2H-Weapon      	260	   12	  4.0000
+Accessory      	260	   58	  4.6207
+Back           	260	   22	  4.5909
+Major-Armor    	260	   93	  4.8172
+Minor-Armor    	260	  155	  4.8258
+Moderate-Armor 	260	   72	  4.9167
+Ranged-Thrown  	260	    3	  4.6667
+Ranged-Wand    	260	    8	  4.8750
+Ranged-Weapon  	260	    8	  4.1250
+Shield         	260	    4	  4.5000
+Staff-Weapon   	260	   12	  4.7500
+Accessory      	270	   39	  4.6410
+Major-Armor    	270	   87	  4.8506
+Minor-Armor    	270	   84	  4.8333
+Moderate-Armor 	270	   87	  4.9080
+Shield         	270	    5	  4.0000
+1H-Weapon      	270	   37	  4.2703
+2H-Weapon      	270	   10	  4.0000
+Back           	270	   17	  4.7647
+Ranged-Weapon  	270	    6	  4.0000
+Staff-Weapon   	270	   11	  4.7273
+Ranged-Wand    	270	    2	  5.0000
+1H-Weapon      	280	    5	  5.0000
+2H-Weapon      	280	    3	  4.3333
+Accessory      	280	    3	  4.3333
+Back           	280	    1	  5.0000
+Minor-Armor    	280	    8	  5.0000
+Ranged-Weapon  	280	    1	  5.0000
+Staff-Weapon   	280	    1	  5.0000
+
+
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  3. Research Stat Count per Item: Three Groups                                                                        ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:58:51                                                                                            0604A (v1.0)
+                                                                                                                           
+
+GROUP BY Quality, slot_group, ItemLevelBracket
+Quality	Slot_Group	ItemLevel	Item_Count	AVG_Stat_Count
+Uncommon  	1H-Weapon      	10 	   32	  1.0938
+Uncommon  	Accessory      	10 	   11	  1.4545
+Uncommon  	Major-Armor    	10 	   74	  1.5946
+Uncommon  	Minor-Armor    	10 	   66	  1.6515
+Uncommon  	2H-Weapon      	10 	   14	  1.2857
+Uncommon  	Back           	10 	   17	  1.4118
+Uncommon  	Shield         	10 	    6	  1.6667
+Uncommon  	Staff-Weapon   	10 	    6	  1.3333
+Uncommon  	Ranged-Thrown  	10 	    1	  1.0000
+Uncommon  	1H-Weapon      	20 	   26	  1.2692
+Uncommon  	2H-Weapon      	20 	   21	  1.6667
+Uncommon  	Accessory      	20 	   25	  1.7200
+Uncommon  	Back           	20 	   26	  1.5385
+Uncommon  	Major-Armor    	20 	   65	  1.8615
+Uncommon  	Minor-Armor    	20 	   91	  1.8132
+Uncommon  	Ranged-Thrown  	20 	    1	  1.0000
+Uncommon  	Shield         	20 	   12	  1.7500
+Uncommon  	Staff-Weapon   	20 	    3	  1.6667
+Uncommon  	Moderate-Armor 	20 	   18	  1.8333
+Uncommon  	1H-Weapon      	30 	    7	  1.2857
+Uncommon  	2H-Weapon      	30 	   10	  1.8000
+Uncommon  	Accessory      	30 	   26	  1.9615
+Uncommon  	Back           	30 	   18	  2.0556
+Uncommon  	Major-Armor    	30 	   53	  2.0377
+Uncommon  	Minor-Armor    	30 	   80	  1.9625
+Uncommon  	Moderate-Armor 	30 	   51	  2.1176
+Uncommon  	Shield         	30 	   10	  2.1000
+Uncommon  	Staff-Weapon   	30 	    1	  1.0000
+Uncommon  	2H-Weapon      	40 	    3	  1.6667
+Uncommon  	Accessory      	40 	   14	  2.0000
+Uncommon  	Major-Armor    	40 	   68	  1.9853
+Uncommon  	Minor-Armor    	40 	  100	  2.0100
+Uncommon  	Moderate-Armor 	40 	   60	  2.0500
+Uncommon  	Ranged-Thrown  	40 	    1	  2.0000
+Uncommon  	Shield         	40 	    8	  2.1250
+Uncommon  	Back           	40 	   16	  2.1875
+Uncommon  	Ranged-Weapon  	40 	    1	  1.0000
+Uncommon  	1H-Weapon      	40 	    7	  1.2857
+Uncommon  	Back           	50 	   15	  2.2000
+Uncommon  	Major-Armor    	50 	   53	  2.0566
+Uncommon  	Minor-Armor    	50 	   89	  2.1573
+Uncommon  	Moderate-Armor 	50 	   44	  2.1591
+Uncommon  	1H-Weapon      	50 	    4	  1.7500
+Uncommon  	2H-Weapon      	50 	    4	  1.2500
+Uncommon  	Accessory      	50 	   16	  2.0000
+Uncommon  	Shield         	50 	    8	  2.3750
+Uncommon  	1H-Weapon      	60 	    4	  1.5000
+Uncommon  	2H-Weapon      	60 	    2	  2.0000
+Uncommon  	Accessory      	60 	   18	  2.0000
+Uncommon  	Back           	60 	    5	  1.8000
+Uncommon  	Major-Armor    	60 	   39	  2.1026
+Uncommon  	Minor-Armor    	60 	   35	  1.9429
+Uncommon  	Moderate-Armor 	60 	   25	  2.1200
+Uncommon  	Ranged-Thrown  	60 	    1	  1.0000
+Uncommon  	Ranged-Weapon  	60 	    4	  1.7500
+Uncommon  	Shield         	60 	    4	  2.0000
+Uncommon  	Staff-Weapon   	60 	    2	  1.0000
+Uncommon  	Ranged-Wand    	60 	    1	  1.0000
+Uncommon  	Major-Armor    	70 	    1	  2.0000
+Uncommon  	1H-Weapon      	80 	    1	  1.0000
+Uncommon  	Accessory      	80 	    2	  1.0000
+Uncommon  	Major-Armor    	80 	    1	  1.0000
+Uncommon  	Minor-Armor    	80 	    3	  2.0000
+Uncommon  	1H-Weapon      	90 	    3	  1.6667
+Uncommon  	2H-Weapon      	90 	    2	  1.5000
+Uncommon  	Accessory      	90 	    6	  1.5000
+Uncommon  	Back           	90 	    3	  1.6667
+Uncommon  	Major-Armor    	90 	   11	  1.8182
+Uncommon  	Minor-Armor    	90 	   24	  1.6667
+Uncommon  	Moderate-Armor 	90 	    7	  1.7143
+Uncommon  	Ranged-Wand    	90 	    1	  1.0000
+Uncommon  	Ranged-Weapon  	90 	    3	  1.6667
+Uncommon  	Staff-Weapon   	90 	    1	  2.0000
+Uncommon  	2H-Weapon      	100	    3	  1.6667
+Uncommon  	Major-Armor    	100	    6	  1.6667
+Uncommon  	Accessory      	100	    1	  1.0000
+Uncommon  	1H-Weapon      	100	    6	  1.5000
+Uncommon  	Back           	100	    1	  1.0000
+Uncommon  	Minor-Armor    	100	    2	  1.0000
+Uncommon  	Ranged-Thrown  	100	    2	  1.0000
+Uncommon  	Major-Armor    	110	    2	  1.0000
+Uncommon  	2H-Weapon      	110	    2	  3.0000
+Uncommon  	Ranged-Weapon  	110	    1	  1.0000
+Uncommon  	1H-Weapon      	130	    6	  1.0000
+Uncommon  	Major-Armor    	130	    5	  2.8000
+Uncommon  	Minor-Armor    	130	    8	  3.1250
+Uncommon  	Moderate-Armor 	130	    1	  3.0000
+Uncommon  	Accessory      	130	    4	  3.0000
+Uncommon  	1H-Weapon      	140	    4	  1.5000
+Uncommon  	Major-Armor    	140	    7	  3.0000
+Uncommon  	Minor-Armor    	140	   13	  3.0000
+Uncommon  	Moderate-Armor 	140	   10	  3.0000
+Uncommon  	Shield         	140	    1	  3.0000
+Uncommon  	1H-Weapon      	150	    7	  1.1429
+Uncommon  	2H-Weapon      	150	    1	  2.0000
+Uncommon  	Major-Armor    	150	    4	  3.0000
+Uncommon  	Minor-Armor    	150	   12	  2.8333
+Uncommon  	Moderate-Armor 	150	    9	  3.0000
+Uncommon  	Ranged-Thrown  	150	    1	  2.0000
+Uncommon  	1H-Weapon      	160	    4	  1.0000
+Uncommon  	Accessory      	160	    2	  3.0000
+Uncommon  	Minor-Armor    	160	    2	  3.0000
+Uncommon  	Moderate-Armor 	160	    3	  3.3333
+Uncommon  	Major-Armor    	160	    1	  4.0000
+Uncommon  	1H-Weapon      	170	    6	  1.0000
+Uncommon  	Major-Armor    	170	    1	  4.0000
+Uncommon  	1H-Weapon      	180	    3	  1.0000
+Rare      	1H-Weapon      	10 	    1	  2.0000
+Rare      	Back           	10 	    2	  1.5000
+Rare      	Major-Armor    	10 	    1	  3.0000
+Rare      	Minor-Armor    	10 	    3	  2.0000
+Rare      	Accessory      	10 	    1	  1.0000
+Rare      	1H-Weapon      	20 	   33	  1.7879
+Rare      	2H-Weapon      	20 	   19	  1.6842
+Rare      	Accessory      	20 	   19	  1.8947
+Rare      	Back           	20 	   14	  1.8571
+Rare      	Minor-Armor    	20 	   32	  2.0000
+Rare      	Moderate-Armor 	20 	    6	  1.5000
+Rare      	Shield         	20 	    4	  2.2500
+Rare      	Major-Armor    	20 	   23	  2.1739
+Rare      	Staff-Weapon   	20 	   11	  2.0000
+Rare      	Ranged-Weapon  	20 	    2	  1.0000
+Rare      	1H-Weapon      	30 	   28	  1.7500
+Rare      	Accessory      	30 	   27	  2.1852
+Rare      	Back           	30 	    9	  2.0000
+Rare      	Major-Armor    	30 	   22	  2.5000
+Rare      	Minor-Armor    	30 	   56	  2.1786
+Rare      	Moderate-Armor 	30 	   20	  2.3500
+Rare      	Shield         	30 	    5	  1.6000
+Rare      	Staff-Weapon   	30 	    6	  2.3333
+Rare      	Ranged-Weapon  	30 	    1	  1.0000
+Rare      	2H-Weapon      	30 	   11	  1.9091
+Rare      	1H-Weapon      	40 	   17	  1.9412
+Rare      	2H-Weapon      	40 	   14	  1.9286
+Rare      	Accessory      	40 	   21	  2.1905
+Rare      	Back           	40 	   10	  2.4000
+Rare      	Major-Armor    	40 	   18	  2.2778
+Rare      	Minor-Armor    	40 	   58	  2.2069
+Rare      	Moderate-Armor 	40 	   25	  2.0000
+Rare      	Ranged-Weapon  	40 	    9	  1.3333
+Rare      	Shield         	40 	    8	  2.1250
+Rare      	Ranged-Wand    	40 	    1	  2.0000
+Rare      	Staff-Weapon   	40 	    7	  1.7143
+Rare      	1H-Weapon      	50 	   31	  1.5484
+Rare      	2H-Weapon      	50 	   15	  2.0000
+Rare      	Accessory      	50 	   40	  2.0250
+Rare      	Back           	50 	   21	  1.6667
+Rare      	Major-Armor    	50 	   57	  2.6140
+Rare      	Minor-Armor    	50 	  171	  2.4561
+Rare      	Moderate-Armor 	50 	   46	  2.3043
+Rare      	Ranged-Weapon  	50 	   11	  1.4545
+Rare      	Ranged-Wand    	50 	    4	  1.2500
+Rare      	Shield         	50 	    7	  1.5714
+Rare      	Staff-Weapon   	50 	    8	  2.3750
+Rare      	1H-Weapon      	60 	   42	  1.4048
+Rare      	2H-Weapon      	60 	   16	  1.5000
+Rare      	Accessory      	60 	   64	  1.9219
+Rare      	Back           	60 	   29	  1.8276
+Rare      	Major-Armor    	60 	  166	  2.5482
+Rare      	Minor-Armor    	60 	  273	  2.2821
+Rare      	Moderate-Armor 	60 	  113	  2.6637
+Rare      	Ranged-Thrown  	60 	    1	  2.0000
+Rare      	Ranged-Weapon  	60 	   15	  1.6000
+Rare      	Staff-Weapon   	60 	   14	  2.1429
+Rare      	Shield         	60 	   11	  1.9091
+Rare      	Ranged-Wand    	60 	    5	  1.0000
+Rare      	Back           	70 	    4	  2.0000
+Rare      	Major-Armor    	70 	    9	  2.4444
+Rare      	Minor-Armor    	70 	   23	  2.2609
+Rare      	Moderate-Armor 	70 	   46	  2.5652
+Rare      	2H-Weapon      	70 	    1	  3.0000
+Rare      	Accessory      	70 	    6	  1.6667
+Rare      	Accessory      	80 	   12	  2.1667
+Rare      	1H-Weapon      	80 	    6	  1.8333
+Rare      	2H-Weapon      	80 	    4	  2.5000
+Rare      	Back           	80 	    2	  2.0000
+Rare      	Major-Armor    	80 	   10	  3.0000
+Rare      	Minor-Armor    	80 	   15	  2.6667
+Rare      	Moderate-Armor 	80 	    2	  3.0000
+Rare      	Staff-Weapon   	80 	    2	  3.0000
+Rare      	Ranged-Weapon  	80 	    1	  1.0000
+Rare      	1H-Weapon      	90 	   12	  2.5000
+Rare      	Accessory      	90 	    8	  1.6250
+Rare      	Back           	90 	    7	  2.2857
+Rare      	Major-Armor    	90 	   11	  2.9091
+Rare      	Minor-Armor    	90 	   18	  2.7778
+Rare      	Moderate-Armor 	90 	    8	  3.6250
+Rare      	Ranged-Thrown  	90 	    3	  1.6667
+Rare      	Ranged-Wand    	90 	    5	  1.8000
+Rare      	Ranged-Weapon  	90 	    4	  1.7500
+Rare      	Shield         	90 	    2	  2.0000
+Rare      	Staff-Weapon   	90 	    3	  1.6667
+Rare      	2H-Weapon      	90 	    2	  3.0000
+Rare      	1H-Weapon      	100	    7	  1.8571
+Rare      	2H-Weapon      	100	    3	  1.3333
+Rare      	Accessory      	100	   20	  1.8500
+Rare      	Major-Armor    	100	   25	  3.2000
+Rare      	Minor-Armor    	100	   23	  2.8696
+Rare      	Moderate-Armor 	100	   22	  3.5909
+Rare      	Shield         	100	    2	  2.5000
+Rare      	Staff-Weapon   	100	    2	  2.5000
+Rare      	Back           	100	    7	  1.2857
+Rare      	Ranged-Weapon  	100	    1	  2.0000
+Rare      	Major-Armor    	110	  194	  3.2887
+Rare      	Minor-Armor    	110	  188	  2.8511
+Rare      	Ranged-Thrown  	110	    4	  2.0000
+Rare      	1H-Weapon      	110	   71	  2.8732
+Rare      	2H-Weapon      	110	   29	  3.2759
+Rare      	Accessory      	110	   78	  2.2692
+Rare      	Back           	110	   28	  2.2143
+Rare      	Moderate-Armor 	110	  176	  3.4318
+Rare      	Ranged-Wand    	110	    5	  2.4000
+Rare      	Ranged-Weapon  	110	   15	  1.8667
+Rare      	Shield         	110	    9	  1.7778
+Rare      	Staff-Weapon   	110	   15	  3.2000
+Rare      	Accessory      	130	    3	  3.0000
+Rare      	Major-Armor    	130	    3	  3.0000
+Rare      	Minor-Armor    	130	    6	  2.5000
+Rare      	Moderate-Armor 	130	    3	  3.3333
+Rare      	Shield         	130	    1	  2.0000
+Rare      	1H-Weapon      	130	    1	  3.0000
+Rare      	Staff-Weapon   	130	    1	  3.0000
+Rare      	Accessory      	140	    2	  3.0000
+Rare      	Back           	140	    1	  4.0000
+Rare      	Major-Armor    	140	    2	  3.0000
+Rare      	Minor-Armor    	140	    3	  3.3333
+Rare      	Moderate-Armor 	140	    4	  3.0000
+Rare      	2H-Weapon      	140	    2	  3.5000
+Rare      	1H-Weapon      	140	    1	  2.0000
+Rare      	1H-Weapon      	150	    6	  1.6667
+Rare      	Accessory      	150	   12	  2.9167
+Rare      	Back           	150	    7	  2.8571
+Rare      	Major-Armor    	150	    6	  2.6667
+Rare      	Minor-Armor    	150	   13	  3.0000
+Rare      	Ranged-Thrown  	150	    1	  1.0000
+Rare      	Ranged-Wand    	150	    2	  2.0000
+Rare      	2H-Weapon      	150	    4	  1.7500
+Rare      	Moderate-Armor 	150	   11	  2.5455
+Rare      	Shield         	150	    3	  3.3333
+Rare      	Staff-Weapon   	150	    1	  1.0000
+Rare      	1H-Weapon      	160	   10	  2.4000
+Rare      	Major-Armor    	160	   18	  3.6111
+Rare      	Minor-Armor    	160	   17	  2.8824
+Rare      	Ranged-Weapon  	160	    4	  2.7500
+Rare      	Staff-Weapon   	160	    2	  3.0000
+Rare      	Accessory      	160	    9	  2.8889
+Rare      	Moderate-Armor 	160	    5	  3.2000
+Rare      	Back           	160	    3	  3.3333
+Rare      	Ranged-Wand    	160	    2	  3.0000
+Rare      	Shield         	160	    4	  3.0000
+Rare      	Accessory      	170	    9	  3.0000
+Rare      	Major-Armor    	170	   21	  3.2857
+Rare      	Minor-Armor    	170	   24	  3.0417
+Rare      	Moderate-Armor 	170	   12	  2.8333
+Rare      	1H-Weapon      	170	    8	  2.2500
+Rare      	2H-Weapon      	170	    2	  2.5000
+Rare      	Ranged-Thrown  	170	    1	  2.0000
+Rare      	Shield         	170	    3	  3.0000
+Rare      	Staff-Weapon   	170	    3	  2.0000
+Rare      	Ranged-Wand    	170	    2	  1.5000
+Rare      	Back           	170	    2	  4.0000
+Rare      	Ranged-Weapon  	170	    2	  1.5000
+Rare      	1H-Weapon      	180	   14	  2.8571
+Rare      	Accessory      	180	   20	  3.1500
+Rare      	Back           	180	    9	  3.3333
+Rare      	Major-Armor    	180	   43	  3.8837
+Rare      	Minor-Armor    	180	   79	  3.8861
+Rare      	Moderate-Armor 	180	   43	  3.8605
+Rare      	2H-Weapon      	180	    4	  3.5000
+Rare      	Ranged-Thrown  	180	    2	  3.0000
+Rare      	Ranged-Wand    	180	    4	  3.0000
+Rare      	Ranged-Weapon  	180	    2	  2.5000
+Rare      	Shield         	180	    2	  3.0000
+Rare      	Staff-Weapon   	180	    3	  3.6667
+Rare      	1H-Weapon      	200	   33	  3.7576
+Rare      	2H-Weapon      	200	   11	  3.4545
+Rare      	Accessory      	200	   44	  3.4773
+Rare      	Back           	200	   12	  3.5000
+Rare      	Major-Armor    	200	   77	  3.9351
+Rare      	Minor-Armor    	200	  116	  3.5776
+Rare      	Moderate-Armor 	200	   74	  3.9865
+Rare      	Ranged-Thrown  	200	    2	  3.0000
+Rare      	Ranged-Wand    	200	    5	  3.8000
+Rare      	Ranged-Weapon  	200	    7	  3.1429
+Rare      	Shield         	200	    5	  3.4000
+Rare      	Staff-Weapon   	200	   10	  4.2000
+Epic      	Accessory      	30 	    1	  1.0000
+Epic      	Staff-Weapon   	40 	    2	  1.5000
+Epic      	Shield         	40 	    2	  2.0000
+Epic      	Accessory      	40 	    2	  2.0000
+Epic      	Major-Armor    	40 	    2	  2.5000
+Epic      	Minor-Armor    	40 	    7	  2.7143
+Epic      	Ranged-Weapon  	40 	    1	  1.0000
+Epic      	Shield         	50 	    1	  2.0000
+Epic      	Accessory      	50 	    2	  2.5000
+Epic      	Minor-Armor    	50 	    8	  2.6250
+Epic      	Staff-Weapon   	50 	    1	  3.0000
+Epic      	Major-Armor    	50 	    2	  2.5000
+Epic      	Moderate-Armor 	50 	    4	  2.0000
+Epic      	1H-Weapon      	50 	    1	  2.0000
+Epic      	Accessory      	60 	   39	  2.1795
+Epic      	Major-Armor    	60 	   52	  2.6923
+Epic      	Moderate-Armor 	60 	   42	  2.8095
+Epic      	Minor-Armor    	60 	   94	  2.8404
+Epic      	1H-Weapon      	60 	   16	  1.5000
+Epic      	Back           	60 	   18	  2.4444
+Epic      	Staff-Weapon   	60 	    7	  2.0000
+Epic      	2H-Weapon      	60 	    8	  2.5000
+Epic      	Ranged-Wand    	60 	    2	  2.0000
+Epic      	Shield         	60 	    5	  1.2000
+Epic      	Ranged-Weapon  	60 	    1	  2.0000
+Epic      	1H-Weapon      	70 	   57	  1.7018
+Epic      	2H-Weapon      	70 	   22	  2.2273
+Epic      	Accessory      	70 	   46	  1.9783
+Epic      	Back           	70 	   15	  1.9333
+Epic      	Major-Armor    	70 	   85	  2.7412
+Epic      	Minor-Armor    	70 	  146	  2.7877
+Epic      	Ranged-Wand    	70 	    4	  1.5000
+Epic      	Ranged-Weapon  	70 	   14	  1.2143
+Epic      	Staff-Weapon   	70 	   13	  2.6154
+Epic      	Moderate-Armor 	70 	   88	  2.9545
+Epic      	Shield         	70 	    6	  1.8333
+Epic      	Accessory      	80 	   32	  1.7188
+Epic      	Back           	80 	    9	  1.8889
+Epic      	Major-Armor    	80 	   40	  2.9000
+Epic      	Minor-Armor    	80 	   73	  2.3151
+Epic      	1H-Weapon      	80 	   17	  1.7059
+Epic      	2H-Weapon      	80 	    8	  2.0000
+Epic      	Moderate-Armor 	80 	   42	  2.6905
+Epic      	Ranged-Weapon  	80 	    2	  1.0000
+Epic      	Shield         	80 	    3	  1.6667
+Epic      	Staff-Weapon   	80 	    4	  2.2500
+Epic      	Ranged-Wand    	80 	    2	  2.0000
+Epic      	1H-Weapon      	90 	    1	  3.0000
+Epic      	2H-Weapon      	90 	    1	  2.0000
+Epic      	Accessory      	90 	   20	  2.2500
+Epic      	Back           	90 	    5	  2.2000
+Epic      	Major-Armor    	90 	   16	  2.5000
+Epic      	Minor-Armor    	90 	   13	  2.6154
+Epic      	Moderate-Armor 	90 	    6	  2.6667
+Epic      	Ranged-Wand    	90 	    1	  3.0000
+Epic      	Ranged-Weapon  	90 	    2	  2.5000
+Epic      	Shield         	90 	    2	  1.5000
+Epic      	Staff-Weapon   	90 	    1	  3.0000
+Epic      	1H-Weapon      	100	   21	  1.9524
+Epic      	2H-Weapon      	100	   11	  2.2727
+Epic      	Accessory      	100	   22	  2.0909
+Epic      	Back           	100	    6	  1.6667
+Epic      	Major-Armor    	100	   49	  3.5306
+Epic      	Minor-Armor    	100	   41	  3.1220
+Epic      	Moderate-Armor 	100	   52	  3.4231
+Epic      	Ranged-Thrown  	100	    1	  3.0000
+Epic      	Ranged-Weapon  	100	    5	  1.8000
+Epic      	Staff-Weapon   	100	    3	  2.6667
+Epic      	Shield         	100	    2	  2.5000
+Epic      	1H-Weapon      	110	   13	  2.0769
+Epic      	Accessory      	110	   51	  2.2157
+Epic      	Back           	110	   17	  2.1765
+Epic      	Major-Armor    	110	   47	  2.7660
+Epic      	Minor-Armor    	110	  132	  3.1212
+Epic      	Moderate-Armor 	110	   34	  3.0882
+Epic      	Ranged-Wand    	110	    3	  2.3333
+Epic      	Shield         	110	    9	  2.4444
+Epic      	Staff-Weapon   	110	    5	  3.2000
+Epic      	2H-Weapon      	110	    3	  2.0000
+Epic      	Ranged-Thrown  	110	    2	  2.0000
+Epic      	Ranged-Weapon  	110	    2	  1.0000
+Epic      	1H-Weapon      	120	   25	  3.0000
+Epic      	2H-Weapon      	120	   12	  3.0833
+Epic      	Accessory      	120	   37	  2.5676
+Epic      	Back           	120	   18	  2.6111
+Epic      	Major-Armor    	120	  135	  3.5259
+Epic      	Minor-Armor    	120	  227	  3.5683
+Epic      	Moderate-Armor 	120	  133	  3.4812
+Epic      	Ranged-Weapon  	120	    3	  1.6667
+Epic      	Staff-Weapon   	120	    3	  2.6667
+Epic      	Ranged-Thrown  	120	    2	  2.0000
+Epic      	Ranged-Wand    	120	    2	  3.0000
+Epic      	Shield         	120	    5	  2.4000
+Epic      	Accessory      	130	    8	  2.3750
+Epic      	Back           	130	    9	  2.8889
+Epic      	Major-Armor    	130	   88	  3.7841
+Epic      	Minor-Armor    	130	   89	  3.4719
+Epic      	1H-Weapon      	130	   35	  2.8571
+Epic      	2H-Weapon      	130	   11	  3.0909
+Epic      	Ranged-Wand    	130	    4	  2.0000
+Epic      	Ranged-Weapon  	130	    3	  2.0000
+Epic      	Staff-Weapon   	130	    6	  2.8333
+Epic      	Moderate-Armor 	130	   84	  3.7262
+Epic      	Ranged-Thrown  	130	    2	  3.0000
+Epic      	Shield         	130	    3	  2.6667
+Epic      	1H-Weapon      	140	   40	  2.8500
+Epic      	2H-Weapon      	140	   10	  3.5000
+Epic      	Accessory      	140	   43	  2.9302
+Epic      	Back           	140	    6	  2.8333
+Epic      	Major-Armor    	140	  118	  3.8390
+Epic      	Minor-Armor    	140	  163	  3.6380
+Epic      	Moderate-Armor 	140	   96	  3.7188
+Epic      	Ranged-Thrown  	140	    2	  2.5000
+Epic      	Ranged-Wand    	140	    5	  2.6000
+Epic      	Ranged-Weapon  	140	    7	  2.4286
+Epic      	Shield         	140	    7	  2.7143
+Epic      	Staff-Weapon   	140	    7	  3.5714
+Epic      	1H-Weapon      	150	   30	  3.3333
+Epic      	2H-Weapon      	150	    6	  3.5000
+Epic      	Accessory      	150	   35	  3.1143
+Epic      	Back           	150	    7	  3.7143
+Epic      	Major-Armor    	150	   78	  3.9872
+Epic      	Moderate-Armor 	150	   69	  3.9565
+Epic      	Ranged-Weapon  	150	    5	  2.4000
+Epic      	Shield         	150	    7	  2.8571
+Epic      	Staff-Weapon   	150	    7	  3.8571
+Epic      	Minor-Armor    	150	  130	  4.1769
+Epic      	Ranged-Thrown  	150	    2	  2.5000
+Epic      	Ranged-Wand    	150	    5	  2.8000
+Epic      	1H-Weapon      	160	    4	  2.7500
+Epic      	2H-Weapon      	160	    1	  3.0000
+Epic      	Back           	160	    2	  3.0000
+Epic      	Minor-Armor    	160	    5	  3.8000
+Epic      	Moderate-Armor 	160	    9	  3.6667
+Epic      	Staff-Weapon   	160	    1	  4.0000
+Epic      	1H-Weapon      	200	   52	  3.8269
+Epic      	2H-Weapon      	200	   11	  3.8182
+Epic      	Accessory      	200	   64	  4.0469
+Epic      	Back           	200	   19	  4.0526
+Epic      	Major-Armor    	200	  155	  4.1935
+Epic      	Minor-Armor    	200	  205	  4.1902
+Epic      	Moderate-Armor 	200	  158	  4.2405
+Epic      	Ranged-Thrown  	200	    3	  3.6667
+Epic      	Ranged-Wand    	200	    6	  3.8333
+Epic      	Ranged-Weapon  	200	    9	  3.4444
+Epic      	Shield         	200	   10	  3.7000
+Epic      	Staff-Weapon   	200	   12	  4.1667
+Epic      	1H-Weapon      	210	   61	  4.3607
+Epic      	2H-Weapon      	210	   19	  4.1579
+Epic      	Accessory      	210	   69	  4.2029
+Epic      	Back           	210	   32	  4.3438
+Epic      	Major-Armor    	210	  214	  4.4720
+Epic      	Minor-Armor    	210	  263	  4.3574
+Epic      	Moderate-Armor 	210	  199	  4.5528
+Epic      	Ranged-Thrown  	210	    2	  4.0000
+Epic      	Ranged-Wand    	210	   10	  4.2000
+Epic      	Ranged-Weapon  	210	   14	  4.2143
+Epic      	Shield         	210	   10	  4.3000
+Epic      	Staff-Weapon   	210	   19	  4.5789
+Epic      	1H-Weapon      	220	    6	  4.1667
+Epic      	2H-Weapon      	220	    1	  4.0000
+Epic      	Accessory      	220	   68	  4.5441
+Epic      	Back           	220	   20	  4.6000
+Epic      	Major-Armor    	220	  102	  4.7059
+Epic      	Minor-Armor    	220	  168	  4.7738
+Epic      	Moderate-Armor 	220	   93	  4.8172
+Epic      	Ranged-Weapon  	220	    1	  3.0000
+Epic      	Shield         	220	    3	  4.6667
+Epic      	Staff-Weapon   	220	    1	  5.0000
+Epic      	1H-Weapon      	230	   86	  4.5349
+Epic      	2H-Weapon      	230	   25	  4.4000
+Epic      	Accessory      	230	   44	  4.5909
+Epic      	Back           	230	   12	  4.6667
+Epic      	Major-Armor    	230	  224	  4.5670
+Epic      	Minor-Armor    	230	  171	  4.6667
+Epic      	Moderate-Armor 	230	  237	  4.6076
+Epic      	Ranged-Thrown  	230	    4	  4.7500
+Epic      	Ranged-Wand    	230	   10	  4.9000
+Epic      	Ranged-Weapon  	230	   17	  4.5294
+Epic      	Shield         	230	   11	  4.1818
+Epic      	Staff-Weapon   	230	   24	  4.9167
+Epic      	1H-Weapon      	240	   55	  4.5818
+Epic      	2H-Weapon      	240	   17	  4.4706
+Epic      	Accessory      	240	   60	  4.5500
+Epic      	Back           	240	   22	  4.6364
+Epic      	Major-Armor    	240	  142	  4.8169
+Epic      	Minor-Armor    	240	  189	  4.8201
+Epic      	Moderate-Armor 	240	  149	  4.8658
+Epic      	Ranged-Thrown  	240	    3	  4.6667
+Epic      	Ranged-Wand    	240	    7	  4.8571
+Epic      	Ranged-Weapon  	240	   12	  4.6667
+Epic      	Shield         	240	    8	  4.2500
+Epic      	Staff-Weapon   	240	   13	  4.9231
+Epic      	1H-Weapon      	250	   57	  4.7018
+Epic      	2H-Weapon      	250	   20	  4.3500
+Epic      	Accessory      	250	   64	  4.5781
+Epic      	Back           	250	   31	  4.6452
+Epic      	Major-Armor    	250	  248	  4.6976
+Epic      	Minor-Armor    	250	  204	  4.7206
+Epic      	Moderate-Armor 	250	  214	  4.7383
+Epic      	Ranged-Thrown  	250	    1	  5.0000
+Epic      	Ranged-Wand    	250	    2	  5.0000
+Epic      	Ranged-Weapon  	250	   11	  4.6364
+Epic      	Shield         	250	   10	  4.2000
+Epic      	Staff-Weapon   	250	   15	  4.9333
+Epic      	1H-Weapon      	260	   41	  4.3171
+Epic      	2H-Weapon      	260	   12	  4.0000
+Epic      	Accessory      	260	   58	  4.6207
+Epic      	Back           	260	   22	  4.5909
+Epic      	Major-Armor    	260	   93	  4.8172
+Epic      	Minor-Armor    	260	  155	  4.8258
+Epic      	Moderate-Armor 	260	   72	  4.9167
+Epic      	Ranged-Thrown  	260	    3	  4.6667
+Epic      	Ranged-Wand    	260	    8	  4.8750
+Epic      	Ranged-Weapon  	260	    8	  4.1250
+Epic      	Shield         	260	    4	  4.5000
+Epic      	Staff-Weapon   	260	   12	  4.7500
+Epic      	Accessory      	270	   39	  4.6410
+Epic      	Major-Armor    	270	   87	  4.8506
+Epic      	Minor-Armor    	270	   84	  4.8333
+Epic      	Moderate-Armor 	270	   87	  4.9080
+Epic      	Shield         	270	    5	  4.0000
+Epic      	1H-Weapon      	270	   37	  4.2703
+Epic      	2H-Weapon      	270	   10	  4.0000
+Epic      	Back           	270	   17	  4.7647
+Epic      	Ranged-Weapon  	270	    6	  4.0000
+Epic      	Staff-Weapon   	270	   11	  4.7273
+Epic      	Ranged-Wand    	270	    2	  5.0000
+Epic      	1H-Weapon      	280	    5	  5.0000
+Epic      	2H-Weapon      	280	    2	  4.5000
+Epic      	Accessory      	280	    3	  4.3333
+Epic      	Back           	280	    1	  5.0000
+Epic      	Minor-Armor    	280	    8	  5.0000
+Epic      	Ranged-Weapon  	280	    1	  5.0000
+Epic      	Staff-Weapon   	280	    1	  5.0000
+Legendary 	1H-Weapon      	80 	    1	  2.0000
+Legendary 	2H-Weapon      	80 	    1	  2.0000
+Legendary 	Staff-Weapon   	90 	    4	  2.7500
+Legendary 	1H-Weapon      	150	    2	  3.0000
+Legendary 	Ranged-Weapon  	160	    1	  2.0000
+Legendary 	1H-Weapon      	240	    1	  5.0000
+Legendary 	2H-Weapon      	280	    1	  4.0000
+
+
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  4. Create and Populate Table: ACSBV3_0604A_stat                                                                      ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:58:51                                                                                            0604A (v1.0)
+                                                                                                                           
+Slot1_Count
+1635
+
+
+Slot2_Count
+321
+
+
+Slot3_Count
+321
+
+
+Quality	QualityName	ItemLevel	ItemLevelBracket	slot_group	avg_raw	avg_3pnt	avg_mono
+4	Epic	56	40	1H-Weapon	2.00000	0.00000	0.00000
+4	Epic	71	60	1H-Weapon	1.74029	0.00000	0.00000
+4	Epic	86	80	1H-Weapon	1.85000	0.00000	0.00000
+4	Epic	107	100	1H-Weapon	1.90455	0.00000	0.00000
+4	Epic	130	120	1H-Weapon	2.75709	0.00000	0.00000
+4	Epic	148	140	1H-Weapon	2.95908	0.00000	0.00000
+4	Epic	164	160	1H-Weapon	2.75000	0.00000	0.00000
+4	Epic	211	200	1H-Weapon	4.22766	0.00000	0.00000
+4	Epic	232	220	1H-Weapon	4.36474	0.00000	0.00000
+4	Epic	251	240	1H-Weapon	4.69536	0.00000	0.00000
+4	Epic	271	260	1H-Weapon	4.41804	0.00000	0.00000
+4	Epic	284	280	1H-Weapon	5.00000	0.00000	0.00000
+4	Epic	70	60	2H-Weapon	2.50000	0.00000	0.00000
+4	Epic	85	80	2H-Weapon	2.20000	0.00000	0.00000
+4	Epic	107	100	2H-Weapon	2.25000	0.00000	0.00000
+4	Epic	130	120	2H-Weapon	2.47619	0.00000	0.00000
+4	Epic	148	140	2H-Weapon	3.15833	0.00000	0.00000
+4	Epic	164	160	2H-Weapon	3.00000	0.00000	0.00000
+4	Epic	211	200	2H-Weapon	4.05050	0.00000	0.00000
+4	Epic	232	220	2H-Weapon	4.21345	0.00000	0.00000
+4	Epic	251	240	2H-Weapon	4.40228	0.00000	0.00000
+4	Epic	271	260	2H-Weapon	4.06349	0.00000	0.00000
+4	Epic	284	280	2H-Weapon	4.50000	0.00000	0.00000
+4	Epic	36	20	Accessory	1.00000	0.00000	0.00000
+4	Epic	50	40	Accessory	2.25000	0.00000	0.00000
+4	Epic	70	60	Accessory	2.12650	0.00000	0.00000
+4	Epic	87	80	Accessory	2.10636	0.00000	0.00000
+4	Epic	109	100	Accessory	2.31587	0.00000	0.00000
+4	Epic	129	120	Accessory	2.39732	0.00000	0.00000
+4	Epic	149	140	Accessory	3.24164	0.00000	0.00000
+4	Epic	210	200	Accessory	3.89712	0.00000	0.00000
+4	Epic	232	220	Accessory	4.59110	0.00000	0.00000
+4	Epic	253	240	Accessory	4.61357	0.00000	0.00000
+4	Epic	270	260	Accessory	4.65326	0.00000	0.00000
+4	Epic	284	280	Accessory	4.33333	0.00000	0.00000
+4	Epic	71	60	Back	1.95385	0.00000	0.00000
+4	Epic	85	80	Back	1.86667	0.00000	0.00000
+4	Epic	108	100	Back	1.79643	0.00000	0.00000
+4	Epic	129	120	Back	2.44762	0.00000	0.00000
+4	Epic	151	140	Back	3.20833	0.00000	0.00000
+4	Epic	164	160	Back	3.00000	0.00000	0.00000
+4	Epic	211	200	Back	4.26358	0.00000	0.00000
+4	Epic	232	220	Back	4.64445	0.00000	0.00000
+4	Epic	252	240	Back	4.69015	0.00000	0.00000
+4	Epic	271	260	Back	4.67273	0.00000	0.00000
+4	Epic	284	280	Back	5.00000	0.00000	0.00000
+4	Epic	51	40	Major-Armor	2.50000	0.00000	0.00000
+4	Epic	69	60	Major-Armor	2.40621	0.00000	0.00000
+4	Epic	86	80	Major-Armor	2.55102	0.00000	0.00000
+4	Epic	107	100	Major-Armor	3.03871	0.00000	0.00000
+4	Epic	129	120	Major-Armor	3.38102	0.00000	0.00000
+4	Epic	149	140	Major-Armor	3.78763	0.00000	0.00000
+4	Epic	211	200	Major-Armor	4.40711	0.00000	0.00000
+4	Epic	232	220	Major-Armor	4.70687	0.00000	0.00000
+4	Epic	252	240	Major-Armor	4.80726	0.00000	0.00000
+4	Epic	271	260	Major-Armor	4.88138	0.00000	0.00000
+4	Epic	52	40	Minor-Armor	2.66000	0.00000	0.00000
+4	Epic	70	60	Minor-Armor	2.49348	0.00000	0.00000
+4	Epic	85	80	Minor-Armor	2.34188	0.00000	0.00000
+4	Epic	109	100	Minor-Armor	3.19793	0.00000	0.00000
+4	Epic	129	120	Minor-Armor	3.31470	0.00000	0.00000
+4	Epic	150	140	Minor-Armor	4.11272	0.00000	0.00000
+4	Epic	164	160	Minor-Armor	3.80000	0.00000	0.00000
+4	Epic	211	200	Minor-Armor	4.37794	0.00000	0.00000
+4	Epic	232	220	Minor-Armor	4.76634	0.00000	0.00000
+4	Epic	252	240	Minor-Armor	4.81235	0.00000	0.00000
+4	Epic	271	260	Minor-Armor	4.85642	0.00000	0.00000
+4	Epic	284	280	Minor-Armor	5.00000	0.00000	0.00000
+4	Epic	57	40	Moderate-Armor	2.00000	0.00000	0.00000
+4	Epic	70	60	Moderate-Armor	2.52652	0.00000	0.00000
+4	Epic	86	80	Moderate-Armor	2.62778	0.00000	0.00000
+4	Epic	108	100	Moderate-Armor	2.98197	0.00000	0.00000
+4	Epic	129	120	Moderate-Armor	3.35251	0.00000	0.00000
+4	Epic	149	140	Moderate-Armor	3.83879	0.00000	0.00000
+4	Epic	164	160	Moderate-Armor	3.66667	0.00000	0.00000
+4	Epic	211	200	Moderate-Armor	4.47142	0.00000	0.00000
+4	Epic	232	220	Moderate-Armor	4.75075	0.00000	0.00000
+4	Epic	252	240	Moderate-Armor	4.84740	0.00000	0.00000
+4	Epic	271	260	Moderate-Armor	5.17477	0.00000	0.00000
+4	Epic	108	100	Ranged-Thrown	2.50000	0.00000	0.00000
+4	Epic	130	120	Ranged-Thrown	2.50000	0.00000	0.00000
+4	Epic	147	140	Ranged-Thrown	2.50000	0.00000	0.00000
+4	Epic	207	200	Ranged-Thrown	3.83334	0.00000	0.00000
+4	Epic	232	220	Ranged-Thrown	4.75000	0.00000	0.00000
+4	Epic	248	240	Ranged-Thrown	4.83334	0.00000	0.00000
+4	Epic	264	260	Ranged-Thrown	4.66667	0.00000	0.00000
+4	Epic	70	60	Ranged-Wand	1.70000	0.00000	0.00000
+4	Epic	87	80	Ranged-Wand	2.50000	0.00000	0.00000
+4	Epic	113	100	Ranged-Wand	2.25000	0.00000	0.00000
+4	Epic	130	120	Ranged-Wand	2.50000	0.00000	0.00000
+4	Epic	147	140	Ranged-Wand	2.65556	0.00000	0.00000
+4	Epic	211	200	Ranged-Wand	4.27778	0.00000	0.00000
+4	Epic	232	220	Ranged-Wand	4.90000	0.00000	0.00000
+4	Epic	248	240	Ranged-Wand	4.92857	0.00000	0.00000
+4	Epic	271	260	Ranged-Wand	4.93750	0.00000	0.00000
+4	Epic	48	40	Ranged-Weapon	1.00000	0.00000	0.00000
+4	Epic	74	60	Ranged-Weapon	1.43750	0.00000	0.00000
+4	Epic	85	80	Ranged-Weapon	1.50000	0.00000	0.00000
+4	Epic	107	100	Ranged-Weapon	1.44444	0.00000	0.00000
+4	Epic	128	120	Ranged-Weapon	1.83333	0.00000	0.00000
+4	Epic	148	140	Ranged-Weapon	2.31250	0.00000	0.00000
+4	Epic	211	200	Ranged-Weapon	3.92592	0.00000	0.00000
+4	Epic	232	220	Ranged-Weapon	3.95513	0.00000	0.00000
+4	Epic	251	240	Ranged-Weapon	4.65278	0.00000	0.00000
+4	Epic	271	260	Ranged-Weapon	4.20833	0.00000	0.00000
+4	Epic	284	280	Ranged-Weapon	5.00000	0.00000	0.00000
+4	Epic	46	40	Shield	2.00000	0.00000	0.00000
+4	Epic	73	60	Shield	1.62500	0.00000	0.00000
+4	Epic	87	80	Shield	1.62500	0.00000	0.00000
+4	Epic	110	100	Shield	2.45000	0.00000	0.00000
+4	Epic	128	120	Shield	2.41667	0.00000	0.00000
+4	Epic	150	140	Shield	2.81667	0.00000	0.00000
+4	Epic	211	200	Shield	4.15000	0.00000	0.00000
+4	Epic	232	220	Shield	4.55556	0.00000	0.00000
+4	Epic	251	240	Shield	4.25000	0.00000	0.00000
+4	Epic	270	260	Shield	4.22222	0.00000	0.00000
+4	Epic	47	40	Staff-Weapon	2.00000	0.00000	0.00000
+4	Epic	71	60	Staff-Weapon	2.29167	0.00000	0.00000
+4	Epic	86	80	Staff-Weapon	2.50000	0.00000	0.00000
+4	Epic	108	100	Staff-Weapon	2.81250	0.00000	0.00000
+4	Epic	128	120	Staff-Weapon	2.97222	0.00000	0.00000
+4	Epic	148	140	Staff-Weapon	3.52917	0.00000	0.00000
+4	Epic	164	160	Staff-Weapon	4.00000	0.00000	0.00000
+4	Epic	211	200	Staff-Weapon	4.50000	0.00000	0.00000
+4	Epic	232	220	Staff-Weapon	4.93277	0.00000	0.00000
+4	Epic	251	240	Staff-Weapon	4.94406	0.00000	0.00000
+4	Epic	271	260	Staff-Weapon	4.79167	0.00000	0.00000
+4	Epic	284	280	Staff-Weapon	5.00000	0.00000	0.00000
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5. Apply 3-Point Smoothing Window to Table: ACSBV3_0604A_stat                                                        ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:58:53                                                                                            0604A (v1.0)
+                                                                                                                           
+Quality	QualityName	ItemLevel	ItemLevelBracket	slot_group	avg_raw	avg_3pnt	avg_mono
+4	Epic	56	40	1H-Weapon	2.00000	1.87015	0.00000
+4	Epic	71	60	1H-Weapon	1.74029	1.86343	0.00000
+4	Epic	86	80	1H-Weapon	1.85000	1.83161	0.00000
+4	Epic	107	100	1H-Weapon	1.90455	2.17055	0.00000
+4	Epic	130	120	1H-Weapon	2.75709	2.54024	0.00000
+4	Epic	148	140	1H-Weapon	2.95908	2.82206	0.00000
+4	Epic	164	160	1H-Weapon	2.75000	3.31225	0.00000
+4	Epic	211	200	1H-Weapon	4.22766	3.78080	0.00000
+4	Epic	232	220	1H-Weapon	4.36474	4.42925	0.00000
+4	Epic	251	240	1H-Weapon	4.69536	4.49271	0.00000
+4	Epic	271	260	1H-Weapon	4.41804	4.70447	0.00000
+4	Epic	284	280	1H-Weapon	5.00000	4.70902	0.00000
+4	Epic	70	60	2H-Weapon	2.50000	2.35000	0.00000
+4	Epic	85	80	2H-Weapon	2.20000	2.31667	0.00000
+4	Epic	107	100	2H-Weapon	2.25000	2.30873	0.00000
+4	Epic	130	120	2H-Weapon	2.47619	2.62817	0.00000
+4	Epic	148	140	2H-Weapon	3.15833	2.87817	0.00000
+4	Epic	164	160	2H-Weapon	3.00000	3.40294	0.00000
+4	Epic	211	200	2H-Weapon	4.05050	3.75465	0.00000
+4	Epic	232	220	2H-Weapon	4.21345	4.22208	0.00000
+4	Epic	251	240	2H-Weapon	4.40228	4.22641	0.00000
+4	Epic	271	260	2H-Weapon	4.06349	4.32192	0.00000
+4	Epic	284	280	2H-Weapon	4.50000	4.28175	0.00000
+4	Epic	36	20	Accessory	1.00000	1.62500	0.00000
+4	Epic	50	40	Accessory	2.25000	1.79217	0.00000
+4	Epic	70	60	Accessory	2.12650	2.16095	0.00000
+4	Epic	87	80	Accessory	2.10636	2.18291	0.00000
+4	Epic	109	100	Accessory	2.31587	2.27318	0.00000
+4	Epic	129	120	Accessory	2.39732	2.65161	0.00000
+4	Epic	149	140	Accessory	3.24164	3.17869	0.00000
+4	Epic	210	200	Accessory	3.89712	3.90995	0.00000
+4	Epic	232	220	Accessory	4.59110	4.36726	0.00000
+4	Epic	253	240	Accessory	4.61357	4.61931	0.00000
+4	Epic	270	260	Accessory	4.65326	4.53339	0.00000
+4	Epic	284	280	Accessory	4.33333	4.49330	0.00000
+4	Epic	71	60	Back	1.95385	1.91026	0.00000
+4	Epic	85	80	Back	1.86667	1.87232	0.00000
+4	Epic	108	100	Back	1.79643	2.03691	0.00000
+4	Epic	129	120	Back	2.44762	2.48413	0.00000
+4	Epic	151	140	Back	3.20833	2.88532	0.00000
+4	Epic	164	160	Back	3.00000	3.49064	0.00000
+4	Epic	211	200	Back	4.26358	3.96934	0.00000
+4	Epic	232	220	Back	4.64445	4.53273	0.00000
+4	Epic	252	240	Back	4.69015	4.66911	0.00000
+4	Epic	271	260	Back	4.67273	4.78763	0.00000
+4	Epic	284	280	Back	5.00000	4.83637	0.00000
+4	Epic	51	40	Major-Armor	2.50000	2.45311	0.00000
+4	Epic	69	60	Major-Armor	2.40621	2.48574	0.00000
+4	Epic	86	80	Major-Armor	2.55102	2.66531	0.00000
+4	Epic	107	100	Major-Armor	3.03871	2.99025	0.00000
+4	Epic	129	120	Major-Armor	3.38102	3.40245	0.00000
+4	Epic	149	140	Major-Armor	3.78763	3.85859	0.00000
+4	Epic	211	200	Major-Armor	4.40711	4.30054	0.00000
+4	Epic	232	220	Major-Armor	4.70687	4.64041	0.00000
+4	Epic	252	240	Major-Armor	4.80726	4.79850	0.00000
+4	Epic	271	260	Major-Armor	4.88138	4.84432	0.00000
+4	Epic	52	40	Minor-Armor	2.66000	2.57674	0.00000
+4	Epic	70	60	Minor-Armor	2.49348	2.49845	0.00000
+4	Epic	85	80	Minor-Armor	2.34188	2.67776	0.00000
+4	Epic	109	100	Minor-Armor	3.19793	2.95150	0.00000
+4	Epic	129	120	Minor-Armor	3.31470	3.54178	0.00000
+4	Epic	150	140	Minor-Armor	4.11272	3.74247	0.00000
+4	Epic	164	160	Minor-Armor	3.80000	4.09689	0.00000
+4	Epic	211	200	Minor-Armor	4.37794	4.31476	0.00000
+4	Epic	232	220	Minor-Armor	4.76634	4.65221	0.00000
+4	Epic	252	240	Minor-Armor	4.81235	4.81170	0.00000
+4	Epic	271	260	Minor-Armor	4.85642	4.88959	0.00000
+4	Epic	284	280	Minor-Armor	5.00000	4.92821	0.00000
+4	Epic	57	40	Moderate-Armor	2.00000	2.26326	0.00000
+4	Epic	70	60	Moderate-Armor	2.52652	2.38477	0.00000
+4	Epic	86	80	Moderate-Armor	2.62778	2.71209	0.00000
+4	Epic	108	100	Moderate-Armor	2.98197	2.98742	0.00000
+4	Epic	129	120	Moderate-Armor	3.35251	3.39109	0.00000
+4	Epic	149	140	Moderate-Armor	3.83879	3.61932	0.00000
+4	Epic	164	160	Moderate-Armor	3.66667	3.99229	0.00000
+4	Epic	211	200	Moderate-Armor	4.47142	4.29628	0.00000
+4	Epic	232	220	Moderate-Armor	4.75075	4.68986	0.00000
+4	Epic	252	240	Moderate-Armor	4.84740	4.92431	0.00000
+4	Epic	271	260	Moderate-Armor	5.17477	5.01109	0.00000
+4	Epic	108	100	Ranged-Thrown	2.50000	2.50000	0.00000
+4	Epic	130	120	Ranged-Thrown	2.50000	2.50000	0.00000
+4	Epic	147	140	Ranged-Thrown	2.50000	2.94445	0.00000
+4	Epic	207	200	Ranged-Thrown	3.83334	3.69445	0.00000
+4	Epic	232	220	Ranged-Thrown	4.75000	4.47223	0.00000
+4	Epic	248	240	Ranged-Thrown	4.83334	4.75000	0.00000
+4	Epic	264	260	Ranged-Thrown	4.66667	4.75001	0.00000
+4	Epic	70	60	Ranged-Wand	1.70000	2.10000	0.00000
+4	Epic	87	80	Ranged-Wand	2.50000	2.15000	0.00000
+4	Epic	113	100	Ranged-Wand	2.25000	2.41667	0.00000
+4	Epic	130	120	Ranged-Wand	2.50000	2.46852	0.00000
+4	Epic	147	140	Ranged-Wand	2.65556	3.14445	0.00000
+4	Epic	211	200	Ranged-Wand	4.27778	3.94445	0.00000
+4	Epic	232	220	Ranged-Wand	4.90000	4.70212	0.00000
+4	Epic	248	240	Ranged-Wand	4.92857	4.92202	0.00000
+4	Epic	271	260	Ranged-Wand	4.93750	4.93304	0.00000
+4	Epic	48	40	Ranged-Weapon	1.00000	1.21875	0.00000
+4	Epic	74	60	Ranged-Weapon	1.43750	1.31250	0.00000
+4	Epic	85	80	Ranged-Weapon	1.50000	1.46065	0.00000
+4	Epic	107	100	Ranged-Weapon	1.44444	1.59259	0.00000
+4	Epic	128	120	Ranged-Weapon	1.83333	1.86342	0.00000
+4	Epic	148	140	Ranged-Weapon	2.31250	2.69058	0.00000
+4	Epic	211	200	Ranged-Weapon	3.92592	3.39785	0.00000
+4	Epic	232	220	Ranged-Weapon	3.95513	4.17794	0.00000
+4	Epic	251	240	Ranged-Weapon	4.65278	4.27208	0.00000
+4	Epic	271	260	Ranged-Weapon	4.20833	4.62037	0.00000
+4	Epic	284	280	Ranged-Weapon	5.00000	4.60417	0.00000
+4	Epic	46	40	Shield	2.00000	1.81250	0.00000
+4	Epic	73	60	Shield	1.62500	1.75000	0.00000
+4	Epic	87	80	Shield	1.62500	1.90000	0.00000
+4	Epic	110	100	Shield	2.45000	2.16389	0.00000
+4	Epic	128	120	Shield	2.41667	2.56111	0.00000
+4	Epic	150	140	Shield	2.81667	3.12778	0.00000
+4	Epic	211	200	Shield	4.15000	3.84074	0.00000
+4	Epic	232	220	Shield	4.55556	4.31852	0.00000
+4	Epic	251	240	Shield	4.25000	4.34259	0.00000
+4	Epic	270	260	Shield	4.22222	4.23611	0.00000
+4	Epic	47	40	Staff-Weapon	2.00000	2.14584	0.00000
+4	Epic	71	60	Staff-Weapon	2.29167	2.26389	0.00000
+4	Epic	86	80	Staff-Weapon	2.50000	2.53472	0.00000
+4	Epic	108	100	Staff-Weapon	2.81250	2.76157	0.00000
+4	Epic	128	120	Staff-Weapon	2.97222	3.10463	0.00000
+4	Epic	148	140	Staff-Weapon	3.52917	3.50046	0.00000
+4	Epic	164	160	Staff-Weapon	4.00000	4.00972	0.00000
+4	Epic	211	200	Staff-Weapon	4.50000	4.47759	0.00000
+4	Epic	232	220	Staff-Weapon	4.93277	4.79228	0.00000
+4	Epic	251	240	Staff-Weapon	4.94406	4.88950	0.00000
+4	Epic	271	260	Staff-Weapon	4.79167	4.91191	0.00000
+4	Epic	284	280	Staff-Weapon	5.00000	4.89584	0.00000
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  6. Apply Monotonic Enforcement to Table: ACSBV3_0604A_stat                                                           ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:58:54                                                                                            0604A (v1.0)
+                                                                                                                           
+Quality	QualityName	ItemLevel	ItemLevelBracket	slot_group	avg_raw	avg_3pnt	avg_mono
+4	Epic	56	40	1H-Weapon	2.00000	1.87015	1.87015
+4	Epic	71	60	1H-Weapon	1.74029	1.86343	1.87015
+4	Epic	86	80	1H-Weapon	1.85000	1.83161	1.87015
+4	Epic	107	100	1H-Weapon	1.90455	2.17055	2.17055
+4	Epic	130	120	1H-Weapon	2.75709	2.54024	2.54024
+4	Epic	148	140	1H-Weapon	2.95908	2.82206	2.82206
+4	Epic	164	160	1H-Weapon	2.75000	3.31225	3.31225
+4	Epic	211	200	1H-Weapon	4.22766	3.78080	3.78080
+4	Epic	232	220	1H-Weapon	4.36474	4.42925	4.42925
+4	Epic	251	240	1H-Weapon	4.69536	4.49271	4.49271
+4	Epic	271	260	1H-Weapon	4.41804	4.70447	4.70447
+4	Epic	284	280	1H-Weapon	5.00000	4.70902	4.70902
+4	Epic	70	60	2H-Weapon	2.50000	2.35000	2.35000
+4	Epic	85	80	2H-Weapon	2.20000	2.31667	2.35000
+4	Epic	107	100	2H-Weapon	2.25000	2.30873	2.35000
+4	Epic	130	120	2H-Weapon	2.47619	2.62817	2.62817
+4	Epic	148	140	2H-Weapon	3.15833	2.87817	2.87817
+4	Epic	164	160	2H-Weapon	3.00000	3.40294	3.40294
+4	Epic	211	200	2H-Weapon	4.05050	3.75465	3.75465
+4	Epic	232	220	2H-Weapon	4.21345	4.22208	4.22208
+4	Epic	251	240	2H-Weapon	4.40228	4.22641	4.22641
+4	Epic	271	260	2H-Weapon	4.06349	4.32192	4.32192
+4	Epic	284	280	2H-Weapon	4.50000	4.28175	4.32192
+4	Epic	36	20	Accessory	1.00000	1.62500	1.62500
+4	Epic	50	40	Accessory	2.25000	1.79217	1.79217
+4	Epic	70	60	Accessory	2.12650	2.16095	2.16095
+4	Epic	87	80	Accessory	2.10636	2.18291	2.18291
+4	Epic	109	100	Accessory	2.31587	2.27318	2.27318
+4	Epic	129	120	Accessory	2.39732	2.65161	2.65161
+4	Epic	149	140	Accessory	3.24164	3.17869	3.17869
+4	Epic	210	200	Accessory	3.89712	3.90995	3.90995
+4	Epic	232	220	Accessory	4.59110	4.36726	4.36726
+4	Epic	253	240	Accessory	4.61357	4.61931	4.61931
+4	Epic	270	260	Accessory	4.65326	4.53339	4.61931
+4	Epic	284	280	Accessory	4.33333	4.49330	4.61931
+4	Epic	71	60	Back	1.95385	1.91026	1.91026
+4	Epic	85	80	Back	1.86667	1.87232	1.91026
+4	Epic	108	100	Back	1.79643	2.03691	2.03691
+4	Epic	129	120	Back	2.44762	2.48413	2.48413
+4	Epic	151	140	Back	3.20833	2.88532	2.88532
+4	Epic	164	160	Back	3.00000	3.49064	3.49064
+4	Epic	211	200	Back	4.26358	3.96934	3.96934
+4	Epic	232	220	Back	4.64445	4.53273	4.53273
+4	Epic	252	240	Back	4.69015	4.66911	4.66911
+4	Epic	271	260	Back	4.67273	4.78763	4.78763
+4	Epic	284	280	Back	5.00000	4.83637	4.83637
+4	Epic	51	40	Major-Armor	2.50000	2.45311	2.45311
+4	Epic	69	60	Major-Armor	2.40621	2.48574	2.48574
+4	Epic	86	80	Major-Armor	2.55102	2.66531	2.66531
+4	Epic	107	100	Major-Armor	3.03871	2.99025	2.99025
+4	Epic	129	120	Major-Armor	3.38102	3.40245	3.40245
+4	Epic	149	140	Major-Armor	3.78763	3.85859	3.85859
+4	Epic	211	200	Major-Armor	4.40711	4.30054	4.30054
+4	Epic	232	220	Major-Armor	4.70687	4.64041	4.64041
+4	Epic	252	240	Major-Armor	4.80726	4.79850	4.79850
+4	Epic	271	260	Major-Armor	4.88138	4.84432	4.84432
+4	Epic	52	40	Minor-Armor	2.66000	2.57674	2.57674
+4	Epic	70	60	Minor-Armor	2.49348	2.49845	2.57674
+4	Epic	85	80	Minor-Armor	2.34188	2.67776	2.67776
+4	Epic	109	100	Minor-Armor	3.19793	2.95150	2.95150
+4	Epic	129	120	Minor-Armor	3.31470	3.54178	3.54178
+4	Epic	150	140	Minor-Armor	4.11272	3.74247	3.74247
+4	Epic	164	160	Minor-Armor	3.80000	4.09689	4.09689
+4	Epic	211	200	Minor-Armor	4.37794	4.31476	4.31476
+4	Epic	232	220	Minor-Armor	4.76634	4.65221	4.65221
+4	Epic	252	240	Minor-Armor	4.81235	4.81170	4.81170
+4	Epic	271	260	Minor-Armor	4.85642	4.88959	4.88959
+4	Epic	284	280	Minor-Armor	5.00000	4.92821	4.92821
+4	Epic	57	40	Moderate-Armor	2.00000	2.26326	2.26326
+4	Epic	70	60	Moderate-Armor	2.52652	2.38477	2.38477
+4	Epic	86	80	Moderate-Armor	2.62778	2.71209	2.71209
+4	Epic	108	100	Moderate-Armor	2.98197	2.98742	2.98742
+4	Epic	129	120	Moderate-Armor	3.35251	3.39109	3.39109
+4	Epic	149	140	Moderate-Armor	3.83879	3.61932	3.61932
+4	Epic	164	160	Moderate-Armor	3.66667	3.99229	3.99229
+4	Epic	211	200	Moderate-Armor	4.47142	4.29628	4.29628
+4	Epic	232	220	Moderate-Armor	4.75075	4.68986	4.68986
+4	Epic	252	240	Moderate-Armor	4.84740	4.92431	4.92431
+4	Epic	271	260	Moderate-Armor	5.17477	5.01109	5.01109
+4	Epic	108	100	Ranged-Thrown	2.50000	2.50000	2.50000
+4	Epic	130	120	Ranged-Thrown	2.50000	2.50000	2.50000
+4	Epic	147	140	Ranged-Thrown	2.50000	2.94445	2.94445
+4	Epic	207	200	Ranged-Thrown	3.83334	3.69445	3.69445
+4	Epic	232	220	Ranged-Thrown	4.75000	4.47223	4.47223
+4	Epic	248	240	Ranged-Thrown	4.83334	4.75000	4.75000
+4	Epic	264	260	Ranged-Thrown	4.66667	4.75001	4.75001
+4	Epic	70	60	Ranged-Wand	1.70000	2.10000	2.10000
+4	Epic	87	80	Ranged-Wand	2.50000	2.15000	2.15000
+4	Epic	113	100	Ranged-Wand	2.25000	2.41667	2.41667
+4	Epic	130	120	Ranged-Wand	2.50000	2.46852	2.46852
+4	Epic	147	140	Ranged-Wand	2.65556	3.14445	3.14445
+4	Epic	211	200	Ranged-Wand	4.27778	3.94445	3.94445
+4	Epic	232	220	Ranged-Wand	4.90000	4.70212	4.70212
+4	Epic	248	240	Ranged-Wand	4.92857	4.92202	4.92202
+4	Epic	271	260	Ranged-Wand	4.93750	4.93304	4.93304
+4	Epic	48	40	Ranged-Weapon	1.00000	1.21875	1.21875
+4	Epic	74	60	Ranged-Weapon	1.43750	1.31250	1.31250
+4	Epic	85	80	Ranged-Weapon	1.50000	1.46065	1.46065
+4	Epic	107	100	Ranged-Weapon	1.44444	1.59259	1.59259
+4	Epic	128	120	Ranged-Weapon	1.83333	1.86342	1.86342
+4	Epic	148	140	Ranged-Weapon	2.31250	2.69058	2.69058
+4	Epic	211	200	Ranged-Weapon	3.92592	3.39785	3.39785
+4	Epic	232	220	Ranged-Weapon	3.95513	4.17794	4.17794
+4	Epic	251	240	Ranged-Weapon	4.65278	4.27208	4.27208
+4	Epic	271	260	Ranged-Weapon	4.20833	4.62037	4.62037
+4	Epic	284	280	Ranged-Weapon	5.00000	4.60417	4.62037
+4	Epic	46	40	Shield	2.00000	1.81250	1.81250
+4	Epic	73	60	Shield	1.62500	1.75000	1.81250
+4	Epic	87	80	Shield	1.62500	1.90000	1.90000
+4	Epic	110	100	Shield	2.45000	2.16389	2.16389
+4	Epic	128	120	Shield	2.41667	2.56111	2.56111
+4	Epic	150	140	Shield	2.81667	3.12778	3.12778
+4	Epic	211	200	Shield	4.15000	3.84074	3.84074
+4	Epic	232	220	Shield	4.55556	4.31852	4.31852
+4	Epic	251	240	Shield	4.25000	4.34259	4.34259
+4	Epic	270	260	Shield	4.22222	4.23611	4.34259
+4	Epic	47	40	Staff-Weapon	2.00000	2.14584	2.14584
+4	Epic	71	60	Staff-Weapon	2.29167	2.26389	2.26389
+4	Epic	86	80	Staff-Weapon	2.50000	2.53472	2.53472
+4	Epic	108	100	Staff-Weapon	2.81250	2.76157	2.76157
+4	Epic	128	120	Staff-Weapon	2.97222	3.10463	3.10463
+4	Epic	148	140	Staff-Weapon	3.52917	3.50046	3.50046
+4	Epic	164	160	Staff-Weapon	4.00000	4.00972	4.00972
+4	Epic	211	200	Staff-Weapon	4.50000	4.47759	4.47759
+4	Epic	232	220	Staff-Weapon	4.93277	4.79228	4.79228
+4	Epic	251	240	Staff-Weapon	4.94406	4.88950	4.88950
+4	Epic	271	260	Staff-Weapon	4.79167	4.91191	4.91191
+4	Epic	284	280	Staff-Weapon	5.00000	4.89584	4.91191
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  7. Create and Populate Table: ACSBV3_aux_stat_count_uncommon                                                         ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:58:54                                                                                            0604A (v1.0)
+                                                                                                                           
+COUNT(*)
+16
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  8. Create and Populate Table: ACSBV3_aux_stat_count_rare                                                             ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:58:55                                                                                            0604A (v1.0)
+                                                                                                                           
+COUNT(*)
+16
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  9. Create and Populate Table: ACSBV3_aux_stat_count_epic                                                             ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:58:56                                                                                            0604A (v1.0)
+                                                                                                                           
+COUNT(*)
+16
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  10. Create and Populate Table: ACSBV3_aux_stat_count                                                                 ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:58:58                                                                                            0604A (v1.0)
+                                                                                                                           
+ItemLevelBracket	QualityName	1H	2H	Staff	Ranged	Thrown	Wand	Major	Moderate	Minor	Back	Shield	Accessory
+0	Uncommon	1	2	1	1	1	1	2	1	2	2	2	2
+20	Uncommon	1	2	1	1	1	1	2	2	2	2	2	2
+40	Uncommon	1	2	1	1	1	1	2	2	2	2	2	2
+60	Uncommon	1	2	2	1	1	1	2	2	2	2	2	2
+80	Uncommon	2	2	2	1	1	1	2	2	2	2	2	2
+100	Uncommon	2	2	2	1	1	1	2	2	2	2	2	2
+120	Uncommon	2	2	2	1	1	1	2	3	2	2	2	2
+140	Uncommon	2	2	2	1	2	1	3	3	3	2	3	2
+160	Uncommon	2	2	2	1	2	1	4	3	3	2	3	3
+180	Uncommon	2	2	2	1	2	1	4	3	3	2	3	3
+200	Uncommon	2	2	2	1	2	1	4	3	3	2	3	3
+220	Uncommon	2	2	2	1	2	1	4	3	3	2	3	3
+240	Uncommon	2	2	2	1	2	1	4	3	3	2	3	3
+260	Uncommon	2	2	2	1	2	1	4	3	3	2	3	3
+280	Uncommon	2	2	2	1	2	1	4	3	3	2	3	3
+300	Uncommon	2	2	2	1	2	1	4	3	3	2	3	3
+0	Rare	2	2	1	1	1	1	3	1	2	2	2	1
+20	Rare	2	2	2	1	1	1	3	2	2	2	2	2
+40	Rare	2	2	2	1	1	1	3	2	2	2	2	2
+60	Rare	2	2	2	2	2	2	3	3	2	2	2	2
+80	Rare	2	2	2	2	2	2	3	3	2	2	2	2
+100	Rare	2	2	3	2	2	2	3	3	3	2	2	2
+120	Rare	2	2	3	2	2	2	3	3	3	2	3	3
+140	Rare	2	2	3	2	2	2	3	3	3	3	3	3
+160	Rare	2	3	3	2	2	2	3	3	3	3	3	3
+180	Rare	3	3	3	3	3	3	4	3	3	3	3	3
+200	Rare	3	3	4	3	3	3	4	4	4	3	3	3
+220	Rare	3	3	4	3	3	3	4	4	4	3	3	3
+240	Rare	3	3	4	3	3	3	4	4	4	3	3	3
+260	Rare	3	3	4	3	3	3	4	4	4	3	3	3
+280	Rare	3	3	4	3	3	3	4	4	4	3	3	3
+300	Rare	3	3	4	3	3	3	4	4	4	3	3	3
+0	Epic	2	2	1	1	2	1	2	1	2	2	2	2
+20	Epic	2	2	1	1	2	1	2	1	2	2	2	2
+40	Epic	2	2	2	1	2	1	2	2	3	2	2	2
+60	Epic	2	2	2	1	2	2	2	2	3	2	2	2
+80	Epic	2	2	3	1	2	2	3	3	3	2	2	2
+100	Epic	2	2	3	2	3	2	3	3	3	2	2	2
+120	Epic	3	3	3	2	3	2	3	3	4	2	3	3
+140	Epic	3	3	4	3	3	3	4	4	4	3	3	3
+160	Epic	3	3	4	3	3	3	4	4	4	3	3	3
+180	Epic	3	3	4	3	3	3	4	4	4	3	3	3
+200	Epic	4	4	4	3	4	4	4	4	4	4	4	4
+220	Epic	4	4	5	4	4	5	5	5	5	5	4	4
+240	Epic	4	4	5	4	5	5	5	5	5	5	4	5
+260	Epic	5	4	5	5	5	5	5	5	5	5	4	5
+280	Epic	5	4	5	5	5	5	5	5	5	5	4	5
+300	Epic	5	4	5	5	5	5	5	5	5	5	4	5
+
+                                                                                                                           
+2025-12-19 18:58:59                                                                                            0604A (v1.0)
+###########################################################################################################################
+##  END PRINT OUT                                                                                                        ##
+###########################################################################################################################
+                                                                                                                           
+                                                                                                                           

@@ -1,0 +1,29 @@
+total_items
+18731
+Quality	class	count_per_group
+1	2	136
+1	4	339
+2	2	919
+2	4	4051
+3	2	890
+3	4	3312
+4	2	1396
+4	4	7670
+5	2	16
+5	4	2
+slot_group	slot_weight_class	count_per_slot
+Armor	Cloth	2826
+Armor	Leather	3060
+Armor	Mail	2994
+Armor	Other	1
+Armor	Plate	3133
+Misc	Cloth	465
+Misc	Leather	105
+Misc	Mail	33
+Misc	Other	559
+Weapon	Cloth	936
+Weapon	Leather	155
+Weapon	Mail	151
+Weapon	Other	1455
+Weapon	Plate	389
+Weapon	Weapon	2469

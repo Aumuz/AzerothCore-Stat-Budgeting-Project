@@ -1,0 +1,13 @@
+total_links
+11265
+drop_environment	count_per_env	avg_drop_chance
+Dungeon	4	0
+World	11261	0.151
+Quality	drop_environment	items_per_quality_env
+1	World	403
+2	World	8618
+3	Dungeon	4
+3	World	1486
+4	World	754
+distinct_items
+2635

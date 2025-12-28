@@ -1,0 +1,465 @@
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  1. Create Temporary Table: ACSBV3_temp_dataset                                                                       ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:23                                                                                            0501B (v1.2)
+                                                                                                                           
+
+Temporary Table Created: ACSBV3_temp_dataset
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  2. Populate Temporary Table: ACSBV3_temp_dataset                                                                     ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:23                                                                                            0501B (v1.2)
+                                                                                                                           
+
+Temporary Table Populated: 18318 items
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  3. Calculate Stat Values: ACSBV3_temp_dataset                                                                        ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:24                                                                                            0501B (v1.2)
+                                                                                                                           
+
+Finished Calculating Stat Values: ACSBV3_temp_dataset
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  4. Calculate Actual Budget Values: ACSBV3_temp_dataset                                                               ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:24                                                                                            0501B (v1.2)
+                                                                                                                           
+
+Finished Calculating Actual Budget Values: ACSBV3_temp_dataset
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5.0 - ACSBV3 Dataset Verification Check: class_name                                                                  ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:24                                                                                            0501B (v1.2)
+                                                                                                                           
+
+15055 | Equipment
+3263 | Weapon
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5.1 - ACSBV3 Dataset Verification Check: subclass_name                                                               ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:24                                                                                            0501B (v1.2)
+                                                                                                                           
+
+226 | 1H-Axe
+380 | 1H-Mace
+351 | 1H-Sword
+186 | 2H-Axe
+180 | 2H-Mace
+186 | 2H-Sword
+151 | Bow
+4026 | Cloth
+86 | Crossbow
+446 | Dagger
+153 | Fist-Weapon
+149 | Gun
+3164 | Leather
+3021 | Mail
+1334 | Miscellaneous
+3133 | Plate
+127 | Polearm
+377 | Shield
+361 | Staff
+87 | Thrown
+194 | Wand
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5.2 - ACSBV3 Dataset Verification Check: InventoryTypeName                                                           ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:24                                                                                            0501B (v1.2)
+                                                                                                                           
+
+742 | Back
+1374 | Chest
+1346 | Feet
+662 | Finger
+1733 | Hands
+1652 | Head
+1810 | Legs
+418 | Main-Hand
+478 | Neck
+194 | Off-Hand-Equipment
+147 | Off-Hand-Weapon
+991 | One-Hand
+151 | Ranged-Bow
+87 | Ranged-Thrown
+429 | Ranged-Weapon
+602 | Robe
+377 | Shield
+1609 | Shoulder
+1040 | Two-Hand
+1298 | Waist
+1178 | Wrists
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5.3 - ACSBV3 Dataset Verification Check: slot, slot_name                                                             ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:24                                                                                            0501B (v1.2)
+                                                                                                                           
+
+190 | 20013 | Weapon    | 1H-Axe        | One-Hand          
+11 | 20021 | Weapon    | 1H-Axe        | Main-Hand         
+25 | 20022 | Weapon    | 1H-Axe        | Off-Hand-Weapon   
+186 | 20117 | Weapon    | 2H-Axe        | Two-Hand          
+151 | 20215 | Weapon    | Bow           | Ranged-Bow        
+149 | 20326 | Weapon    | Gun           | Ranged-Weapon     
+213 | 20413 | Weapon    | 1H-Mace       | One-Hand          
+154 | 20421 | Weapon    | 1H-Mace       | Main-Hand         
+13 | 20422 | Weapon    | 1H-Mace       | Off-Hand-Weapon   
+180 | 20517 | Weapon    | 2H-Mace       | Two-Hand          
+127 | 20617 | Weapon    | Polearm       | Two-Hand          
+263 | 20713 | Weapon    | 1H-Sword      | One-Hand          
+71 | 20721 | Weapon    | 1H-Sword      | Main-Hand         
+17 | 20722 | Weapon    | 1H-Sword      | Off-Hand-Weapon   
+186 | 20817 | Weapon    | 2H-Sword      | Two-Hand          
+361 | 21017 | Weapon    | Staff         | Two-Hand          
+25 | 21313 | Weapon    | Fist-Weapon   | One-Hand          
+65 | 21321 | Weapon    | Fist-Weapon   | Main-Hand         
+63 | 21322 | Weapon    | Fist-Weapon   | Off-Hand-Weapon   
+300 | 21513 | Weapon    | Dagger        | One-Hand          
+117 | 21521 | Weapon    | Dagger        | Main-Hand         
+29 | 21522 | Weapon    | Dagger        | Off-Hand-Weapon   
+87 | 21625 | Weapon    | Thrown        | Ranged-Thrown     
+86 | 21826 | Weapon    | Crossbow      | Ranged-Weapon     
+194 | 21926 | Weapon    | Wand          | Ranged-Weapon     
+478 | 40002 | Equipment | Miscellaneous | Neck              
+662 | 40011 | Equipment | Miscellaneous | Finger            
+194 | 40023 | Equipment | Miscellaneous | Off-Hand-Equipment
+423 | 40101 | Equipment | Cloth         | Head              
+399 | 40103 | Equipment | Cloth         | Shoulder          
+129 | 40105 | Equipment | Cloth         | Chest             
+336 | 40106 | Equipment | Cloth         | Waist             
+455 | 40107 | Equipment | Cloth         | Legs              
+342 | 40108 | Equipment | Cloth         | Feet              
+296 | 40109 | Equipment | Cloth         | Wrists            
+440 | 40110 | Equipment | Cloth         | Hands             
+742 | 40116 | Equipment | Cloth         | Back              
+464 | 40120 | Equipment | Cloth         | Robe              
+397 | 40201 | Equipment | Leather       | Head              
+401 | 40203 | Equipment | Leather       | Shoulder          
+364 | 40205 | Equipment | Leather       | Chest             
+340 | 40206 | Equipment | Leather       | Waist             
+459 | 40207 | Equipment | Leather       | Legs              
+350 | 40208 | Equipment | Leather       | Feet              
+315 | 40209 | Equipment | Leather       | Wrists            
+433 | 40210 | Equipment | Leather       | Hands             
+105 | 40220 | Equipment | Leather       | Robe              
+385 | 40301 | Equipment | Mail          | Head              
+388 | 40303 | Equipment | Mail          | Shoulder          
+421 | 40305 | Equipment | Mail          | Chest             
+322 | 40306 | Equipment | Mail          | Waist             
+422 | 40307 | Equipment | Mail          | Legs              
+342 | 40308 | Equipment | Mail          | Feet              
+293 | 40309 | Equipment | Mail          | Wrists            
+415 | 40310 | Equipment | Mail          | Hands             
+33 | 40320 | Equipment | Mail          | Robe              
+447 | 40401 | Equipment | Plate         | Head              
+421 | 40403 | Equipment | Plate         | Shoulder          
+460 | 40405 | Equipment | Plate         | Chest             
+300 | 40406 | Equipment | Plate         | Waist             
+474 | 40407 | Equipment | Plate         | Legs              
+312 | 40408 | Equipment | Plate         | Feet              
+274 | 40409 | Equipment | Plate         | Wrists            
+445 | 40410 | Equipment | Plate         | Hands             
+377 | 40614 | Equipment | Shield        | Shield            
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5.4 - ACSBV3 Dataset Verification Check: ItemLevelBracket                                                            ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:25                                                                                            0501B (v1.2)
+                                                                                                                           
+
+591 | 10
+837 | 20
+847 | 30
+923 | 40
+1146 | 50
+1493 | 60
+623 | 70
+496 | 80
+453 | 90
+550 | 100
+1339 | 110
+656 | 120
+535 | 130
+642 | 140
+641 | 150
+215 | 160
+250 | 170
+283 | 180
+1102 | 200
+912 | 210
+463 | 220
+868 | 230
+681 | 240
+877 | 250
+488 | 260
+385 | 270
+22 | 280
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5.5 - ACSBV3 Dataset Verification Check: RequiredLevelBracket                                                        ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:25                                                                                            0501B (v1.2)
+                                                                                                                           
+
+350 | 10
+765 | 20
+834 | 30
+923 | 40
+997 | 50
+3177 | 60
+4437 | 70
+6835 | 80
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5.6 - ACSBV3 Dataset Verification Check: mod_drop                                                                    ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:25                                                                                            0501B (v1.2)
+                                                                                                                           
+
+875 | Dungeon | 1.00
+2527 | Raid | 1.00
+14916 | World | 1.00
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5.7 - ACSBV3 Dataset Verification Check: mod_misc                                                                    ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:25                                                                                            0501B (v1.2)
+                                                                                                                           
+
+3156 | 0.65
+15162 | 1.00
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5.8 - ACSBV3 Dataset Verification Check: mod_slot                                                                    ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:25                                                                                            0501B (v1.2)
+                                                                                                                           
+
+190 | 20013 | Weapon    | 1H-Axe        | One-Hand           | 0.80
+11 | 20021 | Weapon    | 1H-Axe        | Main-Hand          | 0.84
+25 | 20022 | Weapon    | 1H-Axe        | Off-Hand-Weapon    | 0.70
+186 | 20117 | Weapon    | 2H-Axe        | Two-Hand           | 1.19
+151 | 20215 | Weapon    | Bow           | Ranged-Bow         | 0.71
+149 | 20326 | Weapon    | Gun           | Ranged-Weapon      | 0.70
+213 | 20413 | Weapon    | 1H-Mace       | One-Hand           | 0.79
+154 | 20421 | Weapon    | 1H-Mace       | Main-Hand          | 1.01
+13 | 20422 | Weapon    | 1H-Mace       | Off-Hand-Weapon    | 0.71
+180 | 20517 | Weapon    | 2H-Mace       | Two-Hand           | 1.26
+127 | 20617 | Weapon    | Polearm       | Two-Hand           | 1.23
+263 | 20713 | Weapon    | 1H-Sword      | One-Hand           | 0.79
+71 | 20721 | Weapon    | 1H-Sword      | Main-Hand          | 0.96
+17 | 20722 | Weapon    | 1H-Sword      | Off-Hand-Weapon    | 0.73
+186 | 20817 | Weapon    | 2H-Sword      | Two-Hand           | 1.20
+361 | 21017 | Weapon    | Staff         | Two-Hand           | 1.39
+25 | 21313 | Weapon    | Fist-Weapon   | One-Hand           | 0.88
+65 | 21321 | Weapon    | Fist-Weapon   | Main-Hand          | 0.73
+63 | 21322 | Weapon    | Fist-Weapon   | Off-Hand-Weapon    | 0.73
+300 | 21513 | Weapon    | Dagger        | One-Hand           | 0.75
+117 | 21521 | Weapon    | Dagger        | Main-Hand          | 1.15
+29 | 21522 | Weapon    | Dagger        | Off-Hand-Weapon    | 0.70
+87 | 21625 | Weapon    | Thrown        | Ranged-Thrown      | 0.99
+86 | 21826 | Weapon    | Crossbow      | Ranged-Weapon      | 0.73
+194 | 21926 | Weapon    | Wand          | Ranged-Weapon      | 1.12
+478 | 40002 | Equipment | Miscellaneous | Neck               | 0.37
+662 | 40011 | Equipment | Miscellaneous | Finger             | 0.36
+194 | 40023 | Equipment | Miscellaneous | Off-Hand-Equipment | 0.32
+423 | 40101 | Equipment | Cloth         | Head               | 0.71
+399 | 40103 | Equipment | Cloth         | Shoulder           | 0.58
+129 | 40105 | Equipment | Cloth         | Chest              | 0.59
+336 | 40106 | Equipment | Cloth         | Waist              | 0.49
+455 | 40107 | Equipment | Cloth         | Legs               | 0.72
+342 | 40108 | Equipment | Cloth         | Feet               | 0.53
+296 | 40109 | Equipment | Cloth         | Wrists             | 0.37
+440 | 40110 | Equipment | Cloth         | Hands              | 0.53
+742 | 40116 | Equipment | Cloth         | Back               | 0.41
+464 | 40120 | Equipment | Cloth         | Robe               | 0.76
+397 | 40201 | Equipment | Leather       | Head               | 0.93
+401 | 40203 | Equipment | Leather       | Shoulder           | 0.79
+364 | 40205 | Equipment | Leather       | Chest              | 1.07
+340 | 40206 | Equipment | Leather       | Waist              | 0.70
+459 | 40207 | Equipment | Leather       | Legs               | 0.98
+350 | 40208 | Equipment | Leather       | Feet               | 0.77
+315 | 40209 | Equipment | Leather       | Wrists             | 0.53
+433 | 40210 | Equipment | Leather       | Hands              | 0.71
+105 | 40220 | Equipment | Leather       | Robe               | 1.01
+385 | 40301 | Equipment | Mail          | Head               | 1.34
+388 | 40303 | Equipment | Mail          | Shoulder           | 1.18
+421 | 40305 | Equipment | Mail          | Chest              | 1.65
+322 | 40306 | Equipment | Mail          | Waist              | 1.05
+422 | 40307 | Equipment | Mail          | Legs               | 1.48
+342 | 40308 | Equipment | Mail          | Feet               | 1.23
+293 | 40309 | Equipment | Mail          | Wrists             | 0.82
+415 | 40310 | Equipment | Mail          | Hands              | 1.09
+33 | 40320 | Equipment | Mail          | Robe               | 1.40
+447 | 40401 | Equipment | Plate         | Head               | 1.85
+421 | 40403 | Equipment | Plate         | Shoulder           | 1.60
+460 | 40405 | Equipment | Plate         | Chest              | 2.13
+300 | 40406 | Equipment | Plate         | Waist              | 1.43
+474 | 40407 | Equipment | Plate         | Legs               | 1.95
+312 | 40408 | Equipment | Plate         | Feet               | 1.67
+274 | 40409 | Equipment | Plate         | Wrists             | 1.11
+445 | 40410 | Equipment | Plate         | Hands              | 1.43
+377 | 40614 | Equipment | Shield        | Shield             | 6.43
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5.9 - ACSBV3 Dataset Verification Check: mod_source                                                                  ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:25                                                                                            0501B (v1.2)
+                                                                                                                           
+
+1 | Conjured | 1.00
+3146 | Crafted | 1.00
+6764 | Creature | 1.00
+1258 | Gameobject | 1.00
+2107 | Item_Loot | 1.00
+266 | Quest | 1.00
+4776 | Vendor | 1.00
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  6. Remove Low Budget Items: ACSBV3_temp_dataset                                                                      ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:25                                                                                            0501B (v1.2)
+                                                                                                                           
+
+0 Low Budget Items.
+
+0 Low DPS Items.
+
+0 Total Items Removed.
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  7. Calculate Normalized Budget Values: ACSBV3_temp_dataset                                                           ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:25                                                                                            0501B (v1.2)
+                                                                                                                           
+
+Finished Calculating Normalized Budget Values: ACSBV3_temp_dataset
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  8. Create Table: ACSBV3_ref_dataset                                                                                  ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:25                                                                                            0501B (v1.2)
+                                                                                                                           
+
+Temporary Table Created: ACSBV3_ref_dataset
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  9. Populate Final Dataset Table: COPY FROM ACSBV3_temp_dataset INTO ACSBV3_ref_dataset                               ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:26                                                                                            0501B (v1.2)
+                                                                                                                           
+
+Final Dataset Table Populated: 18318 items
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  10. Verification: ACSBV3_ref_dataset                                                                                 ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:33                                                                                            0501B (v1.2)
+                                                                                                                           
+
+   27413 | Ring of the Exarchs            | Rare       | 100 | 70 | 40011 | Equipment | Miscellaneous | Finger                
+   42337 | Sun Rock Ring                  | Uncommon   | 130 | 70 | 40011 | Equipment | Miscellaneous | Finger                
+   10802 | Wingveil Cloak                 | Rare       |  50 | 50 | 40116 | Equipment | Cloth         | Back                  
+   48246 | Garona's Legplates of Conquest | Epic       | 230 | 80 | 40207 | Equipment | Leather       | Legs                  
+   36946 | Runic Cage Chestpiece          | Rare       | 180 | 80 | 40305 | Equipment | Mail          | Chest                 
+
+   34348 | Wand of Cleansing Light        |    227.93333 | 1.00 | 1.00 | 1.12 | 1.00 |    203.51190
+   35130 | Guardian's Band of Salvation   |     74.10000 | 1.00 | 1.00 | 0.36 | 1.00 |    205.83333
+    6422 | Glyphed Helm                   |     34.40000 | 1.00 | 1.00 | 0.93 | 1.00 |     36.98925
+   17943 | Fist of Stone                  |     35.27778 | 1.00 | 1.00 | 0.79 | 1.00 |     44.65542
+   36147 | Pygmy Belt                     |     43.80000 | 1.00 | 0.65 | 0.70 | 1.00 |     96.26374
+
+
+total_rows	total_items	AVG_budget_actual	AVG_budget_normalized
+18318	18318	233.819571407	231.040011215
+
+                                                                                                                           
+2025-12-19 18:55:33                                                                                            0501B (v1.2)
+###########################################################################################################################
+##  END PRINT OUT                                                                                                        ##
+###########################################################################################################################
+                                                                                                                           
+                                                                                                                           

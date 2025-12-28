@@ -1,0 +1,247 @@
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  1. Create and Populate Table: ACSBV3_ref_cost                                                                        ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:13                                                                                            0501A (v2.1)
+                                                                                                                           
+stat_type	stat_name	cost	role	notes
+-2	Armor	0.20	ANY	1 Budget Per 5 Armor.
+-1	DPS	1.00	ANY	1 Budget Per 1 DPS.
+0	ITEM_MOD_MANA	0.00	NONE	Excluded From Stats Budget.
+3	ITEM_MOD_AGILITY	1.10	PRIMARY DPS	Increase Attack Power of Melee and Ranged Weapons.
+4	ITEM_MOD_STRENGTH	0.85	PRIMARY MELEE	Increase Melee Attack Power and Perry Rating.
+5	ITEM_MOD_INTELLECT	0.90	PRIMARY CASTER	Increase Spell Power and Mana Pool.
+6	ITEM_MOD_SPIRIT	0.80	ANY	Increase Health and Mana Regeneration.
+7	ITEM_MOD_STAMINA	1.00	ANY	Increase Health.
+12	ITEM_MOD_DEFENSE_SKILL_RATING	0.80	TANK	Reduce Chance of Being Hit, or Critically Hit. Increase Chance to Block, Dodge, and Perry an Attack.
+13	ITEM_MOD_DODGE_RATING	0.85	TANK	Increase Chance to Dodge an Attack.
+14	ITEM_MOD_PARRY_RATING	0.25	TANK	Increase Chance to Perry an Attack.
+15	ITEM_MOD_BLOCK_RATING	0.55	TANK	Increase Chance to Block an Attack.
+31	ITEM_MOD_HIT_RATING	0.85	DPS	Increase Chance of Successful Hit.
+32	ITEM_MOD_CRIT_RATING	0.90	DPS	Increase Chance of Critical Hit.
+35	ITEM_MOD_RESILIENCE_RATING	0.70	PVP	Reduce PVP Damage Taken.
+36	ITEM_MOD_HASTE_RATING	0.90	DPS	Increase Attack Speed. Reduce Cast Time.
+37	ITEM_MOD_EXPERTISE_RATING	1.10	MELEE	Reduce Chance of Melee Attack Being Avoided by Target.
+38	ITEM_MOD_ATTACK_POWER	0.40	DPS	Increase Base Weapon Damage.
+39	ITEM_MOD_RANGED_ATTACK_POWER	0.40	RANGED	Increase Ranged Weapon Damage.
+42	ITEM_MOD_SPELL_DAMAGE_DONE	0.45	CASTER	Legacy Stat -> Mirrors Spell Power.
+44	ITEM_MOD_ARMOR_PENETRATION_RATING	0.90	MELEE DPS	Increase Amount of Armor Player Attack can Ignore.
+45	ITEM_MOD_SPELL_POWER	0.90	CASTER	Increase Effectiveness of Spells.
+100	Other	0.00	UNKNOWN	All Other Stats.
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  2. Create and Populate Table: ACSBV3_ref_socket                                                                      ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:15                                                                                            0501A (v2.1)
+                                                                                                                           
+socketBonus	socketBonus_name	cost
+1597	+32 Attack Power	6.40
+2370	+3 Mana per 5 sec	1.50
+2371	+4 Mana per 5 sec	2.00
+2392	+12 Mana per 5 sec	6.00
+2844	+8 Hit Rating	3.40
+2861	+3 Defense Rating	1.20
+2862	+3 Resilience Rating	1.05
+2863	+3 Intellect	1.35
+2865	+2 Mana per 5 sec	1.00
+2866	+3 Spirit	1.20
+2867	+2 Resilience Rating	0.70
+2869	+4 Intellect	1.80
+2870	+3 Parry Rating	0.37
+2871	+4 Dodge Rating	1.70
+2876	+3 Dodge Rating	1.27
+2877	+4 Agility	2.20
+2878	+4 Resilience Rating	1.40
+2879	+3 Strength	1.27
+2880	+3 Hit Rating	1.27
+2881	+1 Mana per 5 sec	0.50
+2882	+6 Stamina	3.00
+2888	+6 Block Value	1.65
+2890	+4 Spirit	1.60
+2893	+3 Agility	1.65
+2895	+4 Stamina	2.00
+2907	+2 Parry Rating	0.25
+2908	+4 Hit Rating	1.70
+2926	+2 Dodge Rating	0.85
+2927	+4 Strength	1.70
+2932	+4 Defense Rating	1.60
+2936	+8 Attack Power	1.60
+2941	+2 Hit Rating	0.85
+2972	+4 Block Rating	1.10
+2973	+6 Attack Power	1.20
+2974	+4 Spell Power	1.80
+2975	+5 Block Value	1.37
+2976	+2 Defense Rating	0.80
+3015	+2 Strength	0.85
+3016	+2 Intellect	0.90
+3017	+3 Block Rating	0.82
+3094	+4 Expertise Rating	2.20
+3097	+2 Spirit	0.80
+3114	+4 Attack Power	0.80
+3149	+2 Agility	1.10
+3152	+2 Critical Strike Rating	0.90
+3153	+2 Spell Power	0.90
+3164	+3 Stamina	1.50
+3205	+3 Critical Strike Rating	1.35
+3263	+4 Critical Strike Rating	1.80
+3302	+8 Defense Rating	3.20
+3303	+8 Haste Rating	3.60
+3304	+8 Dodge Rating	3.40
+3307	+9 Stamina	4.50
+3308	+4 Haste Rating	1.80
+3309	+6 Haste Rating	2.70
+3310	+6 Intellect	2.70
+3311	+6 Spirit	2.40
+3312	+8 Strength	3.40
+3313	+8 Agility	4.40
+3314	+8 Critical Strike Rating	3.60
+3316	+6 Critical Strike Rating	2.70
+3351	+6 Hit Rating	2.55
+3352	+8 Spirit	3.20
+3353	+8 Intellect	3.60
+3355	+6 Agility	3.30
+3357	+6 Strength	2.55
+3358	+6 Dodge Rating	2.55
+3359	+4 Parry Rating	0.50
+3360	+8 Parry Rating	1.00
+3361	+6 Block Rating	1.65
+3362	+6 Expertise Rating	3.30
+3363	+9 Block Value	2.47
+3600	+6 Resilience Rating	2.10
+3602	+7 Spell Power	3.15
+3752	+5 Spell Power	2.25
+3753	+9 Spell Power	4.05
+3764	+12 Attack Power	2.40
+3765	+4 Armor Penetration	1.80
+3766	+12 Stamina	6.00
+3778	+8 Expertise Rating	4.40
+3821	+8 Resilience Rating	2.80
+3857	+6 Defense Rating	2.40
+3871	+6 Parry Rating	0.75
+3877	+16 Attack Power	3.20
+3880	+6 Armor Penetration	2.70
+3882	+8 Armor Penetration	3.60
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  3. Create and Populate Table: ACSBV3_ref_drop                                                                        ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:17                                                                                            0501A (v2.1)
+                                                                                                                           
+drop_environment	modifier
+Dungeon	1.00
+Raid	1.00
+World	1.00
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  4. Create and Populate Table: ACSBV3_ref_source                                                                      ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:19                                                                                            0501A (v2.1)
+                                                                                                                           
+source_type	modifier
+Conjured	1.00
+Crafted	1.00
+Creature	1.00
+Gameobject	1.00
+Item_Loot	1.00
+Quest	1.00
+Vendor	1.00
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5. Create and Populate Table: ACSBV3_ref_slot                                                                        ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:55:21                                                                                            0501A (v2.1)
+                                                                                                                           
+slot	slot_name	class	class_name	subclass	subclass_name	InventoryType	InventoryTypeName	slot_group	slot_group_desc	modifier
+20013	Weapon    | 1H-Axe        | One-Hand          	2	Weapon	0	1H-Axe	13	One-Hand	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	0.80
+20021	Weapon    | 1H-Axe        | Main-Hand         	2	Weapon	0	1H-Axe	21	Main-Hand	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	0.84
+20022	Weapon    | 1H-Axe        | Off-Hand-Weapon   	2	Weapon	0	1H-Axe	22	Off-Hand-Weapon	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	0.70
+20117	Weapon    | 2H-Axe        | Two-Hand          	2	Weapon	1	2H-Axe	17	Two-Hand	2H-Weapon	2H-Axe, 2H-Mace, 2H-Sword, Polearm	1.19
+20215	Weapon    | Bow           | Ranged-Bow        	2	Weapon	2	Bow	15	Ranged-Bow	Ranged-Weapon	Bow, Crossbow, Gun	0.71
+20326	Weapon    | Gun           | Ranged-Weapon     	2	Weapon	3	Gun	26	Ranged-Weapon	Ranged-Weapon	Bow, Crossbow, Gun	0.70
+20413	Weapon    | 1H-Mace       | One-Hand          	2	Weapon	4	1H-Mace	13	One-Hand	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	0.79
+20421	Weapon    | 1H-Mace       | Main-Hand         	2	Weapon	4	1H-Mace	21	Main-Hand	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	1.01
+20422	Weapon    | 1H-Mace       | Off-Hand-Weapon   	2	Weapon	4	1H-Mace	22	Off-Hand-Weapon	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	0.71
+20517	Weapon    | 2H-Mace       | Two-Hand          	2	Weapon	5	2H-Mace	17	Two-Hand	2H-Weapon	2H-Axe, 2H-Mace, 2H-Sword, Polearm	1.26
+20617	Weapon    | Polearm       | Two-Hand          	2	Weapon	6	Polearm	17	Two-Hand	2H-Weapon	2H-Axe, 2H-Mace, 2H-Sword, Polearm	1.23
+20713	Weapon    | 1H-Sword      | One-Hand          	2	Weapon	7	1H-Sword	13	One-Hand	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	0.79
+20721	Weapon    | 1H-Sword      | Main-Hand         	2	Weapon	7	1H-Sword	21	Main-Hand	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	0.96
+20722	Weapon    | 1H-Sword      | Off-Hand-Weapon   	2	Weapon	7	1H-Sword	22	Off-Hand-Weapon	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	0.73
+20817	Weapon    | 2H-Sword      | Two-Hand          	2	Weapon	8	2H-Sword	17	Two-Hand	2H-Weapon	2H-Axe, 2H-Mace, 2H-Sword, Polearm	1.20
+21017	Weapon    | Staff         | Two-Hand          	2	Weapon	10	Staff	17	Two-Hand	Staff-Weapon	Staff	1.39
+21313	Weapon    | Fist-Weapon   | One-Hand          	2	Weapon	13	Fist-Weapon	13	One-Hand	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	0.88
+21321	Weapon    | Fist-Weapon   | Main-Hand         	2	Weapon	13	Fist-Weapon	21	Main-Hand	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	0.73
+21322	Weapon    | Fist-Weapon   | Off-Hand-Weapon   	2	Weapon	13	Fist-Weapon	22	Off-Hand-Weapon	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	0.73
+21513	Weapon    | Dagger        | One-Hand          	2	Weapon	15	Dagger	13	One-Hand	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	0.75
+21521	Weapon    | Dagger        | Main-Hand         	2	Weapon	15	Dagger	21	Main-Hand	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	1.15
+21522	Weapon    | Dagger        | Off-Hand-Weapon   	2	Weapon	15	Dagger	22	Off-Hand-Weapon	1H-Weapon	1H-Axe, 1H-Mace, 1H-Sword, Dagger, Fist-Weapon	0.70
+21625	Weapon    | Thrown        | Ranged-Thrown     	2	Weapon	16	Thrown	25	Ranged-Thrown	Ranged-Thrown	Thrown	0.99
+21826	Weapon    | Crossbow      | Ranged-Weapon     	2	Weapon	18	Crossbow	26	Ranged-Weapon	Ranged-Weapon	Bow, Crossbow, Gun	0.73
+21926	Weapon    | Wand          | Ranged-Weapon     	2	Weapon	19	Wand	26	Ranged-Weapon	Ranged-Wand	Wand	1.12
+40002	Equipment | Miscellaneous | Neck              	4	Equipment	0	Miscellaneous	2	Neck	Accessory	Finger, Neck, Off-Hand-Equipment	0.37
+40011	Equipment | Miscellaneous | Finger            	4	Equipment	0	Miscellaneous	11	Finger	Accessory	Finger, Neck, Off-Hand-Equipment	0.36
+40023	Equipment | Miscellaneous | Off-Hand-Equipment	4	Equipment	0	Miscellaneous	23	Off-Hand-Equipment	Accessory	Finger, Neck, Off-Hand-Equipment	0.32
+40101	Equipment | Cloth         | Head              	4	Equipment	1	Cloth	1	Head	Moderate-Armor	Head, Shoulder	0.71
+40103	Equipment | Cloth         | Shoulder          	4	Equipment	1	Cloth	3	Shoulder	Moderate-Armor	Head, Shoulder	0.58
+40105	Equipment | Cloth         | Chest             	4	Equipment	1	Cloth	5	Chest	Major-Armor	Chest, Legs, Robe	0.59
+40106	Equipment | Cloth         | Waist             	4	Equipment	1	Cloth	6	Waist	Minor-Armor	Feet, Hands, Waist, Wrists	0.49
+40107	Equipment | Cloth         | Legs              	4	Equipment	1	Cloth	7	Legs	Major-Armor	Chest, Legs, Robe	0.72
+40108	Equipment | Cloth         | Feet              	4	Equipment	1	Cloth	8	Feet	Minor-Armor	Feet, Hands, Waist, Wrists	0.53
+40109	Equipment | Cloth         | Wrists            	4	Equipment	1	Cloth	9	Wrists	Minor-Armor	Feet, Hands, Waist, Wrists	0.37
+40110	Equipment | Cloth         | Hands             	4	Equipment	1	Cloth	10	Hands	Minor-Armor	Feet, Hands, Waist, Wrists	0.53
+40116	Equipment | Cloth         | Back              	4	Equipment	1	Cloth	16	Back	Back	Back	0.41
+40120	Equipment | Cloth         | Robe              	4	Equipment	1	Cloth	20	Robe	Major-Armor	Chest, Legs, Robe	0.76
+40201	Equipment | Leather       | Head              	4	Equipment	2	Leather	1	Head	Moderate-Armor	Head, Shoulder	0.93
+40203	Equipment | Leather       | Shoulder          	4	Equipment	2	Leather	3	Shoulder	Moderate-Armor	Head, Shoulder	0.79
+40205	Equipment | Leather       | Chest             	4	Equipment	2	Leather	5	Chest	Major-Armor	Chest, Legs, Robe	1.07
+40206	Equipment | Leather       | Waist             	4	Equipment	2	Leather	6	Waist	Minor-Armor	Feet, Hands, Waist, Wrists	0.70
+40207	Equipment | Leather       | Legs              	4	Equipment	2	Leather	7	Legs	Major-Armor	Chest, Legs, Robe	0.98
+40208	Equipment | Leather       | Feet              	4	Equipment	2	Leather	8	Feet	Minor-Armor	Feet, Hands, Waist, Wrists	0.77
+40209	Equipment | Leather       | Wrists            	4	Equipment	2	Leather	9	Wrists	Minor-Armor	Feet, Hands, Waist, Wrists	0.53
+40210	Equipment | Leather       | Hands             	4	Equipment	2	Leather	10	Hands	Minor-Armor	Feet, Hands, Waist, Wrists	0.71
+40220	Equipment | Leather       | Robe              	4	Equipment	2	Leather	20	Robe	Major-Armor	Chest, Legs, Robe	1.01
+40301	Equipment | Mail          | Head              	4	Equipment	3	Mail	1	Head	Moderate-Armor	Head, Shoulder	1.34
+40303	Equipment | Mail          | Shoulder          	4	Equipment	3	Mail	3	Shoulder	Moderate-Armor	Head, Shoulder	1.18
+40305	Equipment | Mail          | Chest             	4	Equipment	3	Mail	5	Chest	Major-Armor	Chest, Legs, Robe	1.65
+40306	Equipment | Mail          | Waist             	4	Equipment	3	Mail	6	Waist	Minor-Armor	Feet, Hands, Waist, Wrists	1.05
+40307	Equipment | Mail          | Legs              	4	Equipment	3	Mail	7	Legs	Major-Armor	Chest, Legs, Robe	1.48
+40308	Equipment | Mail          | Feet              	4	Equipment	3	Mail	8	Feet	Minor-Armor	Feet, Hands, Waist, Wrists	1.23
+40309	Equipment | Mail          | Wrists            	4	Equipment	3	Mail	9	Wrists	Minor-Armor	Feet, Hands, Waist, Wrists	0.82
+40310	Equipment | Mail          | Hands             	4	Equipment	3	Mail	10	Hands	Minor-Armor	Feet, Hands, Waist, Wrists	1.09
+40320	Equipment | Mail          | Robe              	4	Equipment	3	Mail	20	Robe	Major-Armor	Chest, Legs, Robe	1.40
+40401	Equipment | Plate         | Head              	4	Equipment	4	Plate	1	Head	Moderate-Armor	Head, Shoulder	1.85
+40403	Equipment | Plate         | Shoulder          	4	Equipment	4	Plate	3	Shoulder	Moderate-Armor	Head, Shoulder	1.60
+40405	Equipment | Plate         | Chest             	4	Equipment	4	Plate	5	Chest	Major-Armor	Chest, Legs, Robe	2.13
+40406	Equipment | Plate         | Waist             	4	Equipment	4	Plate	6	Waist	Minor-Armor	Feet, Hands, Waist, Wrists	1.43
+40407	Equipment | Plate         | Legs              	4	Equipment	4	Plate	7	Legs	Major-Armor	Chest, Legs, Robe	1.95
+40408	Equipment | Plate         | Feet              	4	Equipment	4	Plate	8	Feet	Minor-Armor	Feet, Hands, Waist, Wrists	1.67
+40409	Equipment | Plate         | Wrists            	4	Equipment	4	Plate	9	Wrists	Minor-Armor	Feet, Hands, Waist, Wrists	1.11
+40410	Equipment | Plate         | Hands             	4	Equipment	4	Plate	10	Hands	Minor-Armor	Feet, Hands, Waist, Wrists	1.43
+40614	Equipment | Shield        | Shield            	4	Equipment	6	Shield	14	Shield	Shield	Shield	6.43
+
+                                                                                                                           
+2025-12-19 18:55:23                                                                                            0501A (v2.1)
+###########################################################################################################################
+##  END PRINT OUT                                                                                                        ##
+###########################################################################################################################
+                                                                                                                           
+                                                                                                                           

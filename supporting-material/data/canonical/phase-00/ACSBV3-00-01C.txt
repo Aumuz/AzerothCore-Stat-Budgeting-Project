@@ -1,0 +1,4 @@
+drop_environment	total_rows	very_low	low_mid	high_mid	very_high	avg_final_weight	pct_very_low	pct_low_mid	pct_high_mid	pct_very_high
+Dungeon	206646	0	205906	740	251	0.376	0.0	99.6	0.4	0.1
+Raid	58062	0	58062	2	0	0.251	0.0	100.0	0.0	0.0
+World	1348597	0	1296270	1347958	639	0.503	0.0	96.1	100.0	0.0

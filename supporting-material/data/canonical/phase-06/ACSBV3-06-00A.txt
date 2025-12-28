@@ -1,0 +1,370 @@
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  1. Create and Populate Table: ACSBV3_0600A_quality                                                                   ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:56:33                                                                                            0600A (v2.0)
+                                                                                                                           
+
+Done.
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  2. Create and Populate Temporary Table: ACSBV3_temp_quality                                                          ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:56:35                                                                                            0600A (v2.0)
+                                                                                                                           
+slot_group	RequiredLevelBracket	Quality	QualityName	Score
+1H-Weapon	10	2	Uncommon	18.730085042264594
+1H-Weapon	20	2	Uncommon	40.55252503736812
+1H-Weapon	30	3	Rare	24.886581786260983
+1H-Weapon	40	3	Rare	22.292991869311063
+1H-Weapon	50	3	Rare	37.587546922294386
+1H-Weapon	60	4	Epic	82.92467419613502
+1H-Weapon	70	4	Epic	124.4608375548563
+1H-Weapon	80	4	Epic	239.320728534806
+2H-Weapon	10	2	Uncommon	6.671539393975742
+2H-Weapon	20	2	Uncommon	25.74699746073155
+2H-Weapon	30	2	Uncommon	14.956605311982166
+2H-Weapon	40	2	Uncommon	13.217260284818558
+2H-Weapon	50	3	Rare	14.664290708560655
+2H-Weapon	60	4	Epic	34.47467081458801
+2H-Weapon	70	2	Uncommon	42.84004136803376
+2H-Weapon	80	4	Epic	66.875
+Accessory	10	2	Uncommon	4.03414820586094
+Accessory	20	2	Uncommon	17.914728800452778
+Accessory	30	3	Rare	19.651920600278082
+Accessory	40	3	Rare	17.18943714274863
+Accessory	50	3	Rare	22.227693682553774
+Accessory	60	4	Epic	100.86693993520682
+Accessory	70	4	Epic	130.60998525959553
+Accessory	80	4	Epic	250.1081648309475
+Back	10	1	Common	16.995507011748472
+Back	20	2	Uncommon	33.81738239828816
+Back	30	2	Uncommon	25.688473731259194
+Back	40	2	Uncommon	29.210224136665303
+Back	50	2	Uncommon	28.056311460414708
+Back	60	4	Epic	32.75576417389762
+Back	70	4	Epic	40.62804453724828
+Back	80	4	Epic	102.875
+Major-Armor	10	2	Uncommon	53.05333019748975
+Major-Armor	20	2	Uncommon	73.59009446840783
+Major-Armor	30	2	Uncommon	78.98482860732207
+Major-Armor	40	2	Uncommon	81.54719649393958
+Major-Armor	50	2	Uncommon	86.39864299687382
+Major-Armor	60	3	Rare	161.03593261526333
+Major-Armor	70	4	Epic	443.673407886569
+Major-Armor	80	4	Epic	1043.7890000000002
+Minor-Armor	10	1	Common	97.15204781619313
+Minor-Armor	20	2	Uncommon	112.36723034572967
+Minor-Armor	30	2	Uncommon	118.15018184379474
+Minor-Armor	40	2	Uncommon	147.75433043386542
+Minor-Armor	50	2	Uncommon	144.21922296916034
+Minor-Armor	60	3	Rare	301.35379090341524
+Minor-Armor	70	4	Epic	660.6306705724489
+Minor-Armor	80	4	Epic	990.2572533892491
+Moderate-Armor	20	1	Common	18.577451741779587
+Moderate-Armor	30	2	Uncommon	50.92338846138817
+Moderate-Armor	40	2	Uncommon	75.52042535872592
+Moderate-Armor	50	2	Uncommon	72.15163322355492
+Moderate-Armor	60	3	Rare	142.31110078753628
+Moderate-Armor	70	4	Epic	411.9107740922118
+Moderate-Armor	80	4	Epic	1015.8936356656764
+Ranged-Thrown	20	1	Common	2.577008790582619
+Ranged-Thrown	30	1	Common	2
+Ranged-Thrown	40	1	Common	2
+Ranged-Thrown	50	1	Common	2
+Ranged-Thrown	60	2	Uncommon	3
+Ranged-Thrown	70	2	Uncommon	10.314864853216953
+Ranged-Thrown	80	4	Epic	11.75
+Ranged-Wand	10	2	Uncommon	2.0784548778482312
+Ranged-Wand	20	1	Common	5
+Ranged-Wand	30	2	Uncommon	5.314436644352033
+Ranged-Wand	40	3	Rare	2.9545911149002713
+Ranged-Wand	50	3	Rare	2.49965390945687
+Ranged-Wand	60	3	Rare	6.910760690357552
+Ranged-Wand	70	4	Epic	12.25
+Ranged-Wand	80	4	Epic	27.82
+Ranged-Weapon	10	2	Uncommon	2.590589474516701
+Ranged-Weapon	20	2	Uncommon	5.795028656505204
+Ranged-Weapon	30	2	Uncommon	9.978765539203996
+Ranged-Weapon	40	3	Rare	6.256059456933288
+Ranged-Weapon	50	3	Rare	7.891661437388638
+Ranged-Weapon	60	4	Epic	19.138812471435003
+Ranged-Weapon	70	2	Uncommon	27.613089393686284
+Ranged-Weapon	80	4	Epic	46.2345
+Shield	10	1	Common	6.964070437635803
+Shield	20	2	Uncommon	16.57769787515008
+Shield	30	2	Uncommon	12.297922564744495
+Shield	40	2	Uncommon	14.543888573177917
+Shield	50	2	Uncommon	13.32857764300991
+Shield	60	2	Uncommon	16.121347173056908
+Shield	70	4	Epic	21.625
+Shield	80	4	Epic	33.478271110245885
+Staff-Weapon	10	1	Common	2.7958887369992405
+Staff-Weapon	20	2	Uncommon	7.413891414984958
+Staff-Weapon	30	3	Rare	5.857213406638883
+Staff-Weapon	40	3	Rare	5.870835021641906
+Staff-Weapon	50	3	Rare	7.0512478129459675
+Staff-Weapon	60	4	Epic	19.62166050584417
+Staff-Weapon	70	2	Uncommon	18.245563418715893
+Staff-Weapon	80	4	Epic	65.12040134881943
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  3. Create and Populate Table: ACSBV3_0600A_itemlevel                                                                 ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:56:35                                                                                            0600A (v2.0)
+                                                                                                                           
+
+Done.
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  4. Create and Populate Temporary Table: ACSBV3_temp_itemlevel                                                        ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:56:36                                                                                            0600A (v2.0)
+                                                                                                                           
+slot_group	RequiredLevelBracket	ItemLevel	Score
+1H-Weapon	10	15	9.617117113053922
+1H-Weapon	20	25	11.942094834140162
+1H-Weapon	30	26	7.527221488448281
+1H-Weapon	40	43	6.60155446343383
+1H-Weapon	50	53	10.136318968549462
+1H-Weapon	60	78	21.25
+1H-Weapon	70	115	58.10931683630097
+1H-Weapon	80	200	71.17935708096822
+2H-Weapon	10	15	5.524248711034963
+2H-Weapon	20	25	6.160004343762153
+2H-Weapon	30	26	5.249982278035566
+2H-Weapon	40	36	5.890695032180312
+2H-Weapon	50	52	5.907043603126167
+2H-Weapon	60	63	11.59399044286025
+2H-Weapon	70	115	23.26860997159918
+2H-Weapon	80	200	17
+Accessory	10	15	3
+Accessory	20	23	7.039231482461663
+Accessory	30	35	11.773303533527274
+Accessory	40	43	7.5532312216316555
+Accessory	50	53	9.037489292118723
+Accessory	60	65	23.654145296351018
+Accessory	70	115	48.27097979746446
+Accessory	80	200	74.35766499127578
+Back	10	15	5.4166141960275995
+Back	20	23	7.8699944983148455
+Back	30	33	5.786153798272755
+Back	40	45	4.838803815311515
+Back	50	55	7.90852778293553
+Back	60	63	11.592398872797283
+Back	70	115	18
+Back	80	200	21.31433575638132
+Major-Armor	10	10	22.097793649016644
+Major-Armor	20	17	14.187538724510533
+Major-Armor	30	27	16.059382084742154
+Major-Armor	40	45	15.083390664599019
+Major-Armor	50	50	19.979819718303947
+Major-Armor	60	63	66.25145729989076
+Major-Armor	70	115	170.89344178311117
+Major-Armor	80	232	202.5
+Minor-Armor	10	10	45.20809648059343
+Minor-Armor	20	17	25.15712353048429
+Minor-Armor	30	33	40.439186826636515
+Minor-Armor	40	43	42.7328216095393
+Minor-Armor	50	50	49.222749830111454
+Minor-Armor	60	63	104.46323151510516
+Minor-Armor	70	115	156.19597979746447
+Minor-Armor	80	200	239.1209435644267
+Moderate-Armor	20	25	7.138007461767377
+Moderate-Armor	30	32	11.374302172100782
+Moderate-Armor	40	45	14.69970211576615
+Moderate-Armor	50	50	14.767452744822377
+Moderate-Armor	60	63	54.59391485575471
+Moderate-Armor	70	115	152.97947573047122
+Moderate-Armor	80	232	199.75
+Ranged-Thrown	20	16	2
+Ranged-Thrown	30	27	2
+Ranged-Thrown	40	40	3
+Ranged-Thrown	50	55	2
+Ranged-Thrown	60	60	1.75
+Ranged-Thrown	70	108	2.5
+Ranged-Thrown	80	200	5
+Ranged-Wand	10	15	1
+Ranged-Wand	20	20	2.3385437751444176
+Ranged-Wand	30	35	2.970569534695911
+Ranged-Wand	40	45	1.648821491156621
+Ranged-Wand	50	51	1.3854340558859142
+Ranged-Wand	60	90	2
+Ranged-Wand	70	75	4
+Ranged-Wand	80	200	9
+Ranged-Weapon	10	14	1
+Ranged-Weapon	20	21	5.112360690486149
+Ranged-Weapon	30	32	4.05702829977788
+Ranged-Weapon	40	41	2.8330734332317435
+Ranged-Weapon	50	53	5.202860456589191
+Ranged-Weapon	60	78	6.25
+Ranged-Weapon	70	115	8.590997940631805
+Ranged-Weapon	80	200	13.25
+Shield	10	10	3.718574929943944
+Shield	20	24	5.643049040087777
+Shield	30	34	3.5242401218099717
+Shield	40	37	3.5263508535627075
+Shield	50	50	3.6386104044143517
+Shield	60	62	4.59413466392746
+Shield	70	115	9
+Shield	80	200	11.603271110245883
+Staff-Weapon	10	10	2.7958887369992405
+Staff-Weapon	20	23	5.448953473850921
+Staff-Weapon	30	33	2.716455037468953
+Staff-Weapon	40	45	2
+Staff-Weapon	50	54	2.7866284783048654
+Staff-Weapon	60	90	6.5663082453710535
+Staff-Weapon	70	115	10.338308683693393
+Staff-Weapon	80	200	17
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  5. Create and Populate Table: ACSBV3_0600A_recommend                                                                 ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:56:40                                                                                            0600A (v2.0)
+                                                                                                                           
+slot_group	RequiredLevelBracket	QualityName	ItemLevel
+2H-Weapon	10	Uncommon	15
+Accessory	10	Uncommon	15
+Staff-Weapon	10	Common	10
+Ranged-Wand	10	Uncommon	15
+Ranged-Weapon	10	Uncommon	14
+1H-Weapon	10	Uncommon	15
+Back	10	Common	15
+Shield	10	Common	10
+Minor-Armor	10	Common	10
+Major-Armor	10	Uncommon	10
+Back	20	Uncommon	23
+1H-Weapon	20	Uncommon	25
+Minor-Armor	20	Uncommon	17
+Moderate-Armor	20	Common	25
+Staff-Weapon	20	Uncommon	23
+Major-Armor	20	Uncommon	17
+Ranged-Thrown	20	Common	16
+Accessory	20	Uncommon	23
+Ranged-Wand	20	Common	20
+2H-Weapon	20	Uncommon	25
+Ranged-Weapon	20	Uncommon	21
+Shield	20	Uncommon	24
+Ranged-Thrown	30	Common	27
+Moderate-Armor	30	Uncommon	32
+Ranged-Wand	30	Uncommon	35
+Staff-Weapon	30	Rare	33
+Ranged-Weapon	30	Uncommon	32
+Major-Armor	30	Uncommon	27
+Shield	30	Uncommon	34
+Minor-Armor	30	Uncommon	33
+Accessory	30	Rare	35
+1H-Weapon	30	Rare	26
+2H-Weapon	30	Uncommon	26
+Back	30	Uncommon	33
+Ranged-Weapon	40	Rare	41
+Accessory	40	Rare	43
+Moderate-Armor	40	Uncommon	45
+Ranged-Thrown	40	Common	40
+2H-Weapon	40	Uncommon	36
+Ranged-Wand	40	Rare	45
+Minor-Armor	40	Uncommon	43
+Staff-Weapon	40	Rare	45
+1H-Weapon	40	Rare	43
+Major-Armor	40	Uncommon	45
+Back	40	Uncommon	45
+Shield	40	Uncommon	37
+Staff-Weapon	50	Rare	54
+Ranged-Weapon	50	Rare	53
+Ranged-Wand	50	Rare	51
+1H-Weapon	50	Rare	53
+2H-Weapon	50	Rare	52
+Ranged-Thrown	50	Common	55
+Shield	50	Uncommon	50
+Moderate-Armor	50	Uncommon	50
+Accessory	50	Rare	53
+Back	50	Uncommon	55
+Major-Armor	50	Uncommon	50
+Minor-Armor	50	Uncommon	50
+Moderate-Armor	60	Rare	63
+Shield	60	Uncommon	62
+Back	60	Epic	63
+Major-Armor	60	Rare	63
+Ranged-Weapon	60	Epic	78
+Staff-Weapon	60	Epic	90
+1H-Weapon	60	Epic	78
+Ranged-Wand	60	Rare	90
+Accessory	60	Epic	65
+Ranged-Thrown	60	Uncommon	60
+2H-Weapon	60	Epic	63
+Minor-Armor	60	Rare	63
+2H-Weapon	70	Uncommon	115
+Moderate-Armor	70	Epic	115
+Back	70	Epic	115
+Staff-Weapon	70	Uncommon	115
+Ranged-Thrown	70	Uncommon	108
+Shield	70	Epic	115
+Ranged-Weapon	70	Uncommon	115
+Major-Armor	70	Epic	115
+Accessory	70	Epic	115
+1H-Weapon	70	Epic	115
+Ranged-Wand	70	Epic	75
+Minor-Armor	70	Epic	115
+Staff-Weapon	80	Epic	200
+Shield	80	Epic	200
+Ranged-Weapon	80	Epic	200
+Ranged-Wand	80	Epic	200
+Ranged-Thrown	80	Epic	200
+Moderate-Armor	80	Epic	232
+Minor-Armor	80	Epic	200
+Major-Armor	80	Epic	232
+Back	80	Epic	200
+Accessory	80	Epic	200
+2H-Weapon	80	Epic	200
+1H-Weapon	80	Epic	200
+
+                                                                                                                           
+                                                                                                                           
+###########################################################################################################################
+##                                                                                                                       ##
+##  6. Create and Populate Final Table: ACSBV3_aux_recommend                                                             ##
+##                                                                                                                       ##
+###########################################################################################################################
+2025-12-19 18:56:41                                                                                            0600A (v2.0)
+                                                                                                                           
+slot_group	level_10	level_20	level_30	level_40	level_50	level_60	level_70	level_80
+1H-Weapon	       Uncommon  15	       Uncommon  25	           Rare  26	           Rare  43	           Rare  53	           Epic  78	           Epic 115	           Epic 200
+2H-Weapon	       Uncommon  15	       Uncommon  25	       Uncommon  26	       Uncommon  36	           Rare  52	           Epic  63	       Uncommon 115	           Epic 200
+Staff-Weapon	         Common  10	       Uncommon  23	           Rare  33	           Rare  45	           Rare  54	           Epic  90	       Uncommon 115	           Epic 200
+Ranged-Weapon	       Uncommon  14	       Uncommon  21	       Uncommon  32	           Rare  41	           Rare  53	           Epic  78	       Uncommon 115	           Epic 200
+Ranged-Thrown	  Not Yet Available	         Common  16	         Common  27	         Common  40	         Common  55	       Uncommon  60	       Uncommon 108	           Epic 200
+Ranged-Wand	       Uncommon  15	         Common  20	       Uncommon  35	           Rare  45	           Rare  51	           Rare  90	           Epic  75	           Epic 200
+Major-Armor	       Uncommon  10	       Uncommon  17	       Uncommon  27	       Uncommon  45	       Uncommon  50	           Rare  63	           Epic 115	           Epic 232
+Moderate-Armor	  Not Yet Available	         Common  25	       Uncommon  32	       Uncommon  45	       Uncommon  50	           Rare  63	           Epic 115	           Epic 232
+Minor-Armor	         Common  10	       Uncommon  17	       Uncommon  33	       Uncommon  43	       Uncommon  50	           Rare  63	           Epic 115	           Epic 200
+Accessory	       Uncommon  15	       Uncommon  23	           Rare  35	           Rare  43	           Rare  53	           Epic  65	           Epic 115	           Epic 200
+Shield	         Common  10	       Uncommon  24	       Uncommon  34	       Uncommon  37	       Uncommon  50	       Uncommon  62	           Epic 115	           Epic 200
+Back	         Common  15	       Uncommon  23	       Uncommon  33	       Uncommon  45	       Uncommon  55	           Epic  63	           Epic 115	           Epic 200
+
+                                                                                                                           
+2025-12-19 18:56:44                                                                                            0600A (v2.0)
+###########################################################################################################################
+##  END PRINT OUT                                                                                                        ##
+###########################################################################################################################
+                                                                                                                           
+                                                                                                                           
