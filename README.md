@@ -71,7 +71,7 @@ These four documents are the core of the AzerothCore Stat Budgeting Project and 
 
 
 
-1\. **Validation-Reference.md**
+1\. **Validation-Reference.txt**
 
    *A Derivation and Validation of Stat Budgeting in AzerothCore*
 
@@ -79,7 +79,7 @@ These four documents are the core of the AzerothCore Stat Budgeting Project and 
 
 
 
-2\. **Developer-Handbook.md**
+2\. **Developer-Handbook.txt**
 
    *A Developer’s Handbook to Stat Budgeting Custom Items*
 
@@ -87,7 +87,7 @@ These four documents are the core of the AzerothCore Stat Budgeting Project and 
 
 
 
-3\. **Developer-Recommendations.md**
+3\. **Developer-Recommendations.txt**
 
    *Developer Recommendations for Stat Allocation*
 
@@ -95,7 +95,7 @@ These four documents are the core of the AzerothCore Stat Budgeting Project and 
 
 
 
-4\. **Precision-Reference.md**
+4\. **Precision-Reference.txt**
 
    *A Verification Guide to Stat Budgeting in AzerothCore*
 
@@ -123,10 +123,10 @@ AzerothCore-Stat-Budgeting-Project/
 
 ├── README.md
 │
-├── Validation-Reference.md
-├── Developer-Handbook.md
-├── Developer-Recommendations.md
-├── Precision-Reference.md
+├── Validation-Reference.txt
+├── Developer-Handbook.txt
+├── Developer-Recommendations.txt
+├── Precision-Reference.txt
 │
 └── supporting-material/
    ├── data/
