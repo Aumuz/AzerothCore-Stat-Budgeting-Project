@@ -1,0 +1,37 @@
+# 1. Make sure venv support is installed
+sudo apt install python3-venv -y
+
+# 2. Create a new virtual environment in your home folder
+python3 -m venv ~/acsbv3env
+
+# 3. Activate the environment
+source ~/acsbv3env/bin/activate
+
+# 4. Upgrade pip (inside the venv)
+pip install --upgrade pip
+
+# 5. Install the packages we need (inside the venv)
+pip install mysql-connector-python pandas
+
+# 6. Run your script
+python /path-to-script/ACSBV3_monotonic_fix.py
+
+# 7. When you’re done, deactivate the environment
+deactivate
+
+# 8. Verify monotonic smoothing
+sudo MySQL
+
+USE acore_world;
+
+SELECT family, Quality, MIN(ItemLevel) AS iLvl_min, MAX(ItemLevel) AS iLvl_max,
+       MIN(curve_value) AS min_budget, MAX(curve_value) AS max_budget
+FROM ACSBV3_ref_curve_equipment_final_fixed
+GROUP BY family, Quality;
+
+SELECT family, Quality, MIN(ItemLevel), MAX(ItemLevel),
+       MIN(curve_value), MAX(curve_value)
+FROM ACSBV3_ref_curve_weapons_final_fixed
+GROUP BY family, Quality;
+
+EXIT;
