@@ -1,0 +1,512 @@
+===========================================================================================================================================
+
+  Filename:    Precision-Reference.txt
+
+  Title:       A Verification Guide to Stat Budgeting in AzerothCore.
+  Description: This document provides a concise reference for validating stat budgets within AzerothCore.
+               This document is intended for reference and verification. It is not optimized for day-to-day item creation.
+
+  Information: All calculations are derived from the AzerothCore database (ACDB 335.14-dev).
+               ChatGPT was utilized in the creation of this document, to assist with analysis and formatting.
+               All results and conclusions were manually verified.
+
+  Author:      Aumuz Messick
+
+  Version:     1.0
+
+  Created:     2025-12-18
+  Updated:     2025-12-27
+
+===========================================================================================================================================
+
+
+
+===========================================================================================================================================
+  A Verification Guide to Stat Budgeting in AzerothCore. v1.0
+===========================================================================================================================================
+
+
+
+===========================================================================================================================================
+  Introduction and Workflow:
+===========================================================================================================================================
+
+      The purpose of this document is to provide readers with a concise framework for the verification of stat budgets
+  of existing equipment and weapon items in AzerothCore. Using this framework, readers can observe and validate how
+  stat budgets vary by ItemLevel (iLvl), Quality, and item configuration. This document also defines the procedure for
+  calculating item buy and sell prices based on the Final Budget.
+
+      This document is intended for reference and verification. It is not optimized for day-to-day item creation. Developers
+  seeking guidance on creating custom items should refer to "A Developers Handbook to Stat Budgeting Custom Items in
+  AzerothCore v1.0" (./Developer-Handbook.txt).
+
+
+
+  This guide is organized into a four-step workflow. Each step builds directly on the previous step.
+
+   - Step 1: Determine the Base Budget from the "Observable ItemLevel to Budget Table".
+   - Step 2: Calculate the Final Budget by applying the appropriate Slot Multiplier.
+   - Step 3: Allocate the Final Budget using the "Observable Stat to Cost Table".
+   - Step 4: Use the Final Budget to calculate the item's buy and sell price.
+
+
+
+===========================================================================================================================================
+  Step 1: Determine the Base Budget from the "Observable ItemLevel to Budget Table".
+===========================================================================================================================================
+
+      The Observable ItemLevel to Budget Table defines base stat budgets derived from observed equipment and weapon items
+  in AzerothCore 3.3.5. To determine an item's Base Budget, locate the row corresponding to the item's ItemLevel and the
+  column corresponding to its Quality Tier. The value at this intersection is the Base Budget.
+
+      This table contains only values observed in the underlying dataset and does not include interpolated, inferred, or
+  synthesized budgets. Its purpose is to document existing itemization behavior, rather than to model or recommend
+  potential item configurations.
+
+
+
+  Observable ItemLevel to Budget Table:
+
+  +------+------------+------------+------------+------------+------------+
+  | iLvl |     Common |   Uncommon |       Rare |       Epic |  Legendary |
+  +------+------------+------------+------------+------------+------------+
+  |   10 |    7.47446 |   10.06110 |            |            |            |
+  |   11 |    7.78296 |   10.40652 |            |            |            |
+  |   12 |    8.24744 |   11.90431 |            |            |            |
+  |   13 |    8.85678 |   12.76101 |            |            |            |
+  |   14 |    8.96955 |   13.70037 |            |            |            |
+  |   15 |    8.97974 |   14.56280 |            |            |            |
+  |   16 |    9.82118 |   15.39024 |            |            |            |
+  |   17 |    9.82118 |   16.54371 |            |            |            |
+  |   18 |   10.27522 |   17.05086 |   22.35640 |            |            |
+  |   19 |   10.27522 |   17.60953 |   22.35640 |            |            |
+  |   20 |   11.81757 |   18.11129 |   22.35640 |            |            |
+  |   21 |   12.68691 |   18.59943 |   22.54760 |            |            |
+  |   22 |   14.09457 |   19.52367 |   24.02528 |            |            |
+  |   23 |   14.24801 |   20.10602 |   25.56320 |            |            |
+  |   24 |   14.41154 |   21.28266 |   26.98934 |            |            |
+  |   25 |   14.41154 |   21.88611 |   28.50889 |            |            |
+  |   26 |   14.57581 |   23.02496 |   28.84695 |            |            |
+  |   27 |   14.57581 |   23.95618 |   28.84695 |            |            |
+  |   28 |            |   24.43333 |   29.04808 |            |            |
+  |   29 |   18.68265 |   24.89847 |   30.28513 |            |            |
+  |   30 |   19.92584 |   25.19836 |   32.33845 |            |            |
+  |   31 |            |   26.26939 |   32.92316 |            |            |
+  |   32 |   23.47500 |   27.12279 |   34.37868 |            |            |
+  |   33 |            |   28.01757 |   35.45953 |            |            |
+  |   34 |   23.47500 |   28.76901 |   37.29798 |            |            |
+  |   35 |   23.47500 |   28.91102 |   37.29798 |            |            |
+  |   36 |   23.47500 |   29.83165 |   38.39228 |   32.99517 |            |
+  |   37 |   23.47500 |   30.74852 |   39.15862 |            |            |
+  |   38 |            |   32.16917 |   40.99844 |            |            |
+  |   39 |            |   32.76573 |   42.28592 |            |            |
+  |   40 |   24.58699 |   33.64358 |   42.88719 |   36.93060 |            |
+  |   41 |            |   35.03316 |   44.52325 |   39.57883 |            |
+  |   42 |            |   36.75731 |   45.86605 |   44.84446 |            |
+  |   43 |            |   38.18908 |   47.24410 |   46.73541 |            |
+  |   44 |   27.59684 |   39.46223 |   47.40463 |   55.81199 |            |
+  |   45 |   28.12405 |   40.70254 |   48.11398 |   58.80332 |            |
+  |   46 |   32.67691 |   42.06264 |   48.83731 |   60.58966 |            |
+  |   47 |   33.64792 |   43.01479 |   49.81008 |   64.65072 |            |
+  |   48 |            |   43.31066 |   49.81008 |   64.65072 |            |
+  |   49 |            |   43.89506 |   50.26408 |   64.65072 |            |
+  |   50 |   37.73814 |   44.97053 |   51.54198 |   64.65072 |            |
+  |   51 |            |   47.04863 |   55.26483 |   64.65072 |            |
+  |   52 |            |   48.38759 |   56.75355 |   64.65072 |            |
+  |   53 |            |   48.51300 |   58.04461 |   64.65072 |            |
+  |   54 |            |   48.51300 |   58.40114 |   64.65072 |            |
+  |   55 |   40.69394 |   48.68827 |   59.73884 |   64.65072 |            |
+  |   56 |            |   50.69874 |   60.02128 |   64.65072 |            |
+  |   57 |            |   52.03427 |   61.21932 |   65.12937 |            |
+  |   58 |            |   52.14291 |   61.55092 |   68.50902 |            |
+  |   59 |            |   52.14291 |   64.43199 |   72.44435 |            |
+  |   60 |            |   52.14291 |   65.45773 |   72.44435 |            |
+  |   61 |            |   52.75799 |   67.18677 |   72.44435 |            |
+  |   62 |            |   53.66726 |   67.69100 |   72.44435 |            |
+  |   63 |            |   56.48178 |   68.09519 |   72.44435 |            |
+  |   64 |            |   59.80018 |   68.18552 |   74.88614 |            |
+  |   65 |            |   66.73082 |   70.31548 |   85.07260 |            |
+  |   66 |            |            |   70.98102 |   91.15479 |            |
+  |   67 |            |            |            |   91.15479 |            |
+  |   68 |            |            |   70.98102 |   91.15479 |            |
+  |   69 |   42.75003 |            |            |   91.15479 |            |
+  |   70 |   46.66655 |            |   70.98102 |   91.15479 |            |
+  |   71 |   46.66655 |            |   72.73440 |   92.42994 |            |
+  |   72 |   49.61440 |            |            |   97.49462 |            |
+  |   73 |            |            |   81.12333 |  103.91645 |            |
+  |   74 |            |            |   88.15621 |  103.91645 |            |
+  |   75 |   49.61440 |            |            |  104.62451 |            |
+  |   76 |            |   78.01296 |            |  104.62451 |   68.98266 |
+  |   77 |            |            |            |  104.62451 |            |
+  |   78 |            |            |            |  104.62451 |            |
+  |   79 |            |            |            |  104.62451 |            |
+  |   80 |   53.17109 |   80.74012 |   89.10736 |  104.62451 |   80.44288 |
+  |   81 |            |   86.21895 |            |  104.62451 |            |
+  |   82 |            |            |   94.96167 |            |            |
+  |   83 |            |   86.21895 |            |  104.62451 |            |
+  |   84 |            |   86.21895 |            |  104.62451 |            |
+  |   85 |   56.92547 |            |   94.96167 |  108.54331 |            |
+  |   86 |            |            |            |  111.10945 |            |
+  |   87 |            |   86.21895 |            |            |            |
+  |   88 |            |            |   96.28245 |  111.82436 |            |
+  |   89 |            |            |            |  111.82436 |            |
+  |   90 |   67.44186 |   86.21895 |            |  111.82436 |   87.91394 |
+  |   91 |            |            |   96.28245 |            |            |
+  |   92 |            |            |            |  113.76239 |            |
+  |   93 |            |   86.21895 |            |            |            |
+  |   94 |            |            |  100.90888 |            |            |
+  |   95 |            |            |            |  118.73696 |            |
+  |   96 |            |   86.21895 |            |            |            |
+  |   97 |            |            |  109.24790 |            |            |
+  |   98 |            |            |            |            |            |
+  |   99 |            |   86.50521 |            |            |            |
+  |  100 |            |            |  128.49350 |  122.86945 |  135.31830 |
+  |  101 |            |            |  128.49350 |            |            |
+  |  102 |            |   86.50521 |  128.49350 |            |            |
+  |  103 |            |   86.50521 |  128.49350 |            |            |
+  |  104 |            |            |            |            |            |
+  |  105 |            |   86.50521 |            |  128.68217 |            |
+  |  106 |            |            |  128.49350 |            |            |
+  |  107 |            |            |            |  137.57689 |            |
+  |  108 |            |   93.81943 |  128.49350 |            |            |
+  |  109 |            |            |  128.49350 |            |            |
+  |  110 |            |            |  128.49350 |  158.39656 |            |
+  |  111 |            |   96.58959 |            |            |            |
+  |  112 |            |            |  128.49350 |            |            |
+  |  113 |            |            |  128.49350 |  159.64724 |            |
+  |  114 |            |   99.44456 |  128.49350 |            |            |
+  |  115 |   72.25243 |            |  128.81831 |  164.20858 |            |
+  |  116 |            |            |            |            |            |
+  |  117 |            |  102.13169 |            |            |            |
+  |  118 |            |            |            |            |            |
+  |  119 |            |            |            |            |            |
+  |  120 |            |  110.54562 |            |  170.79147 |            |
+  |  121 |            |            |            |            |            |
+  |  122 |            |            |            |            |            |
+  |  123 |            |            |            |  171.74139 |            |
+  |  124 |            |            |            |            |            |
+  |  125 |            |            |            |  180.98353 |            |
+  |  126 |            |            |            |  180.98353 |            |
+  |  127 |            |            |            |  181.01911 |            |
+  |  128 |            |            |            |  181.01911 |            |
+  |  129 |            |            |            |            |            |
+  |  130 |            |  121.04309 |  162.83538 |  181.01911 |            |
+  |  131 |            |            |            |            |            |
+  |  132 |            |            |            |  181.01911 |            |
+  |  133 |            |            |            |  181.01911 |            |
+  |  134 |            |  132.53019 |  173.95791 |  199.74874 |            |
+  |  135 |            |            |            |            |            |
+  |  136 |            |            |            |  199.74874 |            |
+  |  137 |            |            |            |            |            |
+  |  138 |            |  139.78390 |  194.78015 |  199.74874 |            |
+  |  139 |            |            |            |            |            |
+  |  140 |            |            |            |            |            |
+  |  141 |            |            |            |  221.07680 |            |
+  |  142 |            |  147.66339 |  194.78015 |            |            |
+  |  143 |            |            |            |  221.07680 |            |
+  |  144 |            |            |            |            |            |
+  |  145 |            |  147.66339 |  205.82857 |  221.07680 |            |
+  |  146 |            |  147.66339 |  205.82857 |  221.07680 |            |
+  |  ... |            |            |            |            |            |
+  |  150 |            |  147.66339 |  205.82857 |            |            |
+  |  151 |            |  147.66339 |            |  221.07680 |            |
+  |  152 |            |            |            |            |            |
+  |  153 |            |            |            |            |            |
+  |  154 |            |  147.66339 |  205.82857 |  251.23699 |            |
+  |  155 |            |  150.52734 |  205.82857 |            |            |
+  |  156 |            |            |            |  272.37429 |  192.91220 |
+  |  157 |            |            |            |            |            |
+  |  158 |            |  153.05836 |  207.94578 |            |            |
+  |  159 |            |            |  210.96250 |  276.62292 |            |
+  |  160 |            |            |            |            |            |
+  |  161 |            |            |            |            |            |
+  |  162 |            |  157.19382 |  215.63654 |            |            |
+  |  163 |            |            |  228.31678 |            |            |
+  |  164 |            |            |            |  287.64940 |  450.95635 |
+  |  165 |            |            |            |            |            |
+  |  166 |            |  159.55024 |  231.95568 |            |            |
+  |  167 |            |            |  235.95178 |            |            |
+  |  168 |            |            |            |            |            |
+  |  169 |            |            |            |            |            |
+  |  170 |            |  161.27869 |  235.95178 |            |            |
+  |  171 |            |            |  249.14851 |            |            |
+  |  172 |            |            |            |            |            |
+  |  173 |            |            |            |            |            |
+  |  174 |            |  165.26441 |  253.75793 |            |            |
+  |  175 |            |            |  262.94413 |            |            |
+  |  176 |            |            |            |            |            |
+  |  177 |            |            |            |            |            |
+  |  178 |            |  168.79835 |            |            |            |
+  |  179 |            |            |  262.94413 |            |            |
+  |  180 |            |            |            |            |            |
+  |  181 |            |            |            |            |            |
+  |  182 |            |  182.61219 |            |            |            |
+  |  183 |            |            |  271.55484 |            |            |
+  |  ... |            |            |            |            |            |
+  |  187 |            |  189.54480 |  290.89186 |            |            |
+  |  ... |            |            |            |            |            |
+  |  200 |            |            |  308.84901 |  341.31504 |            |
+  |  ... |            |            |            |            |            |
+  |  206 |            |            |            |  393.66016 |            |
+  |  ... |            |            |            |            |            |
+  |  213 |            |            |            |  427.43925 |            |
+  |  ... |            |            |            |            |            |
+  |  219 |            |            |            |  451.20188 |            |
+  |  ... |            |            |            |            |            |
+  |  226 |            |            |            |  473.89654 |            |
+  |  ... |            |            |            |            |            |
+  |  232 |            |            |            |  507.08615 |            |
+  |  ... |            |            |            |            |            |
+  |  239 |            |            |            |  533.51169 |            |
+  |  ... |            |            |            |            |            |
+  |  245 |            |            |            |  562.94015 |  641.66678 |
+  |  ... |            |            |            |            |            |
+  |  251 |            |            |            |  640.51688 |            |
+  |  252 |            |            |            |  661.15926 |            |
+  |  ... |            |            |            |            |            |
+  |  258 |            |            |            |  759.28957 |            |
+  |  259 |            |            |            |  759.28957 |            |
+  |  ... |            |            |            |            |            |
+  |  264 |            |            |            |  789.99248 |            |
+  |  ... |            |            |            |            |            |
+  |  268 |            |            |            |  789.99248 |            |
+  |  269 |            |            |            |            |            |
+  |  270 |            |            |            |  789.99248 |            |
+  |  271 |            |            |            |  789.99248 |            |
+  |  272 |            |            |            |  800.42101 |            |
+  |  ... |            |            |            |            |            |
+  |  277 |            |            |            |  835.32161 |            |
+  |  ... |            |            |            |            |            |
+  |  284 |            |            |            |  835.32161 |  824.42766 |
+  |  ... |            |            |            |            |            |
+  |  300 |            |            |            |            |            |
+  +------+------------+------------+------------+------------+------------+
+
+    * Only ItemLevels observed in 3.3.5 are shown. Large gaps indicate ranges with no observed items.
+
+
+
+===========================================================================================================================================
+  Step 2: Calculate the Final Budget by applying the appropriate Slot Multiplier.
+===========================================================================================================================================
+
+      The Slot Multiplier adjusts an item's Base Budget based on its class, subclass, and InventoryType. To determine the
+  correct multiplier, identify the item's class and use the corresponding table below. Then locate the row matching the
+  item's subclass and the column matching its InventoryType. The value at this intersection is the Slot Multiplier.
+
+      Multiply the Base Budget obtained in Step 1 by the Slot Multiplier to calculate the Final Budget.
+
+
+
+  Slot Multiplier Table: Weapon
+
+  +------------------------+------------------------------------------------------------------------+
+  | Weapon                 |                        InventoryType multiplier                        |
+  +------------------------+----------+-----------+----------+----------+---------+--------+--------+
+  | class = 2              |    13    |     21    |    22    |    17    |    15   |   25   |   26   |
+  +----------+-------------+----------+-----------+----------+----------+---------+--------+--------+
+  | subclass | Name        | One-Hand | Main-Hand | Off-Hand | Two-Hand |   Bow   | Thrown | Ranged |
+  +----------+-------------+----------+-----------+----------+----------+---------+--------+--------+
+  |     0    | 1H-Axe      |   0.80   |    0.84   |   0.70   |          |         |        |        |
+  |     1    | 2H-Axe      |          |           |          |   1.19   |         |        |        |
+  |     2    | Bow         |          |           |          |          |   0.71  |        |        |
+  |     3    | Gun         |          |           |          |          |         |        |  0.70  |
+  |     4    | 1H-Mace     |   0.79   |    1.01   |   0.71   |          |         |        |        |
+  |     5    | 2H-Mace     |          |           |          |   1.26   |         |        |        |
+  |     6    | Polearm     |          |           |          |   1.23   |         |        |        |
+  |     7    | 1H-Sword    |   0.79   |    0.96   |   0.73   |          |         |        |        |
+  |     8    | 2H-Sword    |          |           |          |   1.20   |         |        |        |
+  |    10    | Staff       |          |           |          |   1.39   |         |        |        |
+  |    13    | Fist-Weapon |   0.88   |    0.73   |   0.73   |          |         |        |        |
+  |    15    | Dagger      |   0.75   |    1.15   |   0.70   |          |         |        |        |
+  |    16    | Thrown      |          |           |          |          |         |  0.99  |        |
+  |    18    | Crossbow    |          |           |          |          |         |        |  0.73  |
+  |    19    | Wand        |          |           |          |          |         |        |  1.12  |
+  +----------+-------------+----------+-----------+----------+----------+---------+--------+--------+
+
+
+
+  Slot Multiplier Table: Equipment
+
+  +------------------------------------+------------------------------------------------+
+  | Equipment                          |               subclass multiplier              |
+  +------------------------------------+------+-------+---------+------+-------+--------+
+  | class = 4                          |   0  |   1   |    2    |   3  |   4   |    6   |
+  +---------------+--------------------+------+-------+---------+------+-------+--------+
+  | InventoryType | Name               | Misc | Cloth | Leather | Mail | Plate | Shield |
+  +---------------+--------------------+------+-------+---------+------+-------+--------+
+  |        1      | Head               |      |  0.71 |   0.93  | 1.34 |  1.85 |        |
+  |        2      | Neck               | 0.37 |       |         |      |       |        |
+  |        3      | Shoulder           |      |  0.58 |   0.79  | 1.18 |  1.60 |        |
+  |        5      | Chest              |      |  0.59 |   1.07  | 1.65 |  2.13 |        |
+  |        6      | Waist              |      |  0.49 |   0.70  | 1.05 |  1.43 |        |
+  |        7      | Legs               |      |  0.72 |   0.98  | 1.48 |  1.95 |        |
+  |        8      | Feet               |      |  0.53 |   0.77  | 1.23 |  1.67 |        |
+  |        9      | Wrists             |      |  0.37 |   0.53  | 0.82 |  1.11 |        |
+  |       10      | Hands              |      |  0.53 |   0.71  | 1.09 |  1.43 |        |
+  |       11      | Finger             | 0.36 |       |         |      |       |        |
+  |       14      | Shield             |      |       |         |      |       |  6.43  |
+  |       16      | Back               |      |  0.41 |         |      |       |        |
+  |       20      | Robe               |      |  0.76 |   1.01  | 1.40 |       |        |
+  |       23      | Off-Hand-Equipment | 0.32 |       |         |      |       |        |
+  +---------------+--------------------+------+-------+---------+------+-------+--------+
+
+
+
+===========================================================================================================================================
+  Step 3: Allocate the Final Budget using the "Observable Stat to Cost Table".
+===========================================================================================================================================
+
+      The Final Budget is allocated by assigning stats according to their respective budget costs. The following formulas
+  define how DPS, Armor, and stat values consume budget. The total cost of all assigned values must not exceed the Final
+  Budget.
+
+
+
+    DPS Cost   = (dmg_min1 + dmg_max1) / 2 / (delay / 1000)
+    Armor Cost = armor * 0.20
+    Stat Cost  = stat_value * Cost
+
+
+
+  Observable Stat to Cost Table:
+
+  +-----------+-----------------------------------+------+---------+-----------+--------------------------------------------------------+
+  | stat_type | Name                              | Cost | Group   | Role      | Notes                                                  |
+  +-----------+-----------------------------------+------+---------+-----------+------------------------------------------------------------+
+  |      -    | DPS                               | 1.00 | None    | Weapon    | 1 Budget Per 1 DPS.                                        |
+  |      -    | armor                             | 0.20 | None    | Equipment | 1 Budget Per 5 armor.                                      |
+  |           |                                   |      |         |           |                                                            |
+  |      7    | ITEM_MOD_STAMINA                  | 1.00 | Stamina | ANY       | Increase Health.                                           |
+  |           |                                   |      |         |           |                                                            |
+  |      3    | ITEM_MOD_AGILITY                  | 1.10 | Primary | DPS       | Increase Attack Power of Melee and Ranged Weapons.         |
+  |      4    | ITEM_MOD_STRENGTH                 | 0.85 | Primary | Melee     | Increase Melee Attack Power and Parry Rating.              |
+  |      5    | ITEM_MOD_INTELLECT                | 0.90 | Primary | Caster    | Increase Spell Power and Mana Pool.                        |
+  |      6    | ITEM_MOD_SPIRIT                   | 0.80 | Primary | ANY       | Increase Health and Mana Regeneration.                     |
+  |           |                                   |      |         |           |                                                            |
+  |     12    | ITEM_MOD_DEFENSE_SKILL_RATING     | 0.80 | Rating  | Tank      | Reduce Chance of Being Hit, or Critically Hit.             |
+  |           |                                   |      |         |           | Increase Chance to Block, Dodge, and Parry an Attack.      |
+  |     13    | ITEM_MOD_DODGE_RATING             | 0.85 | Rating  | Tank      | Increase Chance to Dodge an Attack.                        |
+  |     14    | ITEM_MOD_PARRY_RATING             | 0.25 | Rating  | Tank      | Increase Chance to Parry an Attack.                        |
+  |     15    | ITEM_MOD_BLOCK_RATING             | 0.55 | Rating  | Tank      | Increase Chance to Block an Attack.                        |
+  |     31    | ITEM_MOD_HIT_RATING               | 0.85 | Rating  | DPS       | Increase Chance of Successful Hit.                         |
+  |     32    | ITEM_MOD_CRIT_RATING              | 0.90 | Rating  | DPS       | Increase Chance of Critical Hit.                           |
+  |     35    | ITEM_MOD_RESILIENCE_RATING        | 0.70 | Rating  | PVP       | Reduce PVP Damage Taken.                                   |
+  |     36    | ITEM_MOD_HASTE_RATING             | 0.90 | Rating  | DPS       | Increase Attack Speed. Reduce Cast Time.                   |
+  |     37    | ITEM_MOD_EXPERTISE_RATING         | 1.10 | Rating  | Melee     | Reduce Chance of Melee Attack Being Avoided by Target.     |
+  |     44    | ITEM_MOD_ARMOR_PENETRATION_RATING | 0.90 | Rating  | Melee DPS | Increase Amount of Armor Player Attack can Ignore.         |
+  |           |                                   |      |         |           |                                                            |
+  |     38    | ITEM_MOD_ATTACK_POWER             | 0.40 | Power   | Melee     | Increase Base Weapon Damage.                               |
+  |     39    | ITEM_MOD_RANGED_ATTACK_POWER      | 0.40 | Power   | Ranged    | Increase Ranged Weapon Damage.                             |
+  |     42    | ITEM_MOD_SPELL_DAMAGE_DONE        | 0.45 | Power   | Caster    | Legacy Stat -> Mirrors Spell Power.                        |
+  |     45    | ITEM_MOD_SPELL_POWER              | 0.90 | Power   | Caster    | Increase Effectiveness of Spells.                          |
+  |           |                                   |      |         |           |                                                            |
+  |     --    | OTHER                             | 0.00 | Unknown | Unknown   | Stats Not Listed Have No Observable Effect on Item Budget. |
+  +-----------+-----------------------------------+------+---------+-----------+------------------------------------------------------------+
+
+    * For additional context on stat distribution patterns, refer to <RECOMMENDATION_DOCUMENT_NAME>.
+
+
+
+  Socket Bonus Cost:
+
+      Socket bonuses consume budget at 50% of the cost of the corresponding stat. To calculate the cost of a socket bonus,
+  determine the stat cost using the Stat to Cost Table, then multiply that value by 0.50.
+
+      Example:
+        ITEM_MOD_STRENGTH cost = 0.85
+        Socket bonus: +2 Strength
+        Socket bonus cost = 2 * (0.85 * 0.50) = 0.85
+
+
+
+  Random Property and Random Suffix Cost:
+
+      Items with a Random Property or Random Suffix consume budget equal to 35% of the Final Budget. This cost is applied
+  once per item and is independent of the specific stats granted by the random effect.
+
+
+
+===========================================================================================================================================
+  Step 4: Use the Final Budget to calculate the item's buy and sell price.
+===========================================================================================================================================
+
+      An item's SellPrice (in copper) is derived from its Final Budget and ItemLevel using the ItemLevel Multiplier defined below.
+  BuyPrice is calculated as a fixed multiple of SellPrice.
+
+  BuyPrice  = SellPrice * 5
+  SellPrice = Final Budget * ItemLevel Multiplier
+
+
+
+  Observable ItemLevel Multiplier:
+
+  +------+------------+    +------+------------+    +------+------------+
+  | iLvl | Multiplier |    | iLvl | Multiplier |    | iLvl | Multiplier |
+  +------+------------+    +------+------------+    +------+------------+
+  |   10 |  25.274700 |    |  110 | 354.024000 |    |  210 | 229.690650 |
+  |   20 |  72.151200 |    |  120 | 370.082650 |    |  220 | 219.276500 |
+  |   30 | 141.923100 |    |  130 | 370.082650 |    |  230 | 202.135850 |
+  |   40 | 217.500000 |    |  140 | 402.658200 |    |  240 | 199.893150 |
+  |   50 | 325.671100 |    |  150 | 402.658200 |    |  250 | 194.182900 |
+  |   60 | 339.543900 |    |  160 | 402.658200 |    |  260 | 184.299100 |
+  |   70 | 397.663050 |    |  170 | 400.429850 |    |  270 | 184.299100 |
+  |   80 | 497.510500 |    |  180 | 236.914000 |    |  280 | 209.020000 |
+  |   90 | 691.580100 |    |  190 |            |    |  290 |            |
+  |  100 | 578.721550 |    |  200 | 229.690650 |    |  300 |            |
+  +------+------------+    +------+------------+    +------+------------+
+
+    * All prices are expressed in copper.
+
+
+
+===========================================================================================================================================
+  Additional Information:
+===========================================================================================================================================
+
+      This document defines a complete workflow for verifying stat budgets and item prices for existing equipment and weapon
+  items in AzerothCore. All values presented are derived from observed items only; no interpolation or synthesized values were
+  used to fill unobserved ItemLevel or Quality ranges.
+
+      Readers should expect individual items to deviate from the values presented in this document. The budgets defined
+  here represent the average observed power level for a given ItemLevel and Quality Tier, not a strict specification applied
+  uniformly across all items. Blizzard itemization exhibits intentional variance driven by gameplay considerations, class
+  identity, encounter design, and progression pacing. As a result, deviation from the average is not an anomaly but a
+  structural characteristic of the itemization system being modeled.
+
+      This document therefore describes the expected power level of items within AzerothCore, providing a baseline against
+  which existing items can be evaluated rather than a set of exact targets every item is required to match.
+
+      The following documents provide additional context and usage guidance, depending on the reader’s objectives.
+
+
+
+  Developers Handbook
+    "A Developers Handbook to Stat Budgeting Custom Items in AzerothCore. v1.0"
+    <URL of DEVELOPER_DOCUMENT>
+
+    Provides the same workflow and tables as this document using interpolation or derived values.
+    This document not only defines what exists in AzerothCore, but what can exist. It is designed for daily use by developers.
+
+
+
+  Developer Recommendations
+    "Developer Recommendations for Stat Allocation of Custom Items in AzerothCore. v1.0"
+    <URL of RECOMMENDATION_DOCUMENT>
+
+    Provides guidance on selecting appropriate ItemLevel, Quality, DPS values, armor values, and stat distributions
+    based on player progression and item purpose.
+
+
+
+  Validation Reference
+    "A Derivation and Validation of Stat Budgeting in AzerothCore. v1.0"
+    <URL of RESEARCH_DOCUMENT>
+
+    Documents the data sources, analysis methods, and validation steps used to derive the values presented in this guide.
+
+
+
+===========================================================================================================================================
+  End of Document: A Verification Guide to Stat Budgeting in AzerothCore. v1.0
+===========================================================================================================================================

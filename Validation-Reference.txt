@@ -1,0 +1,460 @@
+===========================================================================================================================================
+
+  Filename:    Validation-Reference.txt
+
+  Title:       A Derivation and Validation of Stat Budgeting in AzerothCore.
+  Description: This document explains how the values and recommendations of the AzerothCore Stat Budgeting Project were derived and validated.
+               It may be read either before or after the accompanying developer-facing guides.
+               Its purpose is to establish the basis and reliability of the recommendations provided elsewhere in this project.
+
+  Information: All calculations are derived from the AzerothCore database (ACDB 335.14-dev).
+               ChatGPT was utilized in the creation of this document, to assist with analysis and formatting.
+               All results and conclusions were manually verified.
+
+  Author:      Aumuz Messick
+
+  Version:     1.0
+
+  Created:     2025-12-27
+  Updated:     2025-12-27
+
+===========================================================================================================================================
+
+
+
+===========================================================================================================================================
+  A Derivation and Validation of Stat Budgeting in AzerothCore. v1.0
+===========================================================================================================================================
+
+
+
+===========================================================================================================================================
+  Introduction and Scope:
+===========================================================================================================================================
+
+      The AzerothCore Stat Budgeting Project provides a reproducible framework for creating custom equipment and weapons that conform to
+  the intended power progression of Blizzard items in World of Warcraft 3.3.5. When used as a complete set, the documents in this project
+  allow developers to produce items that are internally consistent with existing game data while remaining flexible enough for custom design.
+
+      This document explains how the project's values and recommendations were derived. It describes the data sources used, the constraints
+  applied during collection, the methods used to derive and validate stat budget curves, the rules governing interpolation, and the process
+  by which supporting tables were constructed.
+
+      This document may be read either before or after the accompanying developer-facing guides. Its purpose is not to instruct item
+  creation directly, but to establish why the recommendations provided elsewhere are reliable.
+
+
+
+===========================================================================================================================================
+  Foundational Assumptions and Constraints:
+===========================================================================================================================================
+
+      This project is built on the premise that an item's effective power in World of Warcraft 3.3.5 is fully expressed through three
+  components: armor, DPS, and allocated stats. In existing game data, these components are governed primarily by an item's Quality
+  and Item Level (iLvl).
+
+      From this premise, the project assumes that a total stat budget can be derived for any item defined by a given Quality and Item Level.
+  This derivation requires that item slots-defined by class, subclass, and InventoryType, apply consistent multipliers to that budget,
+  and that armor, DPS, and allocated stats each consume predictable portions of it.
+
+      Under these constraints, armor values, DPS values, and stat distribution patterns are treated as derivable functions of Quality
+  and Item Level rather than independent design choices.
+
+
+
+===========================================================================================================================================
+  Data Sources and Collection Constraints:
+===========================================================================================================================================
+
+      All calculations in the AzerothCore Stat Budget Project are derived from the AzerothCore database (ACDB 335.14-dev). Item metadata
+  was copied from table: item_template to create the project's dataset.
+
+  The following filters were applied to isolate player-obtainable items that conform to standard 3.3.5 itemization rules.
+
+    Item Inclusion Constraints:
+
+     - class = 2 AND subclass NOT IN (9, 11, 12, 14, 20) - Include Weapons except Obsolete, Exotic, Miscellaneous, and Fishing Pole.
+                                                           These items do no conform to standard itemization.
+
+     - class = 4 AND InventoryType NOT IN (0, 4, 12, 18, 19, 24, 27, 28) - Include Equipment except Non-Equipable, Shirt, Trinket, Bag,
+                                                                           Tabard, Ammo, Quiver, and Relic. These items typically contain
+                                                                           no stats, or are outside the scope of this project.
+
+     - Quality IN (1, 2, 3, 4, 5) - This excludes Poor, Heirloom, and Artifact items, as these items do not conform to standard itemization.
+
+     - ItemLevel > 5 - This excludes starting gear, and non-standard items, such as Event, GM and Test items (typically ItemLevel = 0).
+
+     - RequiredLevel > 5 - This excludes starting gear, and non-standard items, such as Event, GM and Test items (typically RequiredLevel = 0).
+
+
+
+  Name, Description, and Accessibility Filters:
+
+   - name and description fields excluding values containing "DEPRECATED", "MONSTER", "PLACEHOLDER", or "TEST". This excludes items unobtainable by players.
+
+
+
+  Structural Sanity Checks:
+
+    - Weapons with no dmg_min1 and no dmg_max1 values were removed.
+
+    - Equipment with no armor and no stat values were removed.
+
+    - Impossible item combinations (such as 1H Axe, Two Handed) were also removed.
+
+    - During manual review of Legendary-quality items, five items were removed from the dataset due to known player unavailability,
+      including items never obtainable in-game and one historically limited drop later rendered non-functional.
+
+
+
+  Resulting Dataset Size:
+
+   - These filters resulted in a final data set of 18318 items (3263 weapons, 15055 equipment).
+
+
+
+  Acquisition Normalization: (limited use)
+
+    - After the creation of the initial dataset, items were cross-referenced to determine drop location (dungeon, raid, world),
+      drop source (creature loot, quest rewards, and etc.), drop rate, and drop cadence (how often an item can drop within seven days,
+      given drop rate, respawn time, and spawn count).
+
+    - This information was used to determine an item's availability weight. This weight was only used to generate the
+      "Recommended ItemLevel and Quality by Player Level" in the Developer Recommendations.
+
+    - This weighting was not applied to any budget curves, DPS calculations, armor values, stat counts, or stat distribution tables.
+
+
+
+===========================================================================================================================================
+  Initial Budget Model Definition:
+===========================================================================================================================================
+
+      The initial budget model defines an item's budget as the sum of its observable armor, DPS, stat, and socket costs, normalized by
+  slot-specific multipliers to allow comparison across item slots.
+
+      Costs were derived from observed armor, DPS, and stat values using a unified budget scale, where 1 point of Stamina represents a full
+  budget unit and DPS consumes budget on a 1-to-1 basis. Socket bonuses were treated as consuming half the equivalent stat cost.
+
+      Initial slot multipliers were introduced as neutral scaling factors to normalize budget consumption across item slots. At the outset
+  of curve construction, slot multipliers were treated as provisional normalization factors rather than fixed constants. The initial values
+  served only to allow curve construction to proceed and were not considered authoritative until validated against observed item distributions.
+
+      Actual Budget is defined as the sum of Armor Cost, DPS Cost, Total Stat Cost, and Socket Cost. Armor Cost is calculated as armor x 0.20.
+  DPS Cost is calculated as (dmg_min1 + dmg_max1) / 2 / (delay / 1000). Total Stat Cost is the sum of each stat_value multiplied by its
+  corresponding stat cost. Socket bonuses consume 50% of the equivalent stat cost.
+
+      Normalized Budget is calculated by dividing Actual Budget by the item's slot multiplier, allowing budgets from different item slots to
+  be compared on a common scale. Items with a random property or random suffix were further divided by 0.65, reflecting an observed fixed
+  budget cost of 35%.
+
+      Once normalized budgets were calculated, items were grouped by Quality and ItemLevel. Crude curves were then derived for each Quality
+  by finding the average normalized budget of each group, then ordering the results by ItemLevel. Each curve was further refined by applying
+  a 3 point smoothing window, followed by monotonic enforcement. The result was a smooth, monotonically increasing curve for each Quality tier.
+
+
+
+===========================================================================================================================================
+  Curve Validation and Adjustment:
+===========================================================================================================================================
+
+      After initial curve construction, validation and adjustment were performed to ensure alignment between observed item budgets and
+  curve-derived target budgets.
+
+      For each item in the dataset, the Normalized Budget was compared against its corresponding Quality and ItemLevel target value.
+  Both absolute deviation and budget ratio were recorded.
+
+
+
+  A series of evaluation reports were generated by grouping items by:
+
+   - Quality
+
+   - ItemLevel
+
+   - Slot
+
+   - A global aggregate including all items
+
+  These reports were used to assess systemic deviation patterns rather than individual outliers.
+
+
+
+      Slot multipliers were adjusted using the Slot report by recalculating each multiplier based on the average budget ratio for that slot,
+  according to the following rule:
+
+  New Multiplier = Old Multiplier × Budget Ratio
+
+
+
+  After updating slot multipliers, budget curves were regenerated and the validation process repeated.
+
+
+
+  Validation Summary (Final Iteration)
+
+   - Global ratio: 98.04%
+
+   - Quality-level ratios: 96.74% - 102.17%
+
+   - ItemLevel alignment: 81% of ItemLevels within ±10% of target budget
+
+   - Slot alignment: All slots within ±4% of target budget
+
+
+
+      The final values reported in this project were selected from the iteration that best balanced accuracy across all validation reports,
+  rather than the iteration that minimized error in any single dimension.
+
+  Slot multiplier adjustments were evaluated holistically, as changes to individual slots were observed to propagate variance across other
+  validation dimensions.
+
+
+
+===========================================================================================================================================
+  Interpolation and Curve Expansion:
+===========================================================================================================================================
+
+      Once validated, the budget curves describe observed itemization behavior within the AzerothCore 3.3.5 dataset. To support custom
+  item creation beyond observed ItemLevel and Quality combinations, controlled interpolation and curve expansion were required.
+
+      To prepare for interpolation, validated quality curves were aligned side-by-side and aggregated into 10-level ItemLevel brackets
+  by averaging values within each bracket, ignoring null or zero entries. Slopes were then calculated between adjacent brackets.
+
+
+
+  +------+----------+---------+-----------+---------+-----------+---------+-----------+----------+-----------+----------+
+  | iLvl |   Common | C Slope |  Uncommon | U Slope |      Rare | R Slope |      Epic |  E Slope | Legendary |  L Slope |
+  +------+----------+---------+-----------+---------+-----------+---------+-----------+----------+-----------+----------+
+  |   10 |  9.05037 | 0.53390 |  13.99905 | 0.75832 |  22.35640 | 0.43454 |      NULL |     NULL |      NULL |     NULL |
+  |   20 | 14.38938 | 0.84941 |  21.58221 | 0.73981 |  26.70178 | 1.03513 |      NULL |     NULL |      NULL |     NULL |
+  |   30 | 22.88347 | 0.64431 |  28.98032 | 1.06268 |  37.05310 | 1.04230 |  32.99517 |  2.07295 |      NULL |     NULL |
+  |   40 | 29.32654 | 0.98895 |  39.60711 | 0.97069 |  47.47608 | 1.12208 |  53.72464 |  1.21391 |      NULL |     NULL |
+  |   50 | 39.21604 | 0.35340 |  49.31399 | 0.76162 |  58.69685 | 0.99149 |  65.86378 |  1.55718 |      NULL |     NULL |
+  |   60 | 42.75003 | 0.53905 |  56.93016 | 2.10828 |  68.61172 | 0.96370 |  81.43553 |  1.97680 |      NULL |     NULL |
+  |   70 | 48.14048 | 0.69078 |  78.01296 | 0.71102 |  78.24874 | 1.55796 | 101.20348 |  0.65215 |  68.98266 |  1.14602 |
+  |   80 | 55.04828 | 1.23936 |  85.12318 | 0.11673 |  93.82829 | 0.83181 | 107.72494 |  0.70496 |  80.44288 |  0.74711 |
+  |   90 | 67.44186 |    NULL |  86.29052 | 0.20433 | 102.14641 | 2.63471 | 114.77457 |  1.49349 |  87.91394 |  4.74044 |
+  |  100 |     NULL |    NULL |  88.33377 | 1.10548 | 128.49350 | 0.00650 | 129.70950 |  3.10413 | 135.31830 |     NULL |
+  |  110 | 72.25243 |    NULL |  99.38861 | 1.11570 | 128.55846 |    NULL | 160.75079 |  1.70056 |      NULL |     NULL |
+  |  120 |     NULL |    NULL | 110.54562 | 2.05734 |      NULL |    NULL | 177.75636 |  1.26276 |      NULL |     NULL |
+  |  130 |     NULL |    NULL | 131.11906 | 1.65443 | 177.19115 | 2.49546 | 190.38393 |  3.06929 |      NULL |     NULL |
+  |  140 |     NULL |    NULL | 147.66339 | 0.16518 | 202.14576 | 0.51330 | 221.07680 |  3.42510 |      NULL |     NULL |
+  |  150 |     NULL |    NULL | 149.31517 | 0.90569 | 207.27880 | 2.06864 | 255.32775 |  3.23217 | 192.91220 | 25.80442 |
+  |  160 |     NULL |    NULL | 158.37203 | 0.67418 | 227.96520 | 2.49841 | 287.64940 |     NULL | 450.95635 |     NULL |
+  |  170 |     NULL |    NULL | 165.11382 | 2.09647 | 252.94930 | 2.82741 |      NULL |     NULL |      NULL |     NULL |
+  |  180 |     NULL |    NULL | 186.07850 |    NULL | 281.22335 |    NULL |      NULL |     NULL |      NULL |     NULL |
+  |  190 |     NULL |    NULL |      NULL |    NULL |      NULL |    NULL |      NULL |     NULL |      NULL |     NULL |
+  |  200 |     NULL |    NULL |      NULL |    NULL | 308.84901 |    NULL | 367.48760 |  7.18330 |      NULL |     NULL |
+  |  210 |     NULL |    NULL |      NULL |    NULL |      NULL |    NULL | 439.32057 |  3.45760 |      NULL |     NULL |
+  |  220 |     NULL |    NULL |      NULL |    NULL |      NULL |    NULL | 473.89654 |  4.64024 |      NULL |     NULL |
+  |  230 |     NULL |    NULL |      NULL |    NULL |      NULL |    NULL | 520.29892 |  4.26412 |      NULL |     NULL |
+  |  240 |     NULL |    NULL |      NULL |    NULL |      NULL |    NULL | 562.94015 | 14.21237 | 641.66678 |     NULL |
+  |  250 |     NULL |    NULL |      NULL |    NULL |      NULL |    NULL | 705.06382 |  8.49287 |      NULL |     NULL |
+  |  260 |     NULL |    NULL |      NULL |    NULL |      NULL |    NULL | 789.99248 |  1.39394 |      NULL |     NULL |
+  |  270 |     NULL |    NULL |      NULL |    NULL |      NULL |    NULL | 803.93190 |  3.13897 |      NULL |     NULL |
+  |  280 |     NULL |    NULL |      NULL |    NULL |      NULL |    NULL | 835.32161 |     NULL | 824.42766 |     NULL |
+  |  290 |     NULL |    NULL |      NULL |    NULL |      NULL |    NULL |      NULL |     NULL |      NULL |     NULL |
+  |  300 |     NULL |    NULL |      NULL |    NULL |      NULL |    NULL |      NULL |     NULL |      NULL |     NULL |
+  +------+----------+---------+-----------+---------+-----------+---------+-----------+----------+-----------+----------+
+
+
+
+      Incomplete curves reflect Blizzard's itemization practices rather than missing data; not every ItemLevel–Quality combination exists
+  in the dataset. Among all qualities, the Epic curve was the most complete and was therefore selected as the reference curve for interpolation.
+
+      Three slope regions with internally consistent growth rates were identified within the Epic curve: ItemLevels 10–60, 70–140,
+  and 150–300. For each region, quality-specific ratios relative to Epic were calculated and used to reconstruct missing values in
+  other quality curves.
+
+      Where data was absent across an entire region, constrained fallbacks were applied. The Common quality curve lacked data in the
+  150–300 range and therefore reused the 70–140 slope region. Legendary lacked data in the 10–60 range and similarly reused the 70–140 region.
+
+      Once all ItemLevel brackets were populated, monotonic enforcement was applied within each quality curve. Additional monotonic constraints
+  were enforced across qualities to ensure expected ordering (Legendary ≥ Epic ≥ Rare ≥ Uncommon ≥ Common).
+
+      Poor-quality items (Quality = 0) were not present in the dataset but may be required for custom content. These values were extrapolated
+  from the Common curve using fixed multipliers: 75% for ItemLevels 10–60, 70% for 70–140, and 65% for 150–300.
+
+
+
+===========================================================================================================================================
+  Derivation of Supporting Tables:
+===========================================================================================================================================
+
+      The bulk of analysis in the AzerothCore Stat Budgeting Project was concerned with the production and validation of the budget model
+  (cost, curves, and multipliers). However, additional context was required for developers to produce BlizzLike items.
+
+  Studies have been conducted on the following topics:
+
+   - 1. Recommended Quality and ItemLevel based on player level.
+   - 2. Recommended DPS values based on ItemLevel.
+   - 3. Recommended armor values based on ItemLevel and Armor Type.
+   - 4. Recommended number of stats based on Quality and ItemLevel.
+   - 5. Recommended distribution of stat values.
+   - 6. Recommended buy/sell price.
+
+  Slot Group was heavily utilized within the recommendation document. These groups are classified by items of similar game-play roles and budget behavior.
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------
+  1. Recommended Quality and ItemLevel based on player level.
+  -----------------------------------------------------------------------------------------------------------------------------------------
+
+         To generate this table, dataset items were first grouped by Slot Group, RequiredLevel (in 10 level brackets) and Quality or ItemLevel.
+     Item counts for each group were adjusted using the weights derived in data collection. As a result, each item contributed a weighted
+     value between 0.20 and 1.00. The most common group (highest count) was saved as the recommendation. Finally, as Quality and ItemLevel
+     were calculated separately, these were combined into a final table.
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------
+  2. Recommended DPS values based on ItemLevel.
+  -----------------------------------------------------------------------------------------------------------------------------------------
+
+         This series of tables were generated by grouping weapon items by Slot Group, ItemLevel (in 10 level brackets), and
+     InventoryType (to define handedness).
+
+         For each group, an average dmg_min1, dmg_max1, delay, and Actual Budget was determined. 3 point smoothing was then applied. Monotonic
+     progression was also enforced on all columns excluding delay (which did not display monotonic progression).
+
+         dmg_min1, dmg_max1, and delay were rounded to the nearest whole number, as these are saved as integers in the database. Using these
+     values, DPS was calculated, and rounded to two decimal points.
+
+     A DPS to Actual Budget ratios was calculated for each group, using the smoothed average budget, and rounded DPS values.
+
+         Once all information was collected and calculated, the information was divided into eight tables, representing Slot Group,
+     and handedness (when applicable).
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------
+  3. Recommended armor values based on ItemLevel and Armor Type.
+  -----------------------------------------------------------------------------------------------------------------------------------------
+
+         This series of tables were generated by grouping equipment (armor) items by Slot Group, ItemLevel and subclass (to define armor type).
+     Items without an armor value were excluded.
+
+         For each group an average of armor and Actual Budget was determined. 3 point smoothing and monotonic progression was then applied,
+     and armor was rounded to the nearest whole number.
+
+     Armor Cost was calculated (armor x 0.20), and an Armor Cost to Actual Budget ratio was determined.
+
+         The information collected was then divided into six tables. Four tables depicting Slot Groups Major-Armor, Moderate-Armor, and
+     Minor-Armor, divided into each armor type, Cloth, Leather, Mail, and Plate. Two tables depict Shield and Back (Cloak). The Accessory
+     Slot Group was excluded, as these items do not contain consistent armor values.
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------
+  4. Recommended number of stats based on Quality and ItemLevel.
+  -----------------------------------------------------------------------------------------------------------------------------------------
+
+         To generate these three tables, items were grouped by Quality, ItemLevel (in 20 level brackets) and Slot Group. Stats were then
+     aggregated and counted within each group. Any non-zero stat_value which matched a non-zero stat_type, were counted as 1. These counts
+     were totaled, and an average count was determined per group. This average count was then smoothed and monotonic progression was enforced.
+     Finally, the number was rounded to the nearest whole value.
+
+     The result was three Quality tables, divided by ItemLevel and Slot Group.
+
+         Common items within the dataset did not return any stats beyond DPS or Armor, and have been excluded. Legendary items were also
+     excluded due to the small sample size. Poor items, while generally excluded from this project, were confirmed to also contain no stats
+     beyond DPS or Armor (via MYSQL query on item_template).
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------
+  5. Recommended distribution of stat values.
+  -----------------------------------------------------------------------------------------------------------------------------------------
+
+         Observation of stat distribution within the dataset show consistency between Quality and ItemLevel. Slot Group is the only marked
+     difference in how stats are distributed.
+
+         The Stat Distribution Table was generated by grouping dataset items by Slot Group. Stats were then aggregated according to their
+     stat_type/stat_value combination, and grouped by Stat Group (stats with similar game-play roles and costs). The ratio of each Stat Group
+     to the total sum of stats, was then calculated for each Slot Group.
+
+     This table omits armor and DPS from ratio calculations.
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------
+  6. Recommended buy/sell price.
+  -----------------------------------------------------------------------------------------------------------------------------------------
+
+         Buy and sell pricing was analyzed separately from stat budgeting, as price is not directly encoded as a stat cost but reflects
+     item value within the economy.
+
+         Only items containing both BuyPrice and SellPrice were included in this analysis. Of the 18,318 items in the dataset, 13,096 items
+     (71.49%) met this criterion. Items lacking either value were excluded.
+
+         Analysis of these items showed that SellPrice is consistently equal to 20% of BuyPrice across all Qualities, ItemLevels, and
+     Slot Groups. This establishes a fixed relationship:
+
+     SellPrice = BuyPrice × 0.20
+     BuyPrice = SellPrice × 5
+
+         Further analysis showed that SellPrice does not scale directly with raw stat budget alone. Instead, SellPrice is proportional to
+     the product of Actual Budget and an ItemLevel-specific multiplier.
+
+         To derive this multiplier, items were grouped by ItemLevel bracket and the median ratio of Actual Budget to SellPrice was calculated.
+     This ratio was rounded to the nearest whole number and recorded as the ItemLevel Multiplier.
+
+     Recommended BuyPrice and SellPrice values are therefore derived using:
+
+     SellPrice = Actual Budget × ItemLevel Multiplier
+     BuyPrice = SellPrice × 5
+
+     This approach reflects observed Blizzard pricing behavior and preserves economic consistency across ItemLevels.
+
+
+
+===========================================================================================================================================
+  Scope Limits, Intended Use, and Related Documents:
+===========================================================================================================================================
+
+      The AzerothCore Stat Budgeting Project defines a data-driven model for item stat budgeting in World of Warcraft 3.3.5, based on
+  observed AzerothCore itemization patterns. It is intended for developers creating custom weapons and equipment that conform to established
+  power progression defined by ItemLevel and Quality.
+
+      This project is not intended to prescribe optimal or competitive itemization strategies, nor to replicate Blizzard's internal design
+  process. Instead, it provides a consistent, verifiable framework for producing BlizzLike items that integrate cleanly into existing
+  progression systems. While the model is calibrated to typical Wrath of the Lich King itemization, it is sufficiently flexible to support
+  experimental or best-in-slot designs at the developer's discretion.
+
+
+
+  The documents below provide additional context and guidance, depending on development needs.
+
+
+
+  Developers Handbook
+    "A Developers Handbook to Stat Budgeting Custom Items in AzerothCore. v1.0"
+    <URL of DEVELOPER_DOCUMENT>
+
+    Provides the workflow and reference tables required for calculating item stat budgets. This document incorporates interpolation
+    and derived values and defines both observed and permissible itemization behavior. It is intended for routine use during item creation.
+
+
+
+  Developer Recommendations
+    "Developer Recommendations for Stat Allocation of Custom Items in AzerothCore. v1.0"
+    <URL of RECOMMENDATION_DOCUMENT>
+
+    Provides guidance on selecting appropriate ItemLevel, Quality, DPS values, armor values, and stat distributions based on player progression and item purpose.
+
+
+
+  Precision Reference
+    "A Verification Guide to Stat Budgeting in AzerothCore. v1.0"
+    <URL of PRECISION_DOCUMENT>
+
+    Provides the same workflow and tables as the Developers Handbook using observed 3.3.5 values only, without interpolation or derived values.
+    This document is intended for validation and reference rather than day-to-day item creation and serves as a companion to this methodology.
+
+
+
+===========================================================================================================================================
+  End of Document: A Derivation and Validation of Stat Budgeting in AzerothCore. v1.0
+===========================================================================================================================================
