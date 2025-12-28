@@ -122,34 +122,20 @@ Each document is scoped to a specific audience and purpose.
 AzerothCore-Stat-Budgeting-Project/
 
 ├── README.md
-
 │
-
 ├── Validation-Reference.md
-
 ├── Developer-Handbook.md
-
 ├── Developer-Recommendations.md
-
 ├── Precision-Reference.md
-
 │
-
 └── supporting-material/
-
-&nbsp;   ├── data/
-
-&nbsp;   │   ├── canonical/
-
-&nbsp;   │   ├── depreciated/
-
-&nbsp;   │   └── dataset.csv
-
-&nbsp;   └── sql/
-
-&nbsp;       ├── canonical/
-
-&nbsp;       └── depreciated/
+   ├── data/
+   │   ├── canonical/
+   │   ├── depreciated/
+   │   └── dataset.csv
+   └── sql/
+       ├── canonical/
+       └── depreciated/
 ```
 
 
