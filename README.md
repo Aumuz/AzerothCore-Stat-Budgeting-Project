@@ -2,7 +2,7 @@
 
 
 
-The AzerothCore Stat Budgeting Project is a documentation-first reference project that derives, validates, and formalizes stat budgeting rules for custom items in AzerothCore (World of Warcraft 3.3.5a).
+The AzerothCore Stat Budgeting Project is a documentation-first reference project that derives, validates, and formalizes observed stat budgeting rules for custom items based on AzerothCore (World of Warcraft 3.3.5a).
 
 
 
@@ -23,6 +23,16 @@ The primary output of this project is **documentation**.
 
 
 
+**Disclaimer**
+
+
+
+This project is an independent research and documentation effort based on publicly available AzerothCore data.
+
+It is not affiliated with, endorsed by, or maintained by the AzerothCore project or its contributors.
+
+
+
 ---
 
 
@@ -33,7 +43,7 @@ The primary output of this project is **documentation**.
 
 **This repository is**:
 
-* A set of authoritative reference documents.
+* A set of rigorously validated reference documents.
 * A validated model of stat budgeting behavior in AzerothCore 3.3.5.
 * A practical guide for developers creating or auditing custom items.
 
@@ -243,4 +253,6 @@ All conclusions and results were manually reviewed and verified.
 This project is provided for reference and educational use.
 
 Licensing terms may be added depending on downstream distribution needs.
+
+This repository does not claim ownership over AzerothCore or World of Warcraft intellectual property.
 
